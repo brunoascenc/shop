@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+header {
+  height: 9vh;
+  background: lightblue;
+}
+
+header .topo-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header .logo {
+  margin-top: 25px;
+}
+
+header li, header a {
+  list-style: none;
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 1.0rem;
+  margin-top: 45px;
+  text-transform: uppercase;
+}
+
+.banner {
+  display: -ms-grid;
+  display: grid;
+  height: 30vh;
+  background: lightcoral;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  height: 100vh;
+}
+
+main .menu {
+  background: lightgreen;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 25vw;
+  height: 100vh;
+}
+
+main .menu .menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 10%;
+}
+
+main .menu .menu-items li, main .menu .menu-items a {
+  list-style: none;
+  text-decoration: none;
+  margin-top: 11px;
+}
+/*# sourceMappingURL=style.css.map */

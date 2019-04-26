@@ -1,0 +1,17 @@
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin btnReset {
+    cursor: pointer;
+    background-color: #3b3a3a;
+    border: none;
+    outline: none;
+    color: $textColor;
+}
+
+@mixin linksReset{
+    list-style: none;
+    text-decoration: none;
+}
