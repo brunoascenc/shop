@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+KR:900");
 * {
   margin: 0;
   padding: 0;
@@ -5,9 +7,12 @@
           box-sizing: border-box;
 }
 
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 header {
   height: 9vh;
-  background: lightblue;
 }
 
 header .topo-nav {
@@ -34,37 +39,43 @@ header .navbar {
 }
 
 header .logo {
-  margin-top: 25px;
+  margin-top: 22px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-transform: uppercase;
+  background: #00b7ff;
+  padding: 0 12px 0;
+  color: #f7f5f8;
+  cursor: pointer;
 }
 
 header li, header a {
   list-style: none;
   text-decoration: none;
+  color: #3b3b3b;
   margin-left: 15px;
   font-size: 1.0rem;
-  margin-top: 45px;
+  margin-top: 40px;
   text-transform: uppercase;
 }
 
 .banner {
   display: -ms-grid;
   display: grid;
+  border-bottom: solid 1px #e0dfdf;
+  border-top: solid 1px #e0dfdf;
   height: 30vh;
-  background: lightcoral;
+  margin-top: 5px;
 }
 
 main {
-  display: -ms-grid;
-  display: grid;
-  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 main .menu {
-  background: lightgreen;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
+  border-right: solid 1px #e0dfdf;
   width: 25vw;
-  height: 100vh;
 }
 
 main .menu .menu-items {
@@ -74,12 +85,87 @@ main .menu .menu-items {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 10%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 40%;
+}
+
+main .menu .menu-items h3 {
+  margin-top: 15px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #3e3f3f;
+  text-transform: uppercase;
 }
 
 main .menu .menu-items li, main .menu .menu-items a {
   list-style: none;
   text-decoration: none;
+  color: #3b3b3b;
   margin-top: 11px;
+}
+
+main .menu .menu-items li:hover, main .menu .menu-items a:hover {
+  color: #00b7ff;
+}
+
+main .destaques {
+  display: -ms-grid;
+  display: grid;
+  margin-left: 0%;
+  padding: 12px;
+  -ms-grid-columns: (200px)[4];
+      grid-template-columns: repeat(4, 200px);
+  grid-column-gap: 45px;
+  grid-row-gap: 80px;
+}
+
+main .destaques img {
+  width: 220px;
+}
+
+main .destaques h3, main .destaques a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  color: #3b3b3b;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-left: 11%;
+}
+
+main .destaques a {
+  background: #00b7ff;
+  padding: 11px;
+  width: 150px;
+  margin-left: 17%;
+  text-transform: uppercase;
+  color: #fdf5f5;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: lightgray;
+  height: 50vh;
+}
+
+.destaques-title {
+  display: -ms-grid;
+  display: grid;
+  background: blue;
+  height: 6vh;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
 }
 /*# sourceMappingURL=style.css.map */

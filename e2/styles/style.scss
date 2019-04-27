@@ -4,9 +4,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
 header {
     height: 9vh;
-    background: lightblue;
+    // background: lightblue;
     .topo-nav {
         display: flex;
         justify-content: center;
@@ -19,40 +24,100 @@ header {
     }
 
     .logo {
-        margin-top: 25px;
+        margin-top: 22px;
+        font-family: $titleFont;
+        text-transform: uppercase;
+        background: rgb(0, 183, 255);
+        padding: 0 12px 0;
+        color: rgb(247, 245, 248);
+        cursor: pointer;
     }
 
     li, a{
        @include linksReset();
        margin-left: 15px;
        font-size: 1.0rem;
-       margin-top: 45px;
+       margin-top: 40px;
        text-transform: uppercase;
     }
 }
 
 .banner {
     display: grid;
+    border-bottom: $borderStyle;
+    border-top: $borderStyle;
     height: 30vh;
-    background: lightcoral;
+    margin-top: 5px;
+   // background: lightcoral;
 }
 
 main {
-    display: grid;
-    height: 100vh;
+    display: flex;
     .menu {
-        background: lightgreen;
-        grid-template-columns: 1fr;
+        // background: #cccccc;
+        border-right: $borderStyle;
         width: 25vw;
-        height: 100vh;
         .menu-items {
             @include flexCenter();
-            padding: 10%;
+            flex-direction: column;
+            margin-left: 40%;
+            h3 {
+                margin-top: 15px;
+                font-family: $titleFont;
+                color: rgb(62, 63, 63);
+                text-transform: uppercase;
+            }
 
             li, a {
                 @include linksReset();
                 margin-top: 11px;
+                &:hover {
+                    color: rgb(0, 183, 255);
+                }
             }
         }
     }
+
+    .destaques  {
+        display: grid;
+        margin-left: 0%;
+        padding: 12px;
+        grid-template-columns: repeat(4, 200px);
+        grid-column-gap: 45px;
+        grid-row-gap: 80px;
+
+        img {
+            width: 220px;
+        }
+
+        h3, a {
+            @include flexCenter();
+            @include linksReset();
+            font-family: $titleFont;
+            margin-left: 11%;
+        }
+
+        a {
+            background:rgb(0, 183, 255);
+            padding: 11px;
+            width: 150px;
+            margin-left: 17%;
+            text-transform: uppercase;
+            color: #fdf5f5;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: lightgray;
+    height: 50vh;
+}
+
+.destaques-title{
+    display: grid;
+    background: blue;
+    height: 6vh;
+    grid-column: 1/5;
 }
