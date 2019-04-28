@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 header {
@@ -85,6 +86,17 @@ main {
         grid-template-columns: repeat(4, 200px);
         grid-column-gap: 45px;
         grid-row-gap: 80px;
+        div {
+            width: 235px;
+            padding: 6%;
+            border: solid 1px rgb(224, 222, 222);
+        }
+
+
+        h3 {
+            font-size: 0.9em;
+           align-self: center;
+        }
 
         img {
             width: 220px;
@@ -94,30 +106,136 @@ main {
             @include flexCenter();
             @include linksReset();
             font-family: $titleFont;
-            margin-left: 11%;
+            margin-left: 0%;
         }
 
         a {
             background:rgb(0, 183, 255);
             padding: 11px;
             width: 150px;
-            margin-left: 17%;
+            margin-top: 10px;
+            margin-left: 15%;
             text-transform: uppercase;
             color: #fdf5f5;
+        }
+        p {
+            @include flexCenter();
+            margin-top: 5px;   
+        }
+
+        .parcela {
+            // font-weight: bold;
+            color: rgb(75, 74, 74);
+            font-size: 0.9em;
         }
     }
 }
 
 footer {
     display: flex;
-    justify-content: center;
-    background: lightgray;
+    border-top: solid 1px #e7e6e6;
+    background: #faf9f9;
     height: 50vh;
+    justify-content: space-around;
+
+    .info {
+        margin-top: 5%;
+        li,a {
+            @include linksReset();
+            font-size: 0.9em;
+            color: #3f3e3e;
+        }
+        h4 {
+            text-transform: uppercase;
+            color: rgb(39, 39, 38);
+            margin-bottom: 6px;
+        }
+    }
+    .newsletter {
+        margin-top: 5%;
+        .socials i {
+            color: rgb(0, 183, 255);
+            padding: 2px;
+        }
+        .email {
+            h5 {
+                text-transform: uppercase;
+                color: #353434;
+            }
+            input {
+                padding: 2% 12%;
+                outline: none;
+                border: solid 1px rgb(194, 192, 192);
+            }
+
+            button {
+                @include btnReset();
+                margin-top: 2px;
+                padding: 6% 47.1%;
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .pagamento-icons {
+        margin-top: 11%;
+        img {
+            padding: 2% 3%;
+        }
+        h4 {
+            text-transform: uppercase;
+            color: rgb(39, 39, 38);
+        }
+    }
 }
 
-.destaques-title{
-    display: grid;
-    background: blue;
-    height: 6vh;
-    grid-column: 1/5;
+
+.modal {
+    position: fixed; /* vai se mover junto com a tela */
+    top: 50%;
+    left: 50%;
+    border: 2px solid rgb(227, 227, 230);
+    border-radius: 2px;
+    z-index: 10; /* ficar acima de tudo e todos */
+    transition: 200ms ease-in-out;
+    background-color: rgb(250, 249, 249);
+    width: 450px;
+    max-width: 80%;
+    transform: translate(-50%, -50%) scale(0); /*conteudo fica centralizado na tela*/
+
+    .modal-header {
+        padding: 10px 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .close-button {
+            cursor: pointer;
+            background: none;
+            font-size: 1.25rem;
+            font-weight: bold;
+        }
+    }
+}
+
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparentize($dark, 0.4);
+    pointer-events: none;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
 }

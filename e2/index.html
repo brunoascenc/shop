@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="styles//style.css">
     <title>Document</title>
 </head>
@@ -25,7 +27,28 @@
             </div>
 
             <div class="login">
-                <li><a href="#">Login/Registrar</a></li>
+                <li><a data-modal-target="#modal" href="#">Login/Registrar</a></li>
+                <div class="modal" id=modal>
+                    <div class="modal-header">
+                        <div class="title">QLQLQL</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, inventore alias? Odio laboriosam
+                        molestiae
+                        modi voluptatum quam nisi officiis quidem doloribus nemo quas vero, sit cum perspiciatis
+                        molestias assumenda
+                        voluptates consequuntur officia velit, autem sint! Voluptates molestias, a fuga corrupti hic
+                        nostrum? Alias
+                        incidunt iusto animi repellat ut provident obcaecati nostrum voluptatibus rerum nemo? Dolor
+                        dignissimos
+                        facilis libero dolores qui laborum aliquam autem fugiat tempore harum. Cumque veritatis veniam,
+                        repudiandae,
+                        minima atque esse hic harum dolorem ex nihil minus! Molestias.
+                    </div>
+                </div>
+                <div id="overlay">
+                </div>
             </div>
         </div>
     </header>
@@ -70,72 +93,157 @@
         </div>
 
         <div class="destaques">
-            <div class="destaques-title">
+            <!-- <div class="destaques-title">
                 <div class="options">
-                    <h3>Destaques</h3>
+                    <li><a href="#">Mais vendidos</a></li>
                 </div>
-            </div>
+            </div> -->
             <div>
                 <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
-                <p>R$: 1222 ou 12x sem juros</p>
+                <h3>iPhone 7 Plus Preto Matte</h3>
+                <span class="preco">
+                    <p>R$ 1222 à vista</p>
+                </span>
+                <span class="parcela">
+                    <p>ou 12X 49,90 sem juros</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/zenfone_4_pro.png">
+                <h3>Zenfone 4 Selfie Pro</h3>
+                <p>R$ 1789,00 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 59,99</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/moto_maxx.jpg">
+                <h3>Motorola Moto Maxx 2</h3>
+                <p>R$ 1899,99 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 60,90</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/galaxy_s8_plus.jpg">
+                <h3>Samsung Galaxy S8 Plus</h3>
+                <p>R$ 1999,90 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 69,90</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/moto_g5_plus.jpg">
+                <h3>Motorola Moto G5 Plus</h3>
+                <p>R$ 1290,00 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 36,60</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/galaxy_s7_edge.webp">
+                <h3>Samsung Galaxy S7 Edge</h3>
+                <p>R$ 1689,99 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 49,90</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/iphone_7_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/iphone_se.jpg">
+                <h3>Iphone SE Prata</h3>
+                <p>R$ 1259,99 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 40,90</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/asus_zenfone_4.webp">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/moto_x_style.webp">
+                <h3>Motorola Moto X Style</h3>
+                <p>R$ 2199,90 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 79,90</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
 
             <div>
-                <img src="./images/zenfone_3_preto.jpg">
-                <h3>Iphone 7 Preto</h3>
+                <img src="./images/moto_g3.webp">
+                <h3>Moto G3 Geração</h3>
+                <p>R$ 850,90 à vista</p>
+                <span class="parcela">
+                    <p>ou 12x de R$ 25,90</p>
+                </span>
                 <a href="#">Comprar</a>
             </div>
         </div>
     </main>
 
     <footer>
-        <h1>footer</h1>
+        <div class="info">
+            <h4>Logo</h4>
+            <li><a href="">Sobre a Logo</a></li>
+            <li><a href="">Dúvidas frequentes</a></li>
+            <li><a href="">Trocas e devoluções</a></li>
+            <li><a href="">Políticas de Privacidade</a></li>
+            <li><a href="">Lojas Logo</a></li>
+        </div>
+
+        <div class="info">
+            <h4>Parceiros</h4>
+            <li><a href="">Apple</a></li>
+            <li><a href="">Samsung</a></li>
+            <li><a href="">Motorola</a></li>
+            <li><a href="">Asus</a></li>
+        </div>
+
+        <div class="newsletter">
+            <div class="socials">
+                <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+                <a href="#"><i class="fab fa-youtube-square fa-2x"></i></a>
+            </div>
+            <div class="email">
+                <h5>Cadastre-se</h5>
+                <input type="email"><br>
+                <button>Enviar</button>
+            </div>
+        </div>
+
+        <div class="pagamento">
+            <div class="pagamento-icons">
+                <h4>Formas de pagamento</h4>
+                <img src="https://icon-icons.com/icons2/674/PNG/96/Paypal-39_icon-icons.com_60555.png">
+
+                <img src="https://icon-icons.com/icons2/674/PNG/72/Mastercard_icon-icons.com_60554.png">
+
+                <img src="https://icon-icons.com/icons2/674/PNG/72/Visa_icon-icons.com_60549.png">
+
+                <img src="https://icon-icons.com/icons2/674/PNG/72/American_Express_icon-icons.com_60519.png">
+
+                <img src="https://icon-icons.com/icons2/674/PNG/72/Diners_Club_International_icon-icons.com_60516.png">
+
+                <img src="https://img.icons8.com/color/48/000000/boleto-bankario.png">
+
+                <img src="https://icon-icons.com/icons2/674/PNG/72/amazon.com_icon-icons.com_60547.png">
+            </div>
+        </div>
     </footer>
 
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

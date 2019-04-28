@@ -3,6 +3,7 @@
 
 $titleFont: 'Noto Sans KR', sans-serif;
 $borderStyle: solid 1px #e0dfdf;
+$dark : black;
 
 @mixin flexCenter() {
     display: flex;
@@ -11,10 +12,10 @@ $borderStyle: solid 1px #e0dfdf;
 
 @mixin btnReset {
     cursor: pointer;
-    background-color: #3b3a3a;
+    background-color: rgb(13, 156, 212);
     border: none;
     outline: none;
-    color: $textColor;
+    color: #f8f8f8;
 }
 
 @mixin linksReset{
