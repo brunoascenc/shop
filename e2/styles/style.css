@@ -10,6 +10,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  background-color: #faf8f8;
 }
 
 header {
@@ -105,13 +106,14 @@ main .menu .menu-items li, main .menu .menu-items a {
   text-decoration: none;
   color: #3b3b3b;
   margin-top: 11px;
+  font-size: 16px;
 }
 
 main .menu .menu-items li:hover, main .menu .menu-items a:hover {
   color: #00b7ff;
 }
 
-main .destaques {
+main #destaques {
   display: -ms-grid;
   display: grid;
   margin-left: 0%;
@@ -122,24 +124,25 @@ main .destaques {
   grid-row-gap: 80px;
 }
 
-main .destaques div {
+main #destaques div {
   width: 235px;
   padding: 6%;
+  background-color: #ffffff;
   border: solid 1px #e0dede;
 }
 
-main .destaques h3 {
+main #destaques h3 {
   font-size: 0.9em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-main .destaques img {
+main #destaques img {
   width: 220px;
 }
 
-main .destaques h3, main .destaques a {
+main #destaques h3, main #destaques a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -153,7 +156,7 @@ main .destaques h3, main .destaques a {
   margin-left: 0%;
 }
 
-main .destaques a {
+main #destaques a {
   background: #00b7ff;
   padding: 11px;
   width: 150px;
@@ -163,7 +166,7 @@ main .destaques a {
   color: #fdf5f5;
 }
 
-main .destaques p {
+main #destaques p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -173,7 +176,7 @@ main .destaques p {
   margin-top: 5px;
 }
 
-main .destaques .parcela {
+main #destaques .parcela {
   color: #4b4a4a;
   font-size: 0.9em;
 }

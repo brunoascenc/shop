@@ -35,3 +35,138 @@ const closeModal = (modal) => {
     modal.classList.remove('active')
     overlay.classList.remove('active')
 }
+
+// Apple Products
+document.getElementById('apple').addEventListener('click', loadApple => {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', 'apple.json', true)
+
+
+    xhr.onload = () => {
+        if(xhr.status === 200){
+            const produtos = JSON.parse(xhr.responseText)
+            let output = ''
+            for(let i in produtos){
+                output += `
+                <div>
+                <img src="${produtos[i].imagem}">
+                <h3>${produtos[i].titulo}</h3>
+                <span class="preco">
+                    <p>${produtos[i].preco}</p>
+                </span>
+                <span class="parcela">
+                    <p>${produtos[i].parcela}</p>
+                </span>
+                <a href="#">Comprar</a>
+            </div>
+                `
+            }
+            document.getElementById('destaques').innerHTML = output
+
+        }else if (xhr.status === 404) {
+                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
+                }
+    }
+    xhr.send()
+})
+
+// Samsung Products
+document.getElementById('samsung').addEventListener('click', loadSamsung => {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', 'samsung.json', true)
+
+    xhr.onload = () => {
+        if(xhr.status === 200){
+            const produtos = JSON.parse(xhr.responseText)
+            let output = ''
+            for(let i in produtos){
+                output += `
+                <div>
+                <img src="${produtos[i].imagem}">
+                <h3>${produtos[i].titulo}</h3>
+                <span class="preco">
+                    <p>${produtos[i].preco}</p>
+                </span>
+                <span class="parcela">
+                    <p>${produtos[i].parcela}</p>
+                </span>
+                <a href="#">Comprar</a>
+            </div>
+                `
+            }
+            document.getElementById('destaques').innerHTML = output
+
+        }else if (xhr.status === 404) {
+                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
+                }
+    }
+    xhr.send()
+})
+
+// Motorola Products
+document.getElementById('motorola').addEventListener('click', loadMoto => {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', 'motorola.json', true)
+
+
+    xhr.onload = () => {
+        if(xhr.status === 200){
+            const produtos = JSON.parse(xhr.responseText)
+            let output = ''
+            for(let i in produtos){
+                output += `
+                <div>
+                <img src="${produtos[i].imagem}">
+                <h3>${produtos[i].titulo}</h3>
+                <span class="preco">
+                    <p>${produtos[i].preco}</p>
+                </span>
+                <span class="parcela">
+                    <p>${produtos[i].parcela}</p>
+                </span>
+                <a href="#">Comprar</a>
+            </div>
+                `
+            }
+            document.getElementById('destaques').innerHTML = output
+
+        }else if (xhr.status === 404) {
+                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
+                }
+    }
+    xhr.send()
+})
+
+// Asus Products
+document.getElementById('asus').addEventListener('click', loadAsus => {
+    const xhr = new XMLHttpRequest()
+    xhr.open('GET', 'asus.json', true)
+
+
+    xhr.onload = () => {
+        if(xhr.status === 200){
+            const produtos = JSON.parse(xhr.responseText)
+            let output = ''
+            for(let i in produtos){
+                output += `
+                <div>
+                <img src="${produtos[i].imagem}">
+                <h3>${produtos[i].titulo}</h3>
+                <span class="preco">
+                    <p>${produtos[i].preco}</p>
+                </span>
+                <span class="parcela">
+                    <p>${produtos[i].parcela}</p>
+                </span>
+                <a href="#">Comprar</a>
+            </div>
+                `
+            }
+            document.getElementById('destaques').innerHTML = output
+
+        }else if (xhr.status === 404) {
+                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
+                }
+    }
+    xhr.send()
+})

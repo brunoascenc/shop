@@ -11,26 +11,26 @@
     <title>Document</title>
 </head>
 
-<body id="content" onload=preLoader()>
+<body>
     <header>
         <div class="topo-nav">
             <div class="logo">
                 <h1>Logo</h1>
             </div>
             <div class="navbar">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Apple</a></li>
-                <li><a href="#">Motorola</a></li>
-                <li><a href="#">Asus</a></li>
-                <li><a href="#">Samsung</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#destaques">Home</a></li>
+                <li><a id="apple" href="#">Apple</a></li>
+                <li><a id="motorola" href="#">Motorola</a></li>
+                <li><a id="asus" href="#">Asus</a></li>
+                <li><a id="samsung" href="#">Samsung</a></li>
+                <li><a id="contato" href="#">Contato</a></li>
             </div>
 
             <div class="login">
                 <li><a data-modal-target="#modal" href="#">Login/Registrar</a></li>
                 <div class="modal" id=modal>
                     <div class="modal-header">
-                        <div class="title">QLQLQL</div>
+                        <div class="title">Login</div>
                         <button data-close-button class="close-button">&times;</button>
                     </div>
                     <div class="modal-body">
@@ -68,31 +68,34 @@
 
                 <ul>
                     <h3>Motorola</h3>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Moto Maxx</a></li>
+                    <li><a href="#">Moto X</a></li>
+                    <li><a href="#">Moto G</a></li>
+                    <li><a href="#">Moto Z</a></li>
+                    <li><a href="#">Moto X</a></li>
                 </ul>
 
                 <ul>
                     <h3>Samsung</h3>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Galaxy S8</a></li>
+                    <li><a href="#">Galaxy S9</a></li>
+                    <li><a href="#">Galaxy S7</a></li>
+                    <li><a href="#">Galaxy A5</a></li>
+                    <li><a href="#">Galaxy A7</a></li>
+                    <li><a href="#">Galaxy J5</a></li>
                 </ul>
 
                 <ul>
                     <h3>Asus</h3>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
-                    <li><a href="#">Camisetas</a></li>
+                    <li><a href="#">Zenfone 4</a></li>
+                    <li><a href="#">Zenfone 4 Pro</a></li>
+                    <li><a href="#">Zenfone 3</a></li>
+                    <li><a href="#">Zenfone 4 Max</a></li>
                 </ul>
             </div>
         </div>
 
-        <div class="destaques">
+        <div id="destaques">
             <!-- <div class="destaques-title">
                 <div class="options">
                     <li><a href="#">Mais vendidos</a></li>
@@ -223,7 +226,7 @@
             </div>
         </div>
 
-        <div class="pagamento">
+        <!-- <div class="pagamento">
             <div class="pagamento-icons">
                 <h4>Formas de pagamento</h4>
                 <img src="https://icon-icons.com/icons2/674/PNG/96/Paypal-39_icon-icons.com_60555.png">
@@ -240,7 +243,7 @@
 
                 <img src="https://icon-icons.com/icons2/674/PNG/72/amazon.com_icon-icons.com_60547.png">
             </div>
-        </div>
+        </div> -->
     </footer>
 
     <script src="./js/app.js"></script>
