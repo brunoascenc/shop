@@ -267,7 +267,8 @@ footer .pagamento-icons h4 {
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
   background-color: #faf9f9;
-  width: 450px;
+  width: 490px;
+  height: 400px;
   max-width: 80%;
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
@@ -279,18 +280,68 @@ footer .pagamento-icons h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: solid 1px #e7e6e6;
+}
+
+.modal .modal-body {
+  padding: 6%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.modal .modal-header .close-button {
+.modal .modal-body input {
+  width: 80%;
+  height: 27px;
+  border-radius: 3px;
+  border: solid 1px #cccccc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.modal .modal-body button {
+  cursor: pointer;
+  outline: none;
+  border-radius: 3px;
+  width: 80%;
+  background-color: #00b7ff;
+  border: none;
+  color: #ffffff;
+  height: 30px;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+}
+
+.modal .modal-body a {
+  padding: 0;
+  margin-top: 0;
+  text-transform: inherit;
+  margin-left: 4px;
+}
+
+.modal .close-button {
   cursor: pointer;
   background: none;
-  font-size: 1.25rem;
+  color: #3b3b3b;
+  padding: 4px;
+  border: none;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 

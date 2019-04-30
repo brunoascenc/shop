@@ -170,3 +170,4 @@ document.getElementById('asus').addEventListener('click', loadAsus => {
     }
     xhr.send()
 })
+
