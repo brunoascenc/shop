@@ -260,14 +260,14 @@ footer .pagamento-icons h4 {
   /* vai se mover junto com a tela */
   top: 50%;
   left: 50%;
-  border: 2px solid #e3e3e6;
+  border: none;
   border-radius: 2px;
   z-index: 10;
   /* ficar acima de tudo e todos */
   -webkit-transition: 200ms ease-in-out;
   transition: 200ms ease-in-out;
-  background-color: #faf9f9;
-  width: 490px;
+  background-color: white;
+  width: 380px;
   height: 400px;
   max-width: 80%;
   -webkit-transform: translate(-50%, -50%) scale(0);
@@ -294,7 +294,7 @@ footer .pagamento-icons h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 10px;
+  margin-top: 28px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -305,10 +305,11 @@ footer .pagamento-icons h4 {
 }
 
 .modal .modal-body input {
-  width: 80%;
+  width: 65%;
   height: 27px;
   border-radius: 3px;
-  border: solid 1px #cccccc;
+  border: none;
+  border-bottom: solid 2px #ccc;
   -webkit-box-shadow: none;
           box-shadow: none;
   outline: none;
@@ -317,8 +318,8 @@ footer .pagamento-icons h4 {
 .modal .modal-body button {
   cursor: pointer;
   outline: none;
-  border-radius: 3px;
-  width: 80%;
+  border-radius: 2px;
+  width: 65%;
   background-color: #00b7ff;
   border: none;
   color: #ffffff;
@@ -335,6 +336,23 @@ footer .pagamento-icons h4 {
   margin-left: 4px;
 }
 
+.modal .modal-body .registrar-form {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  padding: 6%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.modal .modal-body .registrar-form input {
+  width: 75%;
+}
+
+.modal .modal-body .recuperar-senha {
+  display: none;
+}
+
 .modal .close-button {
   cursor: pointer;
   background: none;
@@ -343,6 +361,7 @@ footer .pagamento-icons h4 {
   border: none;
   font-size: 1.5rem;
   font-weight: bold;
+  outline: none;
 }
 
 .modal.active {

@@ -171,3 +171,17 @@ document.getElementById('asus').addEventListener('click', loadAsus => {
     xhr.send()
 })
 
+// Login transition
+const loginDiv = document.querySelector('.login-form')
+const registrarDiv = document.querySelector('.registrar-form')
+const recuperarDiv = document.querySelector('.recuperar-senha')
+
+document.querySelector('#registrarLink').addEventListener('click', () => {
+    loginDiv.style.display = "none"
+    registrarDiv.style.display = "block"
+})
+
+document.querySelector('#recuperarLink').addEventListener('click', () => {
+    loginDiv.style.display = "none"
+    recuperarDiv.style.display = "block"
+})

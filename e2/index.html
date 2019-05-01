@@ -27,21 +27,37 @@
             </div>
 
             <div class="login">
-                <li><a data-modal-target="#modal" href="#">Login/Registrar</a></li>
+                <li><a data-modal-target="#modal" href="#">Login</a></li>
                 <div class="modal" id=modal>
                     <button data-close-button class="close-button">&times;</button>
                     <div class="modal-header">
                         <div class="title"><a href="#">Login</a></div>
-                        <div class="title"><a id="registar" href="#">Registrar-se</a></div>
                     </div>
                     <div class="modal-body">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="emailInput"><br>
-                        <label for="password">Senha</label>
-                        <input type="password">
+                        <div class="login-form">
+
+                        
+                        <input type="email" name="email" id="emailInput" placeholder="Seu email..."><br>
+                        <input type="password" placeholder="Sua senha...">
                         <button>Entrar</button>
-                        <a href="#">Quero me registrar</a>
-                        <a href="#">Esqueci minha senha</a>
+                        <a id ="registrarLink" href="#">Quero me registrar</a>
+                        <a id ="recuperarLink" href="#">Esqueci minha senha</a>
+                    </div>
+                    
+                        <div class="registrar-form" hidden>
+                            <form>
+                                <input type="text" placeholder="Digite seu nome">
+                                <input type="email" name="email" id="emailRegistrar" placeholder="Digite seu email"><br>
+                                <input type="password" placeholder="Digite sua senha">
+                                <button>Regitrar</button>
+                            </form>
+                        </div>
+
+                        <div class="recuperar-senha" hidden>
+                            <p>Digite seu email registrado para enviarmos um link de reset para sua senha!</p>
+                            <input type="email" name="email" id="emailRecuperar" placeholder="Digite seu email..."><br>
+                            <button>Enviar</button>
+                        </div>
                     </div>
                 </div>
                 <div id="overlay">
