@@ -13,6 +13,7 @@ body {
   background-color: #faf8f8;
 }
 
+/* Nav*/
 header {
   height: 9vh;
 }
@@ -60,6 +61,7 @@ header li, header a {
   text-transform: uppercase;
 }
 
+/*Banner*/
 .banner {
   display: -ms-grid;
   display: grid;
@@ -69,10 +71,15 @@ header li, header a {
   margin-top: 5px;
 }
 
+/*Conteudo*/
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  /*Side menu*/
+  /*Side menu end*/
+  /*Produtos destaque*/
+  /*Produtos destaque end*/
 }
 
 main .menu {
@@ -181,6 +188,8 @@ main #destaques .parcela {
   font-size: 0.9em;
 }
 
+/*Conteudo end*/
+/* Footer */
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,6 +264,8 @@ footer .pagamento-icons h4 {
   color: #272726;
 }
 
+/* Footer end */
+/* Modal */
 .modal {
   position: fixed;
   /* vai se mover junto com a tela */
@@ -287,6 +298,7 @@ footer .pagamento-icons h4 {
       -ms-flex-pack: center;
           justify-content: center;
   border-bottom: solid 1px #e7e6e6;
+  color: #353434;
 }
 
 .modal .modal-body {
@@ -295,13 +307,17 @@ footer .pagamento-icons h4 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 28px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .modal .modal-body input {
@@ -336,21 +352,70 @@ footer .pagamento-icons h4 {
   margin-left: 4px;
 }
 
+.modal .modal-body .login-form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-body .login-form input {
+  width: 220px;
+}
+
+.modal .modal-body .login-form button {
+  width: 220px;
+}
+
 .modal .modal-body .registrar-form {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  padding: 6%;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  margin-top: -30px;
 }
 
 .modal .modal-body .registrar-form input {
-  width: 75%;
+  width: 220px;
+  margin-top: 15px;
+}
+
+.modal .modal-body .registrar-form button {
+  width: 220px;
+}
+
+.modal .modal-body .registrar-form form {
+  margin-left: 16%;
 }
 
 .modal .modal-body .recuperar-senha {
-  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal .modal-body .recuperar-senha input {
+  width: 220px;
+  margin-top: 15px;
+  margin-bottom: -22px;
+}
+
+.modal .modal-body .recuperar-senha button, .modal .modal-body .recuperar-senha p, .modal .modal-body .recuperar-senha a {
+  width: 220px;
+}
+
+.modal .modal-body .recuperar-senha a {
+  margin-top: -22px;
+}
+
+.modal .modal-body .recuperar-senha form {
+  margin-left: 16%;
 }
 
 .modal .close-button {
@@ -386,4 +451,6 @@ footer .pagamento-icons h4 {
   pointer-events: all;
   opacity: 1;
 }
+
+/*Modal end*/
 /*# sourceMappingURL=style.css.map */

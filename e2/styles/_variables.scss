@@ -23,3 +23,10 @@ $dark : black;
     text-decoration: none;
     color: rgb(59, 59, 59);
 }
+
+@mixin columnCenter {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

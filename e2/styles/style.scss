@@ -10,10 +10,9 @@ body {
     overflow-x: hidden;
     background-color: #faf8f8;
 }
-
+/* Nav*/
 header {
     height: 9vh;
-    // background: lightblue;
     .topo-nav {
         display: flex;
         justify-content: center;
@@ -44,19 +43,20 @@ header {
     }
 }
 
+/*Banner*/
 .banner {
     display: grid;
     border-bottom: $borderStyle;
     border-top: $borderStyle;
     height: 30vh;
     margin-top: 5px;
-   // background: lightcoral;
 }
 
+/*Conteudo*/
 main {
     display: flex;
+    /*Side menu*/
     .menu {
-        // background: #cccccc;
         border-right: $borderStyle;
         width: 25vw;
         .menu-items {
@@ -80,7 +80,9 @@ main {
             }
         }
     }
+    /*Side menu end*/
 
+    /*Produtos destaque*/
     #destaques  {
         display: grid;
         margin-left: 0%;
@@ -132,8 +134,11 @@ main {
             font-size: 0.9em;
         }
     }
+    /*Produtos destaque end*/
 }
+/*Conteudo end*/
 
+/* Footer */
 footer {
     display: flex;
     border-top: solid 1px #e7e6e6;
@@ -192,8 +197,9 @@ footer {
         }
     }
 }
+/* Footer end */
 
-// Modal
+/* Modal */
 .modal {
     position: fixed; /* vai se mover junto com a tela */
     top: 50%;
@@ -214,14 +220,14 @@ footer {
         align-items: center;
         justify-content: center;
         border-bottom: solid 1px #e7e6e6;
+        color: #353434;
     }
 
     .modal-body {
         padding: 6%;
         display: flex;
         margin-top: 28px;
-        flex-direction: column;
-        align-items: center;
+        @include columnCenter();
 
         input {
             width: 65%;
@@ -254,19 +260,49 @@ footer {
             margin-left: 4px;
         }
 
-        .registrar-form{
-            justify-self: center;
-            padding: 6%;
-            align-self: center;
+        .login-form {
+            @include columnCenter();
             input {
-                width: 75%;
+                width: 220px;
+            }
+            button {
+                width: 220px;
+            }
+        }
+
+        .registrar-form{
+            margin-top: -30px;
+            input {
+                width: 220px;
+                margin-top: 15px;
+            }
+            button {
+                width: 220px;
+            }
+            form {
+                margin-left: 16%;
             }
         }
 
         .recuperar-senha {
-            display: none;
-        }
+            flex-direction: column;
+            input {
+                width: 220px;
+                margin-top: 15px;
+                margin-bottom: -22px;
+            }
+            button,p, a {
+                width: 220px;
+            }
+            a {
+                margin-top: -22px;
+            }
 
+            form {
+                margin-left: 16%;
+            }
+
+        }
     }
     .close-button {
         cursor: pointer;
@@ -284,6 +320,7 @@ footer {
     transform: translate(-50%, -50%) scale(1);
 }
 
+// Modal overlay
 #overlay {
     position: fixed;
     opacity: 0;
@@ -300,3 +337,4 @@ footer {
     pointer-events: all;
     opacity: 1;
 }
+/*Modal end*/

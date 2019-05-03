@@ -175,13 +175,26 @@ document.getElementById('asus').addEventListener('click', loadAsus => {
 const loginDiv = document.querySelector('.login-form')
 const registrarDiv = document.querySelector('.registrar-form')
 const recuperarDiv = document.querySelector('.recuperar-senha')
+const voltarLink = document.querySelectorAll('.voltarLink')
 
 document.querySelector('#registrarLink').addEventListener('click', () => {
-    loginDiv.style.display = "none"
-    registrarDiv.style.display = "block"
+    document.querySelector('.title').innerHTML = "Cadastro";
+    loginDiv.style.display = 'none'
+    registrarDiv.style.display = 'flex'
 })
 
 document.querySelector('#recuperarLink').addEventListener('click', () => {
-    loginDiv.style.display = "none"
-    recuperarDiv.style.display = "block"
+    document.querySelector('.title').innerHTML = "Recuperar senha";
+    loginDiv.style.display = 'none'
+    recuperarDiv.style.display = 'flex'
 })
+
+voltarLink.forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelector('.title').innerHTML = "Login";
+        registrarDiv.style.display = 'none';
+        recuperarDiv.style.display = 'none';
+        loginDiv.style.display = 'flex';
+    })
+})
+
