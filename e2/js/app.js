@@ -1,53 +1,52 @@
 // Modal
-const modalButton = document.querySelectorAll('[data-modal-target]') 
-const closeModalBtn = document.querySelectorAll('[data-close-button]') 
-const overlay = document.getElementById('overlay')
+const modalButton = document.querySelectorAll('[data-modal-target]');
+const closeModalBtn = document.querySelectorAll('[data-close-button]');
+const overlay = document.getElementById('overlay');
 
 modalButton.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = document.querySelector(button.dataset.modalTarget)
-        openModal(modal)
-    })
-})
+  button.addEventListener('click', () => {
+    const modal = document.querySelector(button.dataset.modalTarget);
+    openModal(modal);
+  });
+});
 
 closeModalBtn.forEach(button => {
-    button.addEventListener('click', () => {
-        const modal = button.closest('.modal') 
-        closeModal(modal)
-    })
-})
+  button.addEventListener('click', () => {
+    const modal = button.closest('.modal');
+    closeModal(modal);
+  });
+});
 
 overlay.addEventListener('click', () => {
-    const modals = document.querySelectorAll('.modal.active')
-    modals.forEach(modal => {
-        closeModal(modal)
-    })
-})
+  const modals = document.querySelectorAll('.modal.active');
+  modals.forEach(modal => {
+    closeModal(modal);
+  });
+});
 
-const openModal = (modal) => {
-    if (modal == null) return
-    modal.classList.add('active')
-    overlay.classList.add('active')
-}
+const openModal = modal => {
+  if (modal == null) return;
+  modal.classList.add('active');
+  overlay.classList.add('active');
+};
 
-const closeModal = (modal) => {
-    if (modal == null) return
-    modal.classList.remove('active')
-    overlay.classList.remove('active')
-}
+const closeModal = modal => {
+  if (modal == null) return;
+  modal.classList.remove('active');
+  overlay.classList.remove('active');
+};
 
 // Apple Products
-document.getElementById('apple').addEventListener('click', loadApple => {
-    const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'apple.json', true)
+document.getElementById('apple').addEventListener('click', () => {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'apple.json', true);
 
-
-    xhr.onload = () => {
-        if(xhr.status === 200){
-            const produtos = JSON.parse(xhr.responseText)
-            let output = ''
-            for(let i in produtos){
-                output += `
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      const produtos = JSON.parse(xhr.responseText);
+      let output = '';
+      for (let i in produtos) {
+        output += `
                 <div>
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -59,28 +58,28 @@ document.getElementById('apple').addEventListener('click', loadApple => {
                 </span>
                 <a href="#">Comprar</a>
             </div>
-                `
-            }
-            document.getElementById('destaques').innerHTML = output
-
-        }else if (xhr.status === 404) {
-                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
-                }
+                `;
+      }
+      document.getElementById('destaques').innerHTML = output;
+    } else if (xhr.status === 404) {
+      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
     }
-    xhr.send()
-})
+  };
+  xhr.send();
+});
+
 
 // Samsung Products
-document.getElementById('samsung').addEventListener('click', loadSamsung => {
-    const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'samsung.json', true)
+document.getElementById('samsung').addEventListener('click', () => {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'samsung.json', true);
 
-    xhr.onload = () => {
-        if(xhr.status === 200){
-            const produtos = JSON.parse(xhr.responseText)
-            let output = ''
-            for(let i in produtos){
-                output += `
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      const produtos = JSON.parse(xhr.responseText);
+      let output = '';
+      for (let i in produtos) {
+        output += `
                 <div>
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -92,29 +91,27 @@ document.getElementById('samsung').addEventListener('click', loadSamsung => {
                 </span>
                 <a href="#">Comprar</a>
             </div>
-                `
-            }
-            document.getElementById('destaques').innerHTML = output
-
-        }else if (xhr.status === 404) {
-                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
-                }
+                `;
+      }
+      document.getElementById('destaques').innerHTML = output;
+    } else if (xhr.status === 404) {
+      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
     }
-    xhr.send()
-})
+  };
+  xhr.send();
+});
 
 // Motorola Products
-document.getElementById('motorola').addEventListener('click', loadMoto => {
-    const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'motorola.json', true)
+document.getElementById('motorola').addEventListener('click', () => {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'motorola.json', true);
 
-
-    xhr.onload = () => {
-        if(xhr.status === 200){
-            const produtos = JSON.parse(xhr.responseText)
-            let output = ''
-            for(let i in produtos){
-                output += `
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      const produtos = JSON.parse(xhr.responseText);
+      let output = '';
+      for (let i in produtos) {
+        output += `
                 <div>
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -126,29 +123,28 @@ document.getElementById('motorola').addEventListener('click', loadMoto => {
                 </span>
                 <a href="#">Comprar</a>
             </div>
-                `
-            }
-            document.getElementById('destaques').innerHTML = output
-
-        }else if (xhr.status === 404) {
-                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
-                }
+                `;
+      }
+      document.getElementById('destaques').innerHTML = output;
+    } else if (xhr.status === 404) {
+      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
     }
-    xhr.send()
-})
+  };
+  xhr.send();
+});
+
 
 // Asus Products
-document.getElementById('asus').addEventListener('click', loadAsus => {
-    const xhr = new XMLHttpRequest()
-    xhr.open('GET', 'asus.json', true)
+document.getElementById('asus').addEventListener('click', () => {
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'asus.json', true);
 
-
-    xhr.onload = () => {
-        if(xhr.status === 200){
-            const produtos = JSON.parse(xhr.responseText)
-            let output = ''
-            for(let i in produtos){
-                output += `
+  xhr.onload = () => {
+    if (xhr.status === 200) {
+      const produtos = JSON.parse(xhr.responseText);
+      let output = '';
+      for (let i in produtos) {
+        output += `
                 <div>
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -160,41 +156,39 @@ document.getElementById('asus').addEventListener('click', loadAsus => {
                 </span>
                 <a href="#">Comprar</a>
             </div>
-                `
-            }
-            document.getElementById('destaques').innerHTML = output
-
-        }else if (xhr.status === 404) {
-                    document.getElementById('destaques').innerHTML = 'Produto não encontrado'
-                }
+                `;
+      }
+      document.getElementById('destaques').innerHTML = output;
+    } else if (xhr.status === 404) {
+      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
     }
-    xhr.send()
-})
+  };
+  xhr.send();
+});
 
 // Login transition
-const loginDiv = document.querySelector('.login-form')
-const registrarDiv = document.querySelector('.registrar-form')
-const recuperarDiv = document.querySelector('.recuperar-senha')
-const voltarLink = document.querySelectorAll('.voltarLink')
+const loginDiv = document.querySelector('.login-form');
+const registrarDiv = document.querySelector('.registrar-form');
+const recuperarDiv = document.querySelector('.recuperar-senha');
+const voltarLink = document.querySelectorAll('.voltarLink');
 
 document.querySelector('#registrarLink').addEventListener('click', () => {
-    document.querySelector('.title').innerHTML = "Cadastro";
-    loginDiv.style.display = 'none'
-    registrarDiv.style.display = 'flex'
-})
+  document.querySelector('.title').innerHTML = 'Cadastro';
+  loginDiv.style.display = 'none';
+  registrarDiv.style.display = 'flex';
+});
 
 document.querySelector('#recuperarLink').addEventListener('click', () => {
-    document.querySelector('.title').innerHTML = "Recuperar senha";
-    loginDiv.style.display = 'none'
-    recuperarDiv.style.display = 'flex'
-})
+  document.querySelector('.title').innerHTML = 'Recuperar senha';
+  loginDiv.style.display = 'none';
+  recuperarDiv.style.display = 'flex';
+});
 
 voltarLink.forEach(button => {
-    button.addEventListener('click', () => {
-        document.querySelector('.title').innerHTML = "Login";
-        registrarDiv.style.display = 'none';
-        recuperarDiv.style.display = 'none';
-        loginDiv.style.display = 'flex';
-    })
-})
-
+  button.addEventListener('click', () => {
+    document.querySelector('.title').innerHTML = 'Login';
+    registrarDiv.style.display = 'none';
+    recuperarDiv.style.display = 'none';
+    loginDiv.style.display = 'flex';
+  });
+});

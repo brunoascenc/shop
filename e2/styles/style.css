@@ -67,8 +67,11 @@ header li, header a {
   display: grid;
   border-bottom: solid 1px #e0dfdf;
   border-top: solid 1px #e0dfdf;
-  height: 30vh;
+  background-color: white;
+  height: 35vh;
   margin-top: 5px;
+  background: url("https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000") no-repeat;
+  background-size: cover;
 }
 
 /*Conteudo*/
