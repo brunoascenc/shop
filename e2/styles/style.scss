@@ -60,12 +60,15 @@ main {
     display: flex;
     /*Side menu*/
     .menu {
-        border-right: $borderStyle;
         width: 25vw;
+        height: 100vh;        
+        // border-right: $borderStyle;
+        // border-bottom: $borderStyle;
+        // padding: 8px;
         .menu-items {
             @include flexCenter();
             flex-direction: column;
-            margin-left: 40%;
+            margin-left: 40%; 
             h3 {
                 margin-top: 15px;
                 font-family: $titleFont;
@@ -93,13 +96,14 @@ main {
         grid-template-columns: repeat(4, 200px);
         grid-column-gap: 45px;
         grid-row-gap: 80px;
+        border-left: $borderStyle;
         div {
             width: 235px;
+            height: 420px;
             padding: 6%;
             background-color: #ffffff;
             border: solid 1px rgb(224, 222, 222);
         }
-
 
         h3 {
             font-size: 0.9em;
@@ -142,15 +146,15 @@ main {
 }
 /*Conteudo end*/
 .contato-form {
-    // display: flex;
-    flex-direction: column;
+//  display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 25px;
     background: rgb(247, 248, 248);
     padding: 6%;
-    border: $borderStyle;
-    margin-left: 26%;
+    border-top: $borderStyle;
+    margin-left:0;
     h2{
         align-self: center;
         text-transform: uppercase;
@@ -168,6 +172,17 @@ main {
         @include btnReset();
         text-transform: uppercase;
         font-weight: bold;
+    }
+
+    .test1,.test2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+        align-items: center;
+        border: $borderStyle;
+        padding: 2%;
+        margin-left: 5px;
     }
 }
 

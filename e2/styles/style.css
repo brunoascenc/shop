@@ -86,8 +86,8 @@ main {
 }
 
 main .menu {
-  border-right: solid 1px #e0dfdf;
   width: 25vw;
+  height: 100vh;
 }
 
 main .menu .menu-items {
@@ -132,10 +132,12 @@ main #destaques {
       grid-template-columns: repeat(4, 200px);
   grid-column-gap: 45px;
   grid-row-gap: 80px;
+  border-left: solid 1px #e0dfdf;
 }
 
 main #destaques div {
   width: 235px;
+  height: 420px;
   padding: 6%;
   background-color: #ffffff;
   border: solid 1px #e0dede;
@@ -193,10 +195,8 @@ main #destaques .parcela {
 
 /*Conteudo end*/
 .contato-form {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -204,8 +204,8 @@ main #destaques .parcela {
   margin-bottom: 25px;
   background: #f7f8f8;
   padding: 6%;
-  border: solid 1px #e0dfdf;
-  margin-left: 26%;
+  border-top: solid 1px #e0dfdf;
+  margin-left: 0;
 }
 
 .contato-form h2 {
@@ -232,6 +232,26 @@ main #destaques .parcela {
   color: #f8f8f8;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.contato-form .test1, .contato-form .test2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 60%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #e0dfdf;
+  padding: 2%;
+  margin-left: 5px;
 }
 
 /* Footer */
