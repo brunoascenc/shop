@@ -192,3 +192,27 @@ voltarLink.forEach(button => {
     loginDiv.style.display = 'flex';
   });
 });
+
+
+// Contato
+const contatoDiv = document.querySelector('.contato-form');
+const menuDiv = document.querySelector('.menu');
+const bannerDiv = document.querySelector('.banner');
+const destaquesDiv = document.querySelector('#destaques');
+const voltarHome = document.querySelectorAll('.voltarHome');
+
+document.querySelector('#contato').addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  destaquesDiv.style.display = 'none';
+  bannerDiv.style.display = 'none';
+  contatoDiv.style.display = 'flex';
+});
+
+voltarHome.forEach(button => {
+  button.addEventListener('click', () => {
+    contatoDiv.style.display = 'none';
+    menuDiv.style.display = 'flex';
+    destaquesDiv.style.display = 'grid';
+    bannerDiv.style.display = 'block';
+  });
+});

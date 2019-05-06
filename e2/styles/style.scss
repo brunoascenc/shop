@@ -137,9 +137,40 @@ main {
             font-size: 0.9em;
         }
     }
-    /*Produtos destaque end*/
+    /*Produtos destaque end*/    
+    
 }
 /*Conteudo end*/
+.contato-form {
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    background: rgb(247, 248, 248);
+    padding: 6%;
+    border: $borderStyle;
+    margin-left: 26%;
+    h2{
+        align-self: center;
+        text-transform: uppercase;
+        font-family: $titleFont;
+        color: #353434;
+    }
+    // @include flexCenter();
+    input, select, textarea, button {
+        padding: 2%;
+        margin-top: 4px;
+        outline: none;
+        width: 450px;
+    }
+    button {
+        @include btnReset();
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
 
 /* Footer */
 footer {

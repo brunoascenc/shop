@@ -18,11 +18,11 @@
                 <h1>Logo</h1>
             </div>
             <div class="navbar">
-                <li><a href="#destaques">Home</a></li>
-                <li><a id="apple" href="#apple">Apple</a></li>
-                <li><a id="motorola" href="#motorola">Motorola</a></li>
-                <li><a id="asus" href="#asus">Asus</a></li>
-                <li><a id="samsung" href="#samsung">Samsung</a></li>
+                <li><a class ="voltarHome" id="home" href="#destaques">Home</a></li>
+                <li><a class ="voltarHome" id="apple" href="#apple">Apple</a></li>
+                <li><a class ="voltarHome" id="motorola" href="#motorola">Motorola</a></li>
+                <li><a class ="voltarHome" id="asus" href="#asus">Asus</a></li>
+                <li><a class ="voltarHome" id="samsung" href="#samsung">Samsung</a></li>
                 <li><a id="contato" href="#contato">Contato</a></li>
             </div>
 
@@ -35,13 +35,13 @@
                     </div>
                     <div class="modal-body">
                         <div class="login-form">
-                        <input type="email" name="email" id="emailInput" placeholder="Seu email..."><br>
-                        <input type="password" placeholder="Sua senha...">
-                        <button>Entrar</button>
-                        <a id ="registrarLink" href="#">Quero me registrar</a>
-                        <a id ="recuperarLink" href="#">Esqueci minha senha</a>
-                    </div>
-                    
+                            <input type="email" name="email" id="emailInput" placeholder="Seu email..."><br>
+                            <input type="password" placeholder="Sua senha...">
+                            <button>Entrar</button>
+                            <a id="registrarLink" href="#">Quero me registrar</a>
+                            <a id="recuperarLink" href="#">Esqueci minha senha</a>
+                        </div>
+
                         <div class="registrar-form" hidden>
                             <form>
                                 <input type="text" placeholder="Digite seu nome">
@@ -49,7 +49,7 @@
                                 <input type="password" placeholder="Digite sua senha">
                                 <input type="password" placeholder="Digite sua senha novamente">
                                 <button>Regitrar</button><br>
-                                <a class ="voltarLink" href="#">Voltar</a>
+                                <a class="voltarLink" href="#">Voltar</a>
                             </form>
                         </div>
 
@@ -57,7 +57,7 @@
                             <p>Vamos enviar um email para que você possa recuperar sua senha!</p>
                             <input type="email" name="email" id="emailRecuperar" placeholder="Digite seu email..."><br>
                             <button>Enviar</button><br>
-                            <a class ="voltarLink" href="#">Voltar</a>
+                            <a class="voltarLink" href="#">Voltar</a>
                         </div>
                     </div>
                 </div>
@@ -206,6 +206,24 @@
                 </span>
                 <a href="#">Comprar</a>
             </div>
+        </div>
+
+        <div class="contato-form" hidden>
+            <h2>Contato</h2>
+            <!-- <form action=""> -->
+            <input type="text" placeholder="Seu nome">
+            <input type="email" placeholder="Seu email">
+            <select name="duvidas">
+                <option value="valor1" selected>Selecione uma dúvida</option>
+                <option value="devo">Devoluções</option>
+                <option value="troca">Troca</option>
+                <option value="garantia">Garantia</option>
+                <option value="defeito">Produto com defeito</option>
+                <textarea id="story" name="story" rows="5" cols="33">
+                        </textarea>
+                <button>Enviar</button>
+            </select>
+            <!-- </form> -->
         </div>
     </main>
 

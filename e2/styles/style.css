@@ -192,6 +192,48 @@ main #destaques .parcela {
 }
 
 /*Conteudo end*/
+.contato-form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background: #f7f8f8;
+  padding: 6%;
+  border: solid 1px #e0dfdf;
+  margin-left: 26%;
+}
+
+.contato-form h2 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-transform: uppercase;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #353434;
+}
+
+.contato-form input, .contato-form select, .contato-form textarea, .contato-form button {
+  padding: 2%;
+  margin-top: 4px;
+  outline: none;
+  width: 450px;
+}
+
+.contato-form button {
+  cursor: pointer;
+  background-color: #0d9cd4;
+  border: none;
+  outline: none;
+  color: #f8f8f8;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 /* Footer */
 footer {
   display: -webkit-box;
