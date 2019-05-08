@@ -31,3 +31,17 @@ $mainBlue: rgb(13, 156, 212);
     display: flex;
     flex-direction: column;
 }
+
+@mixin inputReset {
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+@mixin aReset {
+    background: none !important;
+    padding: 16px 0 !important;
+    width: 120px !important;
+    margin-top: 0 !important;
+    margin-left: 0 !important;
+}

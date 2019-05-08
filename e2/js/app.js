@@ -44,10 +44,26 @@ document.getElementById('apple').addEventListener('click', () => {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
-      let output = '';
+      let output = `
+      <div class="organizar">
+      <h4>Organizar por: </h4>
+      <div>
+          <a>Menor preco</a>
+      </div>
+      <div>
+          <a>Maior preco</a>
+      </div>
+      <div>
+          <a>Relevancia</a>
+      </div>
+      <div>
+          <input type="search" placeholder="Pesquisar">
+      </div>
+  </div>
+      `;
       for (let i in produtos) {
         output += `
-                <div>
+                <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
                 <span class="preco">
@@ -68,7 +84,6 @@ document.getElementById('apple').addEventListener('click', () => {
   xhr.send();
 });
 
-
 // Samsung Products
 document.getElementById('samsung').addEventListener('click', () => {
   const xhr = new XMLHttpRequest();
@@ -77,10 +92,26 @@ document.getElementById('samsung').addEventListener('click', () => {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
-      let output = '';
+      let output = `
+      <div class="organizar">
+      <h4>Organizar por: </h4>
+      <div>
+          <a>Menor preco</a>
+      </div>
+      <div>
+          <a>Maior preco</a>
+      </div>
+      <div>
+          <a>Relevancia</a>
+      </div>
+      <div>
+          <input type="search" placeholder="Pesquisar">
+      </div>
+  </div>
+      `;
       for (let i in produtos) {
         output += `
-                <div>
+                <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
                 <span class="preco">
@@ -109,10 +140,26 @@ document.getElementById('motorola').addEventListener('click', () => {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
-      let output = '';
+      let output = `
+      <div class="organizar">
+      <h4>Organizar por: </h4>
+      <div>
+          <a>Menor preco</a>
+      </div>
+      <div>
+          <a>Maior preco</a>
+      </div>
+      <div>
+          <a>Relevancia</a>
+      </div>
+      <div>
+          <input type="search" placeholder="Pesquisar">
+      </div>
+  </div>
+      `;
       for (let i in produtos) {
         output += `
-                <div>
+                <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
                 <span class="preco">
@@ -133,7 +180,6 @@ document.getElementById('motorola').addEventListener('click', () => {
   xhr.send();
 });
 
-
 // Asus Products
 document.getElementById('asus').addEventListener('click', () => {
   const xhr = new XMLHttpRequest();
@@ -142,10 +188,26 @@ document.getElementById('asus').addEventListener('click', () => {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
-      let output = '';
+      let output = `
+      <div class="organizar">
+      <h4>Organizar por: </h4>
+      <div>
+          <a>Menor preco</a>
+      </div>
+      <div>
+          <a>Maior preco</a>
+      </div>
+      <div>
+          <a>Relevancia</a>
+      </div>
+      <div>
+          <input type="search" placeholder="Pesquisar">
+      </div>
+  </div>
+      `;
       for (let i in produtos) {
         output += `
-                <div>
+                <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
                 <span class="preco">
@@ -192,7 +254,6 @@ voltarLink.forEach(button => {
     loginDiv.style.display = 'flex';
   });
 });
-
 
 // Contato
 const contatoDiv = document.querySelector('.contato-form');
