@@ -188,6 +188,9 @@ document.getElementById('asus').addEventListener('click', () => {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
+      const test = produtos.map(e => e.preco)
+      const test2 = test.sort((a,b) => a - b) // usar sort para organizar do maior para o menor ou vice-versa
+      console.log(test2)
       let output = `
       <div class="organizar">
       <h4>Organizar por: </h4>
@@ -221,6 +224,7 @@ document.getElementById('asus').addEventListener('click', () => {
                 `;
       }
       document.getElementById('destaques').innerHTML = output;
+ 
     } else if (xhr.status === 404) {
       document.getElementById('destaques').innerHTML = 'Produto não encontrado';
     }
@@ -277,3 +281,4 @@ voltarHome.forEach(button => {
     bannerDiv.style.display = 'block';
   });
 });
+
