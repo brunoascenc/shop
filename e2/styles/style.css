@@ -337,11 +337,34 @@ footer .info h4 {
 
 footer .newsletter {
   margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer .newsletter .socials i {
   color: #00b7ff;
   padding: 2px;
+}
+
+footer .newsletter .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 footer .newsletter .email h5 {
@@ -350,7 +373,9 @@ footer .newsletter .email h5 {
 }
 
 footer .newsletter .email input {
-  padding: 2% 12%;
+  width: 122%;
+  height: 25px;
+  padding: 2px;
   outline: none;
   border: solid 1px #c2c0c0;
 }
@@ -362,9 +387,16 @@ footer .newsletter .email button {
   outline: none;
   color: #f8f8f8;
   margin-top: 2px;
-  padding: 6% 47.1%;
+  width: 122%;
+  height: 25px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+footer .pagamento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .pagamento-icons {
@@ -373,6 +405,7 @@ footer .pagamento-icons {
 
 footer .pagamento-icons img {
   padding: 2% 3%;
+  width: 85px;
 }
 
 footer .pagamento-icons h4 {
@@ -423,13 +456,10 @@ footer .pagamento-icons h4 {
   display: -ms-flexbox;
   display: flex;
   margin-top: 28px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -469,15 +499,12 @@ footer .pagamento-icons h4 {
 }
 
 .modal .modal-body .login-form {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

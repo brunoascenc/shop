@@ -26,9 +26,9 @@ $mainBlue: rgb(13, 156, 212);
 }
 
 @mixin columnCenter {
-    justify-content: center;
-    align-items: center;
     display: flex;
+    // justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 

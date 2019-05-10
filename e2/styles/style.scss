@@ -245,17 +245,21 @@ footer {
     }
     .newsletter {
         margin-top: 5%;
+        @include columnCenter();
         .socials i {
             color: rgb(0, 183, 255);
             padding: 2px;
         }
         .email {
+            @include columnCenter();
             h5 {
                 text-transform: uppercase;
                 color: #353434;
             }
             input {
-                padding: 2% 12%;
+                width: 122%;
+                height: 25px;
+                padding: 2px;
                 outline: none;
                 border: solid 1px rgb(194, 192, 192);
             }
@@ -263,17 +267,22 @@ footer {
             button {
                 @include btnReset();
                 margin-top: 2px;
-                padding: 6% 47.1%;
+                width: 122%;
+                height: 25px;
                 text-transform: uppercase;
                 font-weight: bold;
             }
         }
     }
 
+    .pagamento {
+        display: flex;
+    }
     .pagamento-icons {
         margin-top: 11%;
         img {
             padding: 2% 3%;
+            width: 85px;
         }
         h4 {
             text-transform: uppercase;
