@@ -307,11 +307,14 @@ main .organizar input {
 
 /* Footer */
 footer {
+  padding: 0% 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-top: solid 1px #e7e6e6;
-  background: #faf9f9;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-top: solid 1px #dbdada;
+  background: #f6f5f5;
   height: 40vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -374,10 +377,11 @@ footer .newsletter .email h5 {
 
 footer .newsletter .email input {
   width: 122%;
-  height: 25px;
+  height: 27px;
   padding: 2px;
   outline: none;
-  border: solid 1px #c2c0c0;
+  border-radius: 4px;
+  border: solid 2px #ccc;
 }
 
 footer .newsletter .email button {
@@ -391,26 +395,20 @@ footer .newsletter .email button {
   height: 25px;
   text-transform: uppercase;
   font-weight: bold;
+  border-radius: 2px;
 }
 
-footer .pagamento {
+footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-footer .pagamento-icons {
-  margin-top: 11%;
-}
-
-footer .pagamento-icons img {
-  padding: 2% 3%;
-  width: 85px;
-}
-
-footer .pagamento-icons h4 {
-  text-transform: uppercase;
-  color: #272726;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 /* Footer end */
