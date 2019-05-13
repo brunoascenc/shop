@@ -37,14 +37,15 @@ const closeModal = modal => {
 };
 
 // Apple Products
-document.getElementById('apple').addEventListener('click', () => {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'apple.json', true);
+function appleProdutos() {
+  document.getElementById('apple').addEventListener('click', () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'apple.json', true);
 
-  xhr.onload = () => {
-    if (xhr.status === 200) {
-      const produtos = JSON.parse(xhr.responseText);
-      let output = `
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        const produtos = JSON.parse(xhr.responseText);
+        let output = `
       <div class="organizar">
       <h4>Organizar por: </h4>
       <div>
@@ -61,8 +62,8 @@ document.getElementById('apple').addEventListener('click', () => {
       </div>
   </div>
       `;
-      for (let i in produtos) {
-        output += `
+        for (let i in produtos) {
+          output += `
                 <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -75,24 +76,28 @@ document.getElementById('apple').addEventListener('click', () => {
                 <a href="#">Comprar</a>
             </div>
                 `;
+        }
+        document.getElementById('destaques').innerHTML = output;
+      } else if (xhr.status === 404) {
+        document.getElementById('destaques').innerHTML =
+          'Produto não encontrado';
       }
-      document.getElementById('destaques').innerHTML = output;
-    } else if (xhr.status === 404) {
-      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
-    }
-  };
-  xhr.send();
-});
+    };
+    xhr.send();
+  });
+}
+appleProdutos();
 
 // Samsung Products
-document.getElementById('samsung').addEventListener('click', () => {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'samsung.json', true);
+function samsungProdutos() {
+  document.getElementById('samsung').addEventListener('click', () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'samsung.json', true);
 
-  xhr.onload = () => {
-    if (xhr.status === 200) {
-      const produtos = JSON.parse(xhr.responseText);
-      let output = `
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        const produtos = JSON.parse(xhr.responseText);
+        let output = `
       <div class="organizar">
       <h4>Organizar por: </h4>
       <div>
@@ -109,8 +114,8 @@ document.getElementById('samsung').addEventListener('click', () => {
       </div>
   </div>
       `;
-      for (let i in produtos) {
-        output += `
+        for (let i in produtos) {
+          output += `
                 <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -123,24 +128,28 @@ document.getElementById('samsung').addEventListener('click', () => {
                 <a href="#">Comprar</a>
             </div>
                 `;
+        }
+        document.getElementById('destaques').innerHTML = output;
+      } else if (xhr.status === 404) {
+        document.getElementById('destaques').innerHTML =
+          'Produto não encontrado';
       }
-      document.getElementById('destaques').innerHTML = output;
-    } else if (xhr.status === 404) {
-      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
-    }
-  };
-  xhr.send();
-});
+    };
+    xhr.send();
+  });
+}
+samsungProdutos();
 
 // Motorola Products
-document.getElementById('motorola').addEventListener('click', () => {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'motorola.json', true);
+function motoProdutos() {
+  document.getElementById('motorola').addEventListener('click', () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'motorola.json', true);
 
-  xhr.onload = () => {
-    if (xhr.status === 200) {
-      const produtos = JSON.parse(xhr.responseText);
-      let output = `
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        const produtos = JSON.parse(xhr.responseText);
+        let output = `
       <div class="organizar">
       <h4>Organizar por: </h4>
       <div>
@@ -157,8 +166,8 @@ document.getElementById('motorola').addEventListener('click', () => {
       </div>
   </div>
       `;
-      for (let i in produtos) {
-        output += `
+        for (let i in produtos) {
+          output += `
                 <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -171,27 +180,31 @@ document.getElementById('motorola').addEventListener('click', () => {
                 <a href="#">Comprar</a>
             </div>
                 `;
+        }
+        document.getElementById('destaques').innerHTML = output;
+      } else if (xhr.status === 404) {
+        document.getElementById('destaques').innerHTML =
+          'Produto não encontrado';
       }
-      document.getElementById('destaques').innerHTML = output;
-    } else if (xhr.status === 404) {
-      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
-    }
-  };
-  xhr.send();
-});
+    };
+    xhr.send();
+  });
+}
+motoProdutos();
 
 // Asus Products
-document.getElementById('asus').addEventListener('click', () => {
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'asus.json', true);
+function asusProdutos() {
+  document.getElementById('asus').addEventListener('click', () => {
+    const xhr = new XMLHttpRequest();
+    xhr.open('GET', 'asus.json', true);
 
-  xhr.onload = () => {
-    if (xhr.status === 200) {
-      const produtos = JSON.parse(xhr.responseText);
-      const test = produtos.map(e => e.preco)
-      const test2 = test.sort((a,b) => a - b) // usar sort para organizar do maior para o menor ou vice-versa
-      console.log(test2)
-      let output = `
+    xhr.onload = () => {
+      if (xhr.status === 200) {
+        const produtos = JSON.parse(xhr.responseText);
+        const test = produtos.map(e => e.preco);
+        const test2 = test.sort((a, b) => a - b); // usar sort para organizar do maior para o menor ou vice-versa
+        console.log(test2);
+        let output = `
       <div class="organizar">
       <h4>Organizar por: </h4>
       <div>
@@ -208,8 +221,8 @@ document.getElementById('asus').addEventListener('click', () => {
       </div>
   </div>
       `;
-      for (let i in produtos) {
-        output += `
+        for (let i in produtos) {
+          output += `
                 <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
@@ -222,15 +235,22 @@ document.getElementById('asus').addEventListener('click', () => {
                 <a href="#">Comprar</a>
             </div>
                 `;
+        }
+        document.getElementById('destaques').innerHTML = output;
+      } else if (xhr.status === 404) {
+        document.getElementById('destaques').innerHTML =
+          'Produto não encontrado';
       }
-      document.getElementById('destaques').innerHTML = output;
- 
-    } else if (xhr.status === 404) {
-      document.getElementById('destaques').innerHTML = 'Produto não encontrado';
-    }
-  };
-  xhr.send();
-});
+    };
+    xhr.send();
+  });
+  window.addEventListener('popstate', () => {
+    console.log(location.pathname)
+  })
+
+  history.pushState(null, null, 'asus.json')
+}
+asusProdutos();
 
 // Login transition
 const loginDiv = document.querySelector('.login-form');
@@ -281,4 +301,3 @@ voltarHome.forEach(button => {
     bannerDiv.style.display = 'block';
   });
 });
-
