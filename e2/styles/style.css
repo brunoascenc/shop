@@ -51,14 +51,25 @@ header .logo {
   cursor: pointer;
 }
 
-header li, header a {
+header li,
+header a {
   list-style: none;
   text-decoration: none;
   color: #3b3b3b;
   margin-left: 15px;
-  font-size: 1.0rem;
+  font-size: 1rem;
   margin-top: 40px;
   text-transform: uppercase;
+}
+
+.sticky-nav {
+  position: fixed;
+  width: 100%;
+  height: 9vh;
+  background: #ffffff;
+  z-index: 1;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
 }
 
 /*Banner*/
@@ -111,7 +122,8 @@ main .menu .menu-items h3 {
   text-transform: uppercase;
 }
 
-main .menu .menu-items li, main .menu .menu-items a {
+main .menu .menu-items li,
+main .menu .menu-items a {
   list-style: none;
   text-decoration: none;
   color: #3b3b3b;
@@ -119,7 +131,8 @@ main .menu .menu-items li, main .menu .menu-items a {
   font-size: 16px;
 }
 
-main .menu .menu-items li:hover, main .menu .menu-items a:hover {
+main .menu .menu-items li:hover,
+main .menu .menu-items a:hover {
   color: #00b7ff;
 }
 
@@ -155,7 +168,8 @@ main #destaques img {
   width: 220px;
 }
 
-main #destaques h3, main #destaques a {
+main #destaques h3,
+main #destaques a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,7 +276,10 @@ main .organizar input {
   color: #353434;
 }
 
-.contato-form input, .contato-form select, .contato-form textarea, .contato-form button {
+.contato-form input,
+.contato-form select,
+.contato-form textarea,
+.contato-form button {
   padding: 2%;
   margin-top: 4px;
   outline: none;
@@ -279,7 +296,8 @@ main .organizar input {
   font-weight: bold;
 }
 
-.contato-form .duvidas-form, .contato-form .sobre {
+.contato-form .duvidas-form,
+.contato-form .sobre {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -299,7 +317,8 @@ main .organizar input {
   margin-left: 5px;
 }
 
-.contato-form .duvidas-form .endereco, .contato-form .sobre .endereco {
+.contato-form .duvidas-form .endereco,
+.contato-form .sobre .endereco {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -324,7 +343,8 @@ footer .info {
   margin-top: 5%;
 }
 
-footer .info li, footer .info a {
+footer .info li,
+footer .info a {
   list-style: none;
   text-decoration: none;
   color: #3b3b3b;
@@ -547,7 +567,9 @@ footer .copyright {
   margin-bottom: -22px;
 }
 
-.modal .modal-body .recuperar-senha button, .modal .modal-body .recuperar-senha p, .modal .modal-body .recuperar-senha a {
+.modal .modal-body .recuperar-senha button,
+.modal .modal-body .recuperar-senha p,
+.modal .modal-body .recuperar-senha a {
   width: 220px;
 }
 

@@ -36,8 +36,20 @@ const closeModal = modal => {
   overlay.classList.remove('active');
 };
 
+// Sticky Nav
+const navBar = document.getElementsByClassName("navbar")
+window.onscroll = function sticky(){
+    if(window.pageYOffset > navBar[0].offsetTop){
+        navBar[0].classList.add("sticky-nav")
+    }else {
+        navBar[0].classList.remove("sticky-nav")
+    }
+}
+
 // Apple Products
-function appleProdutos() {
+function produtosShop(){
+  // const href = document.querySelectorAll('.voltarHome');
+
   document.getElementById('apple').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'apple.json', true);
@@ -85,11 +97,11 @@ function appleProdutos() {
     };
     xhr.send();
   });
-}
-appleProdutos();
+
+
 
 // Samsung Products
-function samsungProdutos() {
+
   document.getElementById('samsung').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'samsung.json', true);
@@ -137,11 +149,11 @@ function samsungProdutos() {
     };
     xhr.send();
   });
-}
-samsungProdutos();
+
+
 
 // Motorola Products
-function motoProdutos() {
+
   document.getElementById('motorola').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'motorola.json', true);
@@ -189,11 +201,10 @@ function motoProdutos() {
     };
     xhr.send();
   });
-}
-motoProdutos();
+
 
 // Asus Products
-function asusProdutos() {
+
   document.getElementById('asus').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
     xhr.open('GET', 'asus.json', true);
@@ -244,13 +255,14 @@ function asusProdutos() {
     };
     xhr.send();
   });
-  window.addEventListener('popstate', () => {
-    console.log(location.pathname)
-  })
+  
+  // window.addEventListener('popstate', () => {
+  //   produtosShop(location.pathname);
+  // })
 
-  history.pushState(null, null, 'asus.json')
+  // history.pushState(null, null, href)
 }
-asusProdutos();
+produtosShop();
 
 // Login transition
 const loginDiv = document.querySelector('.login-form');
