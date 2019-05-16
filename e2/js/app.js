@@ -37,17 +37,17 @@ const closeModal = modal => {
 };
 
 // Sticky Nav
-const navBar = document.getElementsByClassName("navbar")
-window.onscroll = function sticky(){
-    if(window.pageYOffset > navBar[0].offsetTop){
-        navBar[0].classList.add("sticky-nav")
-    }else {
-        navBar[0].classList.remove("sticky-nav")
-    }
-}
+const navBar = document.getElementsByClassName('navbar');
+window.onscroll = function sticky() {
+  if (window.pageYOffset > navBar[0].offsetTop) {
+    navBar[0].classList.add('sticky-nav');
+  } else {
+    navBar[0].classList.remove('sticky-nav');
+  }
+};
 
 // Apple Products
-function produtosShop(){
+function produtosShop() {
   // const href = document.querySelectorAll('.voltarHome');
 
   document.getElementById('apple').addEventListener('click', () => {
@@ -98,9 +98,7 @@ function produtosShop(){
     xhr.send();
   });
 
-
-
-// Samsung Products
+  // Samsung Products
 
   document.getElementById('samsung').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
@@ -150,9 +148,7 @@ function produtosShop(){
     xhr.send();
   });
 
-
-
-// Motorola Products
+  // Motorola Products
 
   document.getElementById('motorola').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
@@ -202,8 +198,7 @@ function produtosShop(){
     xhr.send();
   });
 
-
-// Asus Products
+  // Asus Products
 
   document.getElementById('asus').addEventListener('click', () => {
     const xhr = new XMLHttpRequest();
@@ -255,12 +250,25 @@ function produtosShop(){
     };
     xhr.send();
   });
-  
-  // window.addEventListener('popstate', () => {
-  //   produtosShop(location.pathname);
-  // })
 
-  // history.pushState(null, null, href)
+  const container = document.querySelector('.navbar');
+
+  container.addEventListener('click', function(e) {
+      if (e.target != e.currentTarget) {
+        e.preventDefault();
+      }
+      const data = e.target.getAttribute('data-name'),
+        url = data;
+      history.pushState(data, null, url);
+
+      window.addEventListener('popstate', function(){
+        // console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+        produtosShop(location.pathname);
+      })
+
+      e.stopPropagation();
+    },false);
+
 }
 produtosShop();
 
