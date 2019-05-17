@@ -44,7 +44,7 @@ window.onscroll = function sticky() {
   } else {
     navBar[0].classList.remove('sticky-nav');
   }
-};
+}
 
 // Apple Products
 function produtosShop() {
@@ -253,7 +253,7 @@ function produtosShop() {
 
   const container = document.querySelector('.navbar');
 
-  container.addEventListener('click', function(e) {
+  container.addEventListener('click', e => {
       if (e.target != e.currentTarget) {
         e.preventDefault();
       }
@@ -261,9 +261,8 @@ function produtosShop() {
         url = data;
       history.pushState(data, null, url);
 
-      window.addEventListener('popstate', function(){
-        // console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
-        produtosShop(location.pathname);
+      window.addEventListener('popstate', e => {
+        //aqui vai ser disparado para voltar na pagina anterior
       })
 
       e.stopPropagation();
@@ -271,6 +270,8 @@ function produtosShop() {
 
 }
 produtosShop();
+
+
 
 // Login transition
 const loginDiv = document.querySelector('.login-form');
