@@ -41,6 +41,15 @@ header .navbar {
           justify-content: center;
 }
 
+header #main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 header .logo {
   margin-top: 22px;
   font-family: "Noto Sans KR", sans-serif;

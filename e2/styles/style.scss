@@ -23,6 +23,10 @@ header {
   .navbar {
     @include flexCenter();
   }
+  
+  #main {
+    @include flexCenter();
+  }
 
   .logo {
     margin-top: 22px;
