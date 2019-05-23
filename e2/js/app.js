@@ -46,34 +46,6 @@ window.onscroll = function sticky() {
   }
 };
 
-// $(document).ready(function(){
-//   var nav, content, colocarConteudo;
-
-//   nav = $('nav#main');
-//   content = $('div#destaques');
-//   console.log(nav)
-
-//   colocarConteudo = function(href){
-//     $.ajax({
-//       url:'http://127.0.0.1:5500/' + href,
-//       method: 'GET',
-//       cache: false,
-//       success: function(data){
-//         content.json(data);
-//       }
-//     });
-//   };
-
-//   nav.find('a').on('click', e => {
-//     var href = $(this).attr('href');
-
-//     history.pushState(null, null, href);
-
-//     colocarConteudo(href);
-
-//     e.preventDefault();
-//   });
-// });
 
 //Apple Products
 function produtosShop() {
@@ -290,27 +262,14 @@ function produtosShop() {
       history.pushState(data, null, url);
 
       window.addEventListener('popstate', e => {
-        console.log(produtosShop(location.pathname))
-        // produtosShop(e.state);
+        // state      
       })
 
       e.stopPropagation();
    },false);
 }
 produtosShop();
-// const container = Array.from(document.getElementsByClassName('voltarHome'));
 
-// container.forEach(c => {
-//   let id = c.id;
-//   c.addEventListener('click', e => {
-//     history.pushState({id}, null, `./selected=${id}`)
-//     produtosShop(id);
-//   });
-// });
-
-// window.addEventListener('popstate', e => {
-//   produtosShop(location.pathname);
-// });
 
 // Login transition
 const loginDiv = document.querySelector('.login-form');
