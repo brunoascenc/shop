@@ -18,10 +18,11 @@ header {
   height: 9vh;
 }
 
-header .topo-nav {
+header .topo-nav, header .nav-contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 10vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -30,6 +31,7 @@ header .topo-nav {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 2%;
 }
 
 header .navbar {
@@ -74,11 +76,11 @@ header a {
 .sticky-nav {
   position: fixed;
   width: 100%;
-  height: 9vh;
-  background: #ffffff;
+  background: #faf8f8;
   z-index: 1;
-  -webkit-transition: 0.8s;
-  transition: 0.8s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-bottom: solid 1px #e0dede;
 }
 
 /*Banner*/
@@ -265,8 +267,18 @@ main .organizar input {
   margin-top: 10px;
 }
 
+main .organizar .fa-search {
+  position: absolute;
+  top: 380px;
+  right: 95px;
+  color: #383838;
+}
+
 /*Conteudo end*/
 .contato-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   -webkit-box-pack: center;
@@ -321,12 +333,13 @@ main .organizar input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 60%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 60%;
+  align-items: center;
   border: solid 1px #e0dfdf;
-  padding: 2%;
+  padding: 3%;
   margin-left: 5px;
 }
 
@@ -335,6 +348,28 @@ main .organizar input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.contato-form .duvidas-form p,
+.contato-form .sobre p {
+  margin-top: 5px;
+  width: 90%;
+}
+
+.pagamento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -100px;
+  margin-bottom: 35px;
+  width: 100vw;
+}
+
+.pagamento img {
+  margin-left: 65px;
 }
 
 /* Footer */
