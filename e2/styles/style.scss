@@ -472,3 +472,74 @@ footer {
   opacity: 1;
 }
 /*Modal end*/
+
+
+.opcoes {
+  display: flex;
+  justify-content: center;
+  padding: 22px;
+  h1, h2 {
+    color: #2c2c2c;
+    font-family: $titleFont;
+  }
+  p{
+    color: #5d5c5c;
+  }
+  .frete {
+    display: flex;
+    margin-top: 50px;
+    border-top: solid 1px #c8c5c5;
+    padding: 20px;
+    input {
+      @include inputReset();
+      border: solid 1px #dad7d7;
+      border-radius: 3px;
+      padding: 6px;
+      margin-left: 7px;
+    }
+    button {
+      @include btnReset();
+      padding: 10px;
+      margin-left: 4px;
+      border-radius: 3px;
+      font-weight: bold;
+    }
+  }
+  .precodet {
+    margin-top: 45px;
+  }
+  .detalhes-pag{
+    margin-left: 20px;
+    height: 435px;
+    width: 680px;
+    border: $borderStyle;
+    padding: 28px;
+    .buttonsPag {
+      display: flex;
+      width: 215px;
+      margin-top: -85px;
+      margin-left: 360px;
+      flex-direction: column;
+      button {
+        margin-bottom: 7px;
+        padding: 7px;
+        border: $borderStyle;
+        outline: none;
+        cursor: pointer;
+        color: #5d5c5c;
+        background: transparent;
+      }
+      button:first-child {
+        padding: 11px;
+        background-color: $mainBlue;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #f3f1f1;
+        font-size: 20px;
+        font-family: $titleFont;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

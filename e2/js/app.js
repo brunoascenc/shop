@@ -73,7 +73,7 @@ function appleProd() {
       `;
       for (let i in produtos) {
         output += `
-                <div class = "itemApple">
+                <div class = "item">
                 <img src="${produtos[i].imagem}">
                 <h3>${produtos[i].titulo}</h3>
                 <span class="preco">
