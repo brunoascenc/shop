@@ -32,6 +32,7 @@ header .topo-nav, header .nav-contato {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2%;
+  border-bottom: solid 1px #e0dfdf;
 }
 
 header .navbar {
@@ -80,7 +81,6 @@ header a {
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  border-bottom: solid 1px #e0dede;
 }
 
 /*Banner*/
@@ -288,7 +288,6 @@ main .organizar .fa-search {
   margin-bottom: 25px;
   background: #f7f8f8;
   padding: 6%;
-  border-top: solid 1px #e0dfdf;
   margin-left: 0;
 }
 
@@ -664,6 +663,25 @@ footer .copyright {
 }
 
 /*Modal end*/
+#finalizarCompra {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 4%;
+}
+
+#finalizarCompra a {
+  list-style: none;
+  text-decoration: none;
+  color: #3b3b3b;
+  text-transform: uppercase;
+  color: #313030;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+  border-bottom: solid 1px #6b6969;
+}
+
 .opcoes {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -672,6 +690,11 @@ footer .copyright {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 22px;
+}
+
+.opcoes h1 {
+  border: solid 1px #e0dfdf;
+  padding: 12px;
 }
 
 .opcoes h1, .opcoes h2 {
@@ -721,7 +744,7 @@ footer .copyright {
 .opcoes .detalhes-pag {
   margin-left: 20px;
   height: 435px;
-  width: 680px;
+  width: 720px;
   border: solid 1px #e0dfdf;
   padding: 28px;
 }
@@ -732,7 +755,7 @@ footer .copyright {
   display: flex;
   width: 215px;
   margin-top: -85px;
-  margin-left: 360px;
+  margin-left: 443px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;

@@ -273,3 +273,15 @@ voltarLink.forEach(button => {
     loginDiv.style.display = 'flex';
   });
 });
+
+
+// Comprar section
+const compraDiv = document.querySelector('#finalizarCompra');
+const bannerDiv = document.querySelector('.banner');
+const menuDiv = document.querySelector('main');
+
+document.querySelector('.testcmp').addEventListener('click', () => {
+  menuDiv.style.display = 'none';
+  bannerDiv.style.display = 'none';
+  compraDiv.style.display = 'flex';
+})
