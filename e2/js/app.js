@@ -82,10 +82,11 @@ function appleProd() {
                 <span class="parcela">
                     <p>${produtos[i].parcela}</p>
                 </span>
-                <a href="#">Comprar</a>
+                <a class = "tescmp" href="#">Comprar</a>
             </div>
                 `;
       }
+
       document.getElementById('destaquesApple').innerHTML = output;
     } else if (xhr.status === 404) {
       document.getElementById('destaquesApple').innerHTML =
@@ -95,6 +96,7 @@ function appleProd() {
   xhr.send();
 }
 appleProd();
+
 
 // Samsung data
 function samsungProd() {
@@ -246,7 +248,6 @@ function asusProd() {
 }
 asusProd();
 
-
 // Login transition
 const loginDiv = document.querySelector('.login-form');
 const registrarDiv = document.querySelector('.registrar-form');
@@ -274,14 +275,23 @@ voltarLink.forEach(button => {
   });
 });
 
-
 // Comprar section
 const compraDiv = document.querySelector('#finalizarCompra');
 const bannerDiv = document.querySelector('.banner');
 const menuDiv = document.querySelector('main');
 
-document.querySelector('.testcmp').addEventListener('click', () => {
-  menuDiv.style.display = 'none';
-  bannerDiv.style.display = 'none';
-  compraDiv.style.display = 'flex';
+// document.querySelector('.testcmp2').addEventListener('click', e => {
+//   menuDiv.style.display = 'none';
+//   bannerDiv.style.display = 'none';
+//   compraDiv.style.display = 'flex';
+// });
+
+// event delegation to handle event.!!!!!!
+document.addEventListener('click', e => {
+  if (){
+      menuDiv.style.display = 'none';
+      bannerDiv.style.display = 'none';
+      compraDiv.style.display = 'flex';
+      console.log('oi')
+  }
 })
