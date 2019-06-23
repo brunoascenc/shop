@@ -1,0 +1,64 @@
+[
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-591c9c9f-iphone7-black-1.jpg",
+        "titulo": "iPhone 7 Plus Preto Matte",
+        "preco": "R$ 1899,90 à vista",
+        "parcela": "ou 12x de R$ 59,99 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-5ab2a65e-iphone-x-prateado-frente.png",
+        "titulo": "Iphone X Cinza Espacial",
+        "preco": "R$ 2000,00 à vista",
+        "parcela": "ou 12X de 49,60 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-maxx-2-64gb.jpg",
+        "titulo": "Motorola Moto Maxx 2 64gb",
+        "preco": "R$ 2000,00 à vista",
+        "parcela": "ou 12x R$ 49,90 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-s8-plus-ametista-1.jpg",
+        "titulo": "Samsung Galaxy S8 Plus",
+        "preco": "R$ 1970,90 à vista",
+        "parcela": "ou 12x R$ 50,90 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-5979f872-moto-g5-plus-platinum-1.jpg",
+        "titulo": "Motorola Moto G5 Plus",
+        "preco": "R$ 859,90 à vista",
+        "parcela": "ou 12x R$ 39,90 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-s7-edge-dourado-1.png",
+        "titulo": "Samsung Galaxy S7 Edge",
+        "preco": "R$ 1689,99 à vista",
+        "parcela": "ou R$ 65,60 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-prata-frente.jpg",
+        "titulo": "Iphone SE Prata",
+        "preco": "R$ 1259,99 à vista",
+        "parcela": "ou 12x de R$ 39,90 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-x-style-32gb-preto.png",
+        "titulo": "Motorola Moto X Style",
+        "preco": "R$ 2000,00 à vista",
+        "parcela": "ou 12x R$ 49,90 sem juros"
+    },
+
+    {
+        "imagem": "https://imagens.trocafone.com/images/phones/dt-galaxy-s6-flat-bran-1.png",
+        "titulo": "Samsung Galaxy S6 Flat",
+        "preco": "R$ 659,00",
+        "parcela": "ou 12x R$ 25,90 sem juros"
+    }
+]
