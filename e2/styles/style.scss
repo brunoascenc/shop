@@ -490,10 +490,11 @@ footer {
 
 .opcoes {
   display: flex;
+  width: 100%;
   justify-content: center;
-  padding: 22px;
+  padding: 28px;
   h1{
-    border: $borderStyle;
+    border-bottom: $borderStyle;
     padding: 12px;
   }
   h1, h2 {
@@ -528,8 +529,8 @@ footer {
   }
   .detalhes-pag{
     margin-left: 20px;
-    height: 435px;
-    width: 720px;
+    height: 95%;
+    width: 95%;
     border: $borderStyle;
     padding: 28px;
     .buttonsPag {
@@ -560,4 +561,12 @@ footer {
       }
     }
   }
+}
+
+.table {
+  width: 6464px;
+  background: blue;
+  justify-items: center;
+  justify-content: flex-start;
+  flex: 1 1 100%;
 }

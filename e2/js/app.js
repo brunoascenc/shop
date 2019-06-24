@@ -154,7 +154,7 @@ function homeProd() {
                 <img src = "${produtos[0].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[0].titulo}</h1>
+                <h1>${produtos[0].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -176,7 +176,20 @@ function homeProd() {
                     <button>OK</button>
                 </div>
             </div>
-        </div>   
+
+            <div class = "table">
+            <table>
+              <tr>
+               <th>Ficha técnica</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Marca</td>
+                <td>Apple</td>
+               </tr>
+            </table>
+          </div>
+         </div>   
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'homeBtn1') {
@@ -191,7 +204,7 @@ function homeProd() {
                 <img src = "${produtos[1].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[1].titulo}</h1>
+                <h1>${produtos[1].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -228,7 +241,7 @@ function homeProd() {
                 <img src = "${produtos[2].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[2].titulo}</h1>
+                <h1>${produtos[2].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -265,7 +278,7 @@ function homeProd() {
                 <img src = "${produtos[3].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[3].titulo}</h1>
+                <h1>${produtos[3].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -302,7 +315,7 @@ function homeProd() {
                 <img src = "${produtos[4].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[4].titulo}</h1>
+                <h1>${produtos[4].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -339,7 +352,7 @@ function homeProd() {
                 <img src = "${produtos[5].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[5].titulo}</h1>
+                <h1>${produtos[5].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -376,7 +389,7 @@ function homeProd() {
                 <img src = "${produtos[6].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[6].titulo}</h1>
+                <h1>${produtos[6].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -413,7 +426,7 @@ function homeProd() {
                 <img src = "${produtos[7].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[7].titulo}</h1>
+                <h1>${produtos[7].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com
@@ -450,7 +463,7 @@ function homeProd() {
                 <img src = "${produtos[8].imagem}">
             </div>
             <div class = "detalhes-pag">
-                <h1>${produtos[8].titulo}</h1>
+                <h1>${produtos[8].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
                         Logo.com

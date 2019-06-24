@@ -686,14 +686,15 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 22px;
+  padding: 28px;
 }
 
 .opcoes h1 {
-  border: solid 1px #e0dfdf;
+  border-bottom: solid 1px #e0dfdf;
   padding: 12px;
 }
 
@@ -743,8 +744,8 @@ footer .copyright {
 
 .opcoes .detalhes-pag {
   margin-left: 20px;
-  height: 435px;
-  width: 720px;
+  height: 95%;
+  width: 95%;
   border: solid 1px #e0dfdf;
   padding: 28px;
 }
@@ -782,5 +783,17 @@ footer .copyright {
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
+}
+
+.table {
+  width: 6464px;
+  background: blue;
+  justify-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
 }
 /*# sourceMappingURL=style.css.map */
