@@ -2,6 +2,7 @@
 const compraDiv = document.querySelector('#finalizarCompra');
 const bannerDiv = document.querySelector('.banner');
 const menuDiv = document.querySelector('main');
+const tableDiv = document.querySelector('.table');
 
 // *** FETCHING JSON DATA *** //
 //Home content
@@ -145,7 +146,8 @@ function homeProd() {
         if (e.target.className == 'homeBtn0') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
-          compraDiv.style.display = 'flex';
+          compraDiv.style.display = 'block';
+          tableDiv.style.display = 'flex';
 
           let saida = `
             <a   href  = "index.html">Voltar</a>
@@ -176,20 +178,75 @@ function homeProd() {
                     <button>OK</button>
                 </div>
             </div>
-
-            <div class = "table">
-            <table>
-              <tr>
-               <th>Ficha técnica</th>
-                <th></th>
-              </tr>
-              <tr>
-                <td>Marca</td>
-                <td>Apple</td>
-               </tr>
-            </table>
-          </div>
          </div>   
+
+         <div class = "table2">
+         <table>
+           <tr>
+            <th>Ficha técnica</th>
+           </tr>
+           <tr>
+             <td>Marca:</td>
+             <td>${produtos[0].marca}</td>
+           </tr>
+           <tr>
+             <td>Modelo:</td>
+             <td>${produtos[0].modelo}</td>
+           </tr>
+           <tr>
+             <td>Cor:</td>
+             <td>${produtos[0].cor}</td>
+           </tr>
+           <tr>
+             <td>Chip:</td>
+             <td>${produtos[0].chip}</td>
+           </tr>
+           <tr>
+             <td>Quantidades Chip: </td>
+             <td>${produtos[0].qtd_chip}</td>
+           </tr>
+           <tr>
+             <td>Memória:</td>
+             <td>${produtos[0].memoria_interna}</td>
+           </tr>
+           <tr>
+             <td>RAM:</td>
+             <td>${produtos[0].memoria_ram}</td>
+           </tr>
+           <tr>
+             <td>Processador:</td>
+             <td>${produtos[0].processador}</td>
+           </tr>
+           <tr>
+             <td>Sistema:</td>
+             <td>${produtos[0].sistema}</td>
+           </tr>
+           <tr>
+             <td>Versão:</td>
+             <td>${produtos[0].versao}</td>
+           </tr>
+           <tr>
+             <td>Tela:</td>
+             <td>${produtos[0].tipo_tela}</td>
+           </tr>
+           <tr>
+             <td>Tamanho:</td>
+             <td>${produtos[0].tamanho_display}</td>
+           </tr>
+           <tr>
+             <td>Resolução:</td>
+             <td>${produtos[0].resolucao}</td>
+           </tr>
+           <tr>
+             <td>Camera Traseira:</td>
+             <td>${produtos[0].camera_traseira}</td>
+           </tr>
+           <tr>
+             <td>Camera Frontal:</td>
+             <td>${produtos[0].camera_frontal}</td>
+           </tr>
+         </table>
+       </div>
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'homeBtn1') {

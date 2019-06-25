@@ -490,7 +490,7 @@ footer {
 
 .opcoes {
   display: flex;
-  width: 100%;
+  width: 95%;
   justify-content: center;
   padding: 28px;
   h1{
@@ -563,10 +563,27 @@ footer {
   }
 }
 
-.table {
-  width: 6464px;
-  background: blue;
-  justify-items: center;
+.table2 {
+  margin-left: 56px;
+  border-collapse: collapse;
+  width: 85%;
+  justify-self: center;
   justify-content: flex-start;
-  flex: 1 1 100%;
+  padding: 6px;
+  td{
+    padding: 12px 120px 0 4px;
+    border: $borderStyle;
+  }
+}
+
+.table2 tr:nth-child(odd){
+  background: #ebe9e9;
+}
+.table2 tr:nth-child(even){
+  background: rgb(242, 242, 243);
+}
+
+th {
+  background: #ffffff;
+  align-self: center;
 }

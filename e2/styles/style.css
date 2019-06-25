@@ -686,7 +686,7 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: 95%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -785,15 +785,35 @@ footer .copyright {
   text-transform: uppercase;
 }
 
-.table {
-  width: 6464px;
-  background: blue;
-  justify-items: center;
+.table2 {
+  margin-left: 56px;
+  border-collapse: collapse;
+  width: 85%;
+  -ms-grid-column-align: center;
+      justify-self: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  padding: 6px;
+}
+
+.table2 td {
+  padding: 12px 120px 0 4px;
+  border: solid 1px #e0dfdf;
+}
+
+.table2 tr:nth-child(odd) {
+  background: #ebe9e9;
+}
+
+.table2 tr:nth-child(even) {
+  background: #f2f2f3;
+}
+
+th {
+  background: #ffffff;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
