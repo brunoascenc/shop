@@ -785,35 +785,47 @@ footer .copyright {
   text-transform: uppercase;
 }
 
-.table2 {
-  margin-left: 56px;
+.fichaTec {
+  width: 95%;
   border-collapse: collapse;
-  width: 85%;
+  width: 100%;
   -ms-grid-column-align: center;
       justify-self: center;
+  color: #646464;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 6px;
+  padding: 12px;
 }
 
-.table2 td {
-  padding: 12px 120px 0 4px;
-  border: solid 1px #e0dfdf;
+.fichaTec td {
+  padding: 12px 120px 4px 14px;
 }
 
-.table2 tr:nth-child(odd) {
-  background: #ebe9e9;
+.fichaTec table {
+  width: 93%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin-left: 44px;
 }
 
-.table2 tr:nth-child(even) {
-  background: #f2f2f3;
+.fichaTectr:nth-child(odd) {
+  background: #faf8f8;
+}
+
+.fichaTec tr:nth-child(even) {
+  background: #f0eeee;
 }
 
 th {
-  background: #ffffff;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #faf8f8;
+  padding: 6px;
+  text-transform: uppercase;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #444040;
 }
 /*# sourceMappingURL=style.css.map */
