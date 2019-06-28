@@ -18,7 +18,8 @@ header {
   height: 9vh;
 }
 
-header .topo-nav, header .nav-contato {
+header .topo-nav,
+header .nav-contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -147,7 +148,11 @@ main .menu .menu-items a:hover {
   color: #00b7ff;
 }
 
-main #destaques, main #destaquesApple, main #destaquesMoto, main #destaquesSam, main #destaquesAsus {
+main #destaques,
+main #destaquesApple,
+main #destaquesMoto,
+main #destaquesSam,
+main #destaquesAsus {
   display: -ms-grid;
   display: grid;
   margin-left: 0%;
@@ -159,7 +164,11 @@ main #destaques, main #destaquesApple, main #destaquesMoto, main #destaquesSam, 
   border-left: solid 1px #e0dfdf;
 }
 
-main #destaques .item, main #destaquesApple .item, main #destaquesMoto .item, main #destaquesSam .item, main #destaquesAsus .item {
+main #destaques .item,
+main #destaquesApple .item,
+main #destaquesMoto .item,
+main #destaquesSam .item,
+main #destaquesAsus .item {
   width: 235px;
   height: 420px;
   padding: 6%;
@@ -167,23 +176,35 @@ main #destaques .item, main #destaquesApple .item, main #destaquesMoto .item, ma
   border: solid 1px #e0dede;
 }
 
-main #destaques h3, main #destaquesApple h3, main #destaquesMoto h3, main #destaquesSam h3, main #destaquesAsus h3 {
+main #destaques h3,
+main #destaquesApple h3,
+main #destaquesMoto h3,
+main #destaquesSam h3,
+main #destaquesAsus h3 {
   font-size: 0.9em;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
 }
 
-main #destaques img, main #destaquesApple img, main #destaquesMoto img, main #destaquesSam img, main #destaquesAsus img {
+main #destaques img,
+main #destaquesApple img,
+main #destaquesMoto img,
+main #destaquesSam img,
+main #destaquesAsus img {
   cursor: pointer;
   width: 220px;
 }
 
 main #destaques h3,
-main #destaques a, main #destaquesApple h3,
-main #destaquesApple a, main #destaquesMoto h3,
-main #destaquesMoto a, main #destaquesSam h3,
-main #destaquesSam a, main #destaquesAsus h3,
+main #destaques a,
+main #destaquesApple h3,
+main #destaquesApple a,
+main #destaquesMoto h3,
+main #destaquesMoto a,
+main #destaquesSam h3,
+main #destaquesSam a,
+main #destaquesAsus h3,
 main #destaquesAsus a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +219,11 @@ main #destaquesAsus a {
   margin-left: 0%;
 }
 
-main #destaques a, main #destaquesApple a, main #destaquesMoto a, main #destaquesSam a, main #destaquesAsus a {
+main #destaques a,
+main #destaquesApple a,
+main #destaquesMoto a,
+main #destaquesSam a,
+main #destaquesAsus a {
   background: #00b7ff;
   padding: 11px;
   width: 150px;
@@ -208,7 +233,11 @@ main #destaques a, main #destaquesApple a, main #destaquesMoto a, main #destaque
   color: #fdf5f5;
 }
 
-main #destaques p, main #destaquesApple p, main #destaquesMoto p, main #destaquesSam p, main #destaquesAsus p {
+main #destaques p,
+main #destaquesApple p,
+main #destaquesMoto p,
+main #destaquesSam p,
+main #destaquesAsus p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +247,11 @@ main #destaques p, main #destaquesApple p, main #destaquesMoto p, main #destaque
   margin-top: 5px;
 }
 
-main #destaques .parcela, main #destaquesApple .parcela, main #destaquesMoto .parcela, main #destaquesSam .parcela, main #destaquesAsus .parcela {
+main #destaques .parcela,
+main #destaquesApple .parcela,
+main #destaquesMoto .parcela,
+main #destaquesSam .parcela,
+main #destaquesAsus .parcela {
   color: #4b4a4a;
   font-size: 0.9em;
 }
@@ -690,6 +723,8 @@ footer .copyright {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background: #fbfbfb;
+  border: solid 1px #e0dfdf;
   padding: 28px;
 }
 
@@ -698,7 +733,8 @@ footer .copyright {
   padding: 12px;
 }
 
-.opcoes h1, .opcoes h2 {
+.opcoes h1,
+.opcoes h2 {
   color: #2c2c2c;
   font-family: "Noto Sans KR", sans-serif;
 }
@@ -747,6 +783,7 @@ footer .copyright {
   height: 95%;
   width: 95%;
   border: solid 1px #e0dfdf;
+  background: #faf8f8;
   padding: 28px;
 }
 

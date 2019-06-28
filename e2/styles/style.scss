@@ -13,7 +13,8 @@ body {
 /* Nav*/
 header {
   height: 9vh;
-  .topo-nav, .nav-contato {
+  .topo-nav,
+  .nav-contato {
     display: flex;
     height: 10vh;
     justify-content: center;
@@ -26,7 +27,7 @@ header {
   .navbar {
     @include flexCenter();
   }
-  
+
   #main {
     @include flexCenter();
   }
@@ -51,12 +52,12 @@ header {
   }
 }
 .sticky-nav {
-    position: fixed;
-    width: 100%;
-    background: #faf8f8;
-    z-index: 1;
-    transition: 0.5s;
-    // border-bottom: solid 1px rgb(224, 222, 222);
+  position: fixed;
+  width: 100%;
+  background: #faf8f8;
+  z-index: 1;
+  transition: 0.5s;
+  // border-bottom: solid 1px rgb(224, 222, 222);
 }
 
 /*Banner*/
@@ -104,7 +105,11 @@ main {
   /*Side menu end*/
 
   /*Produtos destaque*/
-  #destaques, #destaquesApple, #destaquesMoto, #destaquesSam, #destaquesAsus {
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
     display: grid;
     margin-left: 0%;
     padding: 12px;
@@ -477,7 +482,7 @@ footer {
 #finalizarCompra {
   justify-content: center;
   padding: 4%;
-  a{
+  a {
     @include linksReset();
     text-transform: uppercase;
     color: #313030;
@@ -492,16 +497,19 @@ footer {
   display: flex;
   width: 95%;
   justify-content: center;
+  background: rgb(251, 251, 251);
+  border: $borderStyle;
   padding: 28px;
-  h1{
+  h1 {
     border-bottom: $borderStyle;
     padding: 12px;
   }
-  h1, h2 {
+  h1,
+  h2 {
     color: #2c2c2c;
     font-family: $titleFont;
   }
-  p{
+  p {
     color: #5d5c5c;
   }
   .frete {
@@ -527,11 +535,12 @@ footer {
   .precodet {
     margin-top: 45px;
   }
-  .detalhes-pag{
+  .detalhes-pag {
     margin-left: 20px;
     height: 95%;
     width: 95%;
     border: $borderStyle;
+    background: #faf8f8;
     padding: 28px;
     .buttonsPag {
       display: flex;
@@ -572,7 +581,7 @@ footer {
   color: rgb(100, 100, 100);
   justify-content: flex-start;
   padding: 12px;
-  td{
+  td {
     padding: 12px 120px 4px 14px;
     // height: 35px;
     // border: $borderStyle;
@@ -584,10 +593,10 @@ footer {
   }
 }
 
-.fichaTectr:nth-child(odd){
+.fichaTectr:nth-child(odd) {
   background: #faf8f8;
 }
-.fichaTec tr:nth-child(even){
+.fichaTec tr:nth-child(even) {
   background: rgb(240, 238, 238);
 }
 
