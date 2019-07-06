@@ -1,4 +1,3 @@
-
 // Modal
 const modalButton = document.querySelectorAll('[data-modal-target]');
 const closeModalBtn = document.querySelectorAll('[data-close-button]');

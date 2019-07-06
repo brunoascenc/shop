@@ -10,7 +10,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #faf8f8;
+  background-color: #f5f3f3;
 }
 
 /* Nav*/
@@ -109,8 +109,13 @@ main {
 }
 
 main .menu {
-  width: 25vw;
-  height: 100vh;
+  width: 220px;
+  height: 100%;
+  background: #ffffff;
+  border: solid 1px #e0dfdf;
+  border-right: none;
+  border-top: none;
+  padding: 0 26px 12px;
 }
 
 main .menu .menu-items {
@@ -124,7 +129,7 @@ main .menu .menu-items {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 40%;
+  margin-left: 15px;
 }
 
 main .menu .menu-items h3 {
@@ -146,6 +151,15 @@ main .menu .menu-items a {
 main .menu .menu-items li:hover,
 main .menu .menu-items a:hover {
   color: #00b7ff;
+}
+
+main .menu .menu-items input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  border-bottom: solid 2px #dfdcdc;
+  margin-top: 12px;
+  width: 130px;
 }
 
 main #destaques,
@@ -864,5 +878,13 @@ th {
   text-transform: uppercase;
   font-family: "Noto Sans KR", sans-serif;
   color: #444040;
+}
+
+.home-content {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 /*# sourceMappingURL=style.css.map */

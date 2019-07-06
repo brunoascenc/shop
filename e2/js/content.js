@@ -14,23 +14,8 @@ function homeProd() {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
       let output = `
-      <div class = "organizar">
-       <h4>Organizar por: </h4>
-       <div>
-          <a>Menor preco</a>
-       </div>
-       <div>
-          <a>Maior preco</a>
-       </div>
-       <div>
-          <a>Relevancia</a>
-       </div>
-       <div>
-          <input type = "search" placeholder = "Pesquisar">
-       </div>
-    </div>
          `;
-
+        
       output += `
              <div class = "item">
              <img src   = "${produtos[0].imagem}">
@@ -1100,6 +1085,8 @@ function homeProd() {
 }
 homeProd();
 
+
+
 //Apple data
 function appleProd() {
   const xhr = new XMLHttpRequest();
@@ -1109,21 +1096,6 @@ function appleProd() {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
       let output = `
-      <div class = "organizar">
-       <h4>Organizar por: </h4>
-       <div>
-          <a>Menor preco</a>
-       </div>
-       <div>
-          <a>Maior preco</a>
-       </div>
-       <div>
-          <a>Relevancia</a>
-       </div>
-       <div>
-          <input type = "search" placeholder = "Pesquisar">
-       </div>
-    </div>
          `;
 
       output += `
@@ -2088,21 +2060,6 @@ function samsungProd() {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
       let output = `
-      <div class = "organizar">
-      <h4>Organizar por: </h4>
-      <div>
-          <a>Menor preco</a>
-      </div>
-      <div>
-          <a>Maior preco</a>
-      </div>
-      <div>
-          <a>Relevancia</a>
-      </div>
-      <div>
-          <input type = "search" placeholder = "Pesquisar">
-      </div>
-  </div>
       `;
       output += `
                 <div class = "item">
@@ -3066,21 +3023,6 @@ function motoProd() {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
       let output = `
-      <div class = "organizar">
-      <h4>Organizar por: </h4>
-      <div>
-          <a>Menor preco</a>
-      </div>
-      <div>
-          <a>Maior preco</a>
-      </div>
-      <div>
-          <a>Relevancia</a>
-      </div>
-      <div>
-          <input type = "search" placeholder = "Pesquisar">
-      </div>
-  </div>
       `;
 
       output += `
@@ -4045,21 +3987,6 @@ function asusProd() {
     if (xhr.status === 200) {
       const produtosAsus = JSON.parse(xhr.responseText);
       let output = `
-      <div class = "organizar">
-      <h4>Organizar por: </h4>
-      <div>
-          <a>Menor preco</a>
-      </div>
-      <div>
-          <a>Maior preco</a>
-      </div>
-      <div>
-          <a>Relevancia</a>
-      </div>
-      <div>
-          <input type = "search" placeholder = "Pesquisar">
-      </div>
-  </div>
       `;
 
       output += `

@@ -8,7 +8,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #faf8f8;
+  background-color: #f5f3f3;
 }
 /* Nav*/
 header {
@@ -78,12 +78,17 @@ main {
   display: flex;
   /*Side menu*/
   .menu {
-    width: 25vw;
-    height: 100vh;
+    width: 220px;
+    height: 100%;
+    background: #ffffff;
+    border: $borderStyle;
+    border-right: none;
+    border-top: none;
+    padding: 0 26px 12px;
     .menu-items {
       @include flexCenter();
       flex-direction: column;
-      margin-left: 40%;
+      margin-left: 15px;
       h3 {
         margin-top: 15px;
         font-family: $titleFont;
@@ -99,6 +104,13 @@ main {
         &:hover {
           color: rgb(0, 183, 255);
         }
+      }
+      input {
+        @include inputReset();
+        border-bottom: solid 2px rgb(223, 220, 220);
+        margin-top: 12px;
+        width: 130px;
+        // border-radius: 6px;
       }
     }
   }
@@ -608,4 +620,10 @@ th {
   font-family: $titleFont;
   color: #444040;
   // align-self: center;
+}
+
+
+.home-content{
+  justify-content: center;
+  flex-wrap: wrap;
 }
