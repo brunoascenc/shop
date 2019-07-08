@@ -8,7 +8,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #f5f3f3;
+  background-color: #f1efef;
 }
 /* Nav*/
 header {
@@ -492,7 +492,7 @@ footer {
 
 //compra section
 #finalizarCompra {
-  justify-content: center;
+  // justify-content: ;
   padding: 4%;
   a {
     @include linksReset();
@@ -507,7 +507,8 @@ footer {
 
 .opcoes {
   display: flex;
-  width: 95%;
+  margin-left: 56px;
+  width: 91.4%;
   justify-content: center;
   background: rgb(251, 251, 251);
   border: $borderStyle;
@@ -550,7 +551,7 @@ footer {
   .detalhes-pag {
     margin-left: 20px;
     height: 95%;
-    width: 95%;
+    width: 90%;
     border: $borderStyle;
     background: #faf8f8;
     padding: 28px;
@@ -585,36 +586,33 @@ footer {
 }
 
 .fichaTec {
-  // margin-left: 56px;
+  display: flex;
   width: 95%;
   border-collapse: collapse;
   width: 100%;
   justify-self: center;
   color: rgb(100, 100, 100);
-  justify-content: flex-start;
   padding: 12px;
   td {
     padding: 12px 120px 4px 14px;
-    // height: 35px;
-    // border: $borderStyle;
   }
   table {
-    width: 93%;
+    width: 93.3%;
     justify-content: end;
-    margin-left: 44px;
+    margin-left: 43px;
   }
 }
 
 .fichaTectr:nth-child(odd) {
-  background: #faf8f8;
+  background: #f8f6f6;
 }
 .fichaTec tr:nth-child(even) {
-  background: rgb(240, 238, 238);
+  background: rgb(230, 229, 229);
 }
 
 th {
   display: flex;
-  background: #faf8f8;
+  background: #f1efef;
   padding: 6px;
   text-transform: uppercase;
   font-family: $titleFont;

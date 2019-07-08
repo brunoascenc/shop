@@ -124,11 +124,47 @@ function homeProd() {
                 </span>
                 <a class = "homeBtn8" href = "#">Comprar</a>
             </div>
+
+            <div class = "item">
+            <img src   = "${produtos[9].imagem}">
+                <h3>${produtos[9].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[9].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[9].parcela}</p>
+                </span>
+                <a class = "asusBtn0" href = "#">Comprar</a>
+            </div>
+
+            <div class = "item">
+            <img src   = "${produtos[10].imagem}">
+                <h3>${produtos[10].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[10].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[10].parcela}</p>
+                </span>
+                <a class = "asusBtn1" href = "#">Comprar</a>
+            </div>
+
+            <div class = "item">
+            <img src   = "${produtos[11].imagem}">
+                <h3>${produtos[11].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[11].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[11].parcela}</p>
+                </span>
+                <a class = "asusBtn2" href = "#">Comprar</a>
+            </div>
                 `;
 
       //Product details
       document.addEventListener('click', e => {
-        if (e.target.className == 'homeBtn0') {
+        if (e.target.className == 'homeBtn0' || e.target.className == 'iphone7') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -233,7 +269,7 @@ function homeProd() {
        </div>
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn1') {
+        } else if (e.target.className == 'homeBtn1' || e.target.className == 'iphoneX') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -338,7 +374,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn2') {
+        } else if (e.target.className == 'homeBtn2' || e.target.className == 'motoMaxx') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -443,7 +479,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn3') {
+        } else if (e.target.className == 'homeBtn3' || e.target.className == 'galaxys8') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -548,7 +584,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn4') {
+        } else if (e.target.className == 'homeBtn4' || e.target.className == 'motoG5') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -653,7 +689,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn5') {
+        } else if (e.target.className == 'homeBtn5' || e.target.className == 'galaxys7') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -758,7 +794,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn6') {
+        } else if (e.target.className == 'homeBtn6' || e.target.className == 'iphoneSE') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -863,7 +899,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn7') {
+        } else if (e.target.className == 'homeBtn7' || e.target.className == 'motoXstyle') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -968,7 +1004,7 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn8') {
+        } else if (e.target.className == 'homeBtn8' || e.target.className == 'galaxys6') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1303,7 +1339,7 @@ function appleProd() {
       </div>
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn1') {
+        } else if (e.target.className == 'appleBtn1' || e.target.className == 'iphone6s') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1513,7 +1549,7 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn3') {
+        } else if (e.target.className == 'appleBtn3' || e.target.className == 'iphone5s') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1618,7 +1654,7 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn4') {
+        } else if (e.target.className == 'appleBtn4' || e.target.className == 'iphone5sGold') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1723,7 +1759,7 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn5') {
+        } else if (e.target.className == 'appleBtn5' || e.target.className == 'iphone5c') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1828,7 +1864,7 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn6') {
+        } else if (e.target.className == 'appleBtn6' || e.target.className == 'iphone6Splus') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2161,7 +2197,7 @@ function samsungProd() {
 
       //Product details
       document.addEventListener('click', e => {
-        if (e.target.className == 'samsungBtn0') {
+        if (e.target.className == 'samsungBtn0' || e.target.className == 'galaxyJ5') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2371,7 +2407,7 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn2') {
+        } else if (e.target.className == 'samsungBtn2' || e.target.className == 'galaxys6edge') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2581,7 +2617,7 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn4') {
+        } else if (e.target.className == 'samsungBtn4' || e.target.className == 'galaxyA7') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2686,7 +2722,7 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn5') {
+        } else if (e.target.className == 'samsungBtn5' || e.target.className == 'galaxyA5') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2791,7 +2827,7 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn6') {
+        } else if (e.target.className == 'samsungBtn6' || e.target.className == 'galaxys9') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3335,7 +3371,7 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn2') {
+        } else if (e.target.className == 'motoBtn2' || e.target.className == 'motoG3') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3440,7 +3476,7 @@ function motoProd() {
         </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn3') {
+        } else if (e.target.className == 'motoBtn3' || e.target.className == 'motoZ') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3545,7 +3581,7 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn4') {
+        } else if (e.target.className == 'motoBtn4' || e.target.className == 'motoX4') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3755,7 +3791,7 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn6') {
+        } else if (e.target.className == 'motoBtn6' || e.target.className == 'motoX2') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3860,7 +3896,7 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn7') {
+        } else if (e.target.className == 'motoBtn7' || e.target.className == 'motoG6') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4041,7 +4077,7 @@ function asusProd() {
 
       //Product details
       document.addEventListener('click', e => {
-        if (e.target.className == 'asusBtn0') {
+        if (e.target.className == 'asusBtn0' || e.target.className == 'zenfone4') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4147,7 +4183,7 @@ function asusProd() {
         `;
 
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'asusBtn1') {
+        } else if (e.target.className == 'asusBtn1' || e.target.className == 'zenfone4pro') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4252,7 +4288,7 @@ function asusProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'asusBtn2') {
+        } else if (e.target.className == 'asusBtn2' || e.target.className == 'zenfone3') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4357,7 +4393,7 @@ function asusProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'asusBtn3') {
+        } else if (e.target.className == 'asusBtn3' || e.target.className == 'zenfone4max') {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';

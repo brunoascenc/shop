@@ -10,7 +10,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #f5f3f3;
+  background-color: #f1efef;
 }
 
 /* Nav*/
@@ -711,9 +711,6 @@ footer .copyright {
 
 /*Modal end*/
 #finalizarCompra {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   padding: 4%;
 }
 
@@ -733,7 +730,8 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
+  margin-left: 56px;
+  width: 91.4%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -795,7 +793,7 @@ footer .copyright {
 .opcoes .detalhes-pag {
   margin-left: 20px;
   height: 95%;
-  width: 95%;
+  width: 90%;
   border: solid 1px #e0dfdf;
   background: #faf8f8;
   padding: 28px;
@@ -837,15 +835,14 @@ footer .copyright {
 }
 
 .fichaTec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 95%;
   border-collapse: collapse;
   width: 100%;
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
   color: #646464;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   padding: 12px;
 }
 
@@ -854,26 +851,26 @@ footer .copyright {
 }
 
 .fichaTec table {
-  width: 93%;
+  width: 93.3%;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
-  margin-left: 44px;
+  margin-left: 43px;
 }
 
 .fichaTectr:nth-child(odd) {
-  background: #faf8f8;
+  background: #f8f6f6;
 }
 
 .fichaTec tr:nth-child(even) {
-  background: #f0eeee;
+  background: #e6e5e5;
 }
 
 th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #faf8f8;
+  background: #f1efef;
   padding: 6px;
   text-transform: uppercase;
   font-family: "Noto Sans KR", sans-serif;
