@@ -2,7 +2,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-j5-2016-metal-dourado-1.jpg",
         "titulo": "Samsung J5 Prime Dourado",
-        "preco": "R$ 899,00",
+        "preco": 899.00,
         "parcela": "ou 12x R$ 38,92 sem juros",
         "tituloDetalhe": "Smartphone Samsung Galaxy J5 Prime Dual Chip",
         "marca": "Samsung",
@@ -25,7 +25,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-s8-plus-ametista-1.jpg",
         "titulo": "Samsung Galaxy S8 Plus",
-        "preco": "R$ 1970,90",
+        "preco": 1970.00,
         "parcela": "ou 12x R$ 50,90 sem juros",
         "tituloDetalhe": "Samsung Galaxy S8 Plus 64GB",
         "marca": "Samsung",
@@ -47,7 +47,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-s6-edge-plus-preto-1.jpg",
         "titulo": "Samsung Galaxy S6 Edge",
-        "preco": "R$ 1489,99",
+        "preco": 1489.99,
         "parcela": "ou 12x R$ 45,99 sem juros",
         "tituloDetalhe": "Samsung Galaxy S6 Edge Preto 32GB",
         "marca": "Samsung",

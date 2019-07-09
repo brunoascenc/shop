@@ -2095,6 +2095,8 @@ function samsungProd() {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
+      const produtosMenor = produtos.sort((a,b) => a.preco - b.preco) // Menor preco sort
+      console.log(produtosMenor)
       let output = `
       `;
       output += `
@@ -3041,7 +3043,8 @@ function samsungProd() {
       });
 
       document.getElementById('destaquesSam').innerHTML = output;
-    } else if (xhr.status === 404) {
+
+    }else if (xhr.status === 404) {
       document.getElementById('destaquesSam').innerHTML =
         'Produto não encontrado';
     }
