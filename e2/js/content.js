@@ -14,157 +14,149 @@ function homeProd() {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
       let output = `
-         `;
-        
-      output += `
-             <div class = "item">
-             <img src   = "${produtos[0].imagem}">
-                <h3>${produtos[0].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[0].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[0].parcela}</p>
-                </span>
-                <a class = "homeBtn0" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[1].imagem}">
-                <h3>${produtos[1].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[1].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[1].parcela}</p>
-                </span>
-                <a class = "homeBtn1" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[2].imagem}">
-                <h3>${produtos[2].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[2].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[2].parcela}</p>
-                </span>
-                <a class = "homeBtn2" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[3].imagem}">
-                <h3>${produtos[3].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[3].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[3].parcela}</p>
-                </span>
-                <a class = "homeBtn3" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[4].imagem}">
-                <h3>${produtos[4].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[4].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[4].parcela}</p>
-                </span>
-                <a class = "homeBtn4" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[5].imagem}">
-                <h3>${produtos[5].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[5].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[5].parcela}</p>
-                </span>
-                <a class = "homeBtn5" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[6].imagem}">
-                <h3>${produtos[6].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[6].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[6].parcela}</p>
-                </span>
-                <a class = "homeBtn6" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[7].imagem}">
-                <h3>${produtos[7].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[7].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[7].parcela}</p>
-                </span>
-                <a class = "homeBtn7" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[8].imagem}">
-                <h3>${produtos[8].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[8].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[8].parcela}</p>
-                </span>
-                <a class = "homeBtn8" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[9].imagem}">
-                <h3>${produtos[9].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[9].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[9].parcela}</p>
-                </span>
-                <a class = "asusBtn0" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[10].imagem}">
-                <h3>${produtos[10].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[10].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[10].parcela}</p>
-                </span>
-                <a class = "asusBtn1" href = "#">Comprar</a>
-            </div>
-
-            <div class = "item">
-            <img src   = "${produtos[11].imagem}">
-                <h3>${produtos[11].titulo}</h3>
-                <span class = "preco">
-                    <p>${produtos[11].preco}</p>
-                </span>
-                <span class = "parcela">
-                    <p>${produtos[11].parcela}</p>
-                </span>
-                <a class = "asusBtn2" href = "#">Comprar</a>
-            </div>
-                `;
+         `;  
+        output += `
+        <div class = "item">
+        <img src   = "${produtos[0].imagem}">
+           <h3>${produtos[0].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[0].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[0].parcela}</p>
+           </span>
+           <a class = "homeBtn0" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[1].imagem}">
+           <h3>${produtos[1].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[1].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[1].parcela}</p>
+           </span>
+           <a class = "homeBtn1" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[2].imagem}">
+           <h3>${produtos[2].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[2].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[2].parcela}</p>
+           </span>
+           <a class = "homeBtn2" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[3].imagem}">
+           <h3>${produtos[3].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[3].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[3].parcela}</p>
+           </span>
+           <a class = "homeBtn3" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[4].imagem}">
+           <h3>${produtos[4].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[4].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[4].parcela}</p>
+           </span>
+           <a class = "homeBtn4" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[5].imagem}">
+           <h3>${produtos[5].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[5].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[5].parcela}</p>
+           </span>
+           <a class = "homeBtn5" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[6].imagem}">
+           <h3>${produtos[6].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[6].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[6].parcela}</p>
+           </span>
+           <a class = "homeBtn6" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[7].imagem}">
+           <h3>${produtos[7].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[7].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[7].parcela}</p>
+           </span>
+           <a class = "homeBtn7" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[8].imagem}">
+           <h3>${produtos[8].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[8].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[8].parcela}</p>
+           </span>
+           <a class = "homeBtn8" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[9].imagem}">
+           <h3>${produtos[9].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[9].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[9].parcela}</p>
+           </span>
+           <a class = "asusBtn0" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[10].imagem}">
+           <h3>${produtos[10].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[10].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[10].parcela}</p>
+           </span>
+           <a class = "asusBtn1" href = "#">Comprar</a>
+       </div>
+       <div class = "item">
+       <img src   = "${produtos[11].imagem}">
+           <h3>${produtos[11].titulo}</h3>
+           <span class = "preco">
+               <p>${produtos[11].preco}</p>
+           </span>
+           <span class = "parcela">
+               <p>${produtos[11].parcela}</p>
+           </span>
+           <a class = "asusBtn2" href = "#">Comprar</a>
+       </div>
+                 `;
+    
 
       //Product details
       document.addEventListener('click', e => {
-        if (e.target.className == 'homeBtn0' || e.target.className == 'iphone7') {
+        if (
+          e.target.className == 'homeBtn0' ||
+          e.target.className == 'iphone7'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -190,7 +182,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[0].preco} no boleto bancário</p>
-                <p>${produtos[0].preco} no cartão de crédito em até 10x de R$ 139,99 s/ juros</p>
+                <p>${
+                  produtos[0].preco
+                } no cartão de crédito em até 10x de R$ 139,99 s/ juros</p>
                 <p>R$ 1659,99 no cartão Logo.com em até 12x de R$ 59,99 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -269,7 +263,10 @@ function homeProd() {
        </div>
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn1' || e.target.className == 'iphoneX') {
+        } else if (
+          e.target.className == 'homeBtn1' ||
+          e.target.className == 'iphoneX'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -295,7 +292,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[1].preco} no boleto bancário</p>
-                <p>${produtos[1].preco} no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
+                <p>${
+                  produtos[1].preco
+                } no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
                 <p>R$ 1899,90 no cartão Logo.com em até 12x de R$ 49,60 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -374,7 +373,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn2' || e.target.className == 'motoMaxx') {
+        } else if (
+          e.target.className == 'homeBtn2' ||
+          e.target.className == 'motoMaxx'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -400,7 +402,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[2].preco} no boleto bancário</p>
-                <p>${produtos[2].preco} no cartão de crédito em até 10x de R$ 139,99 s/ juros</p>
+                <p>${
+                  produtos[2].preco
+                } no cartão de crédito em até 10x de R$ 139,99 s/ juros</p>
                 <p>R$ 1668,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -479,7 +483,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn3' || e.target.className == 'galaxys8') {
+        } else if (
+          e.target.className == 'homeBtn3' ||
+          e.target.className == 'galaxys8'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -505,7 +512,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[3].preco} no boleto bancário</p>
-                <p>${produtos[3].preco}no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+                <p>${
+                  produtos[3].preco
+                }no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
                 <p>R$ 1689,80 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -584,7 +593,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn4' || e.target.className == 'motoG5') {
+        } else if (
+          e.target.className == 'homeBtn4' ||
+          e.target.className == 'motoG5'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -610,7 +622,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[4].preco} no boleto bancário</p>
-                <p>${produtos[4].preco} no cartão de crédito em até 10x de R$ 80,95 s/ juros</p>
+                <p>${
+                  produtos[4].preco
+                } no cartão de crédito em até 10x de R$ 80,95 s/ juros</p>
                 <p>R$ 790,00 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -689,7 +703,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn5' || e.target.className == 'galaxys7') {
+        } else if (
+          e.target.className == 'homeBtn5' ||
+          e.target.className == 'galaxys7'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -715,7 +732,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[5].preco} no boleto bancário</p>
-                <p>${produtos[5].preco} no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
+                <p>${
+                  produtos[5].preco
+                } no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
                 <p>R$ 1489,90 no cartão Logo.com em até 12x de R$ 65,60 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -794,7 +813,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn6' || e.target.className == 'iphoneSE') {
+        } else if (
+          e.target.className == 'homeBtn6' ||
+          e.target.className == 'iphoneSE'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -820,7 +842,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[6].preco} no boleto bancário</p>
-                <p>${produtos[6].preco} no cartão de crédito em até 10x de R$ 110,99 s/ juros</p>
+                <p>${
+                  produtos[6].preco
+                } no cartão de crédito em até 10x de R$ 110,99 s/ juros</p>
                 <p>R$ 1159,99 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -899,7 +923,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn7' || e.target.className == 'motoXstyle') {
+        } else if (
+          e.target.className == 'homeBtn7' ||
+          e.target.className == 'motoXstyle'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -925,7 +952,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[7].preco} no boleto bancário</p>
-                <p>${produtos[7].preco} no cartão de crédito em até 10x de R$ 236,99 s/ juros</p>
+                <p>${
+                  produtos[7].preco
+                } no cartão de crédito em até 10x de R$ 236,99 s/ juros</p>
                 <p>R$ 1899,00 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1004,7 +1033,10 @@ function homeProd() {
        </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'homeBtn8' || e.target.className == 'galaxys6') {
+        } else if (
+          e.target.className == 'homeBtn8' ||
+          e.target.className == 'galaxys6'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1030,7 +1062,9 @@ function homeProd() {
                 </div>
                 <br>
                 <p>${produtos[8].preco} no boleto bancário</p>
-                <p>${produtos[8].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
+                <p>${
+                  produtos[8].preco
+                } no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
                 <p>R$ 550,96 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1120,8 +1154,6 @@ function homeProd() {
   xhr.send();
 }
 homeProd();
-
-
 
 //Apple data
 function appleProd() {
@@ -1260,7 +1292,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[0].preco} no boleto bancário</p>
-                <p>${produtos[0].preco} no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
+                <p>${
+                  produtos[0].preco
+                } no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
                 <p>R$ 1899,90 no cartão Logo.com em até 12x de R$ 49,60 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1339,7 +1373,10 @@ function appleProd() {
       </div>
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn1' || e.target.className == 'iphone6s') {
+        } else if (
+          e.target.className == 'appleBtn1' ||
+          e.target.className == 'iphone6s'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1365,7 +1402,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[1].preco} no boleto bancário</p>
-                <p>${produtos[1].preco} no cartão de crédito em até 10x de R$ 130,99 s/ juros</p>
+                <p>${
+                  produtos[1].preco
+                } no cartão de crédito em até 10x de R$ 130,99 s/ juros</p>
                 <p>R$ 1389,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1470,7 +1509,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[2].preco} no boleto bancário</p>
-                <p>${produtos[2].preco} no cartão de crédito em até 10x de R$ 109,99 s/ juros</p>
+                <p>${
+                  produtos[2].preco
+                } no cartão de crédito em até 10x de R$ 109,99 s/ juros</p>
                 <p>R$ 1259,99 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1549,7 +1590,10 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn3' || e.target.className == 'iphone5s') {
+        } else if (
+          e.target.className == 'appleBtn3' ||
+          e.target.className == 'iphone5s'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1575,7 +1619,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[3].preco} no boleto bancário</p>
-                <p>${produtos[3].preco} no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
+                <p>${
+                  produtos[3].preco
+                } no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
                 <p>R$ 1005,90 no cartão Logo.com em até 12x de R$ 29,99 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1654,7 +1700,10 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn4' || e.target.className == 'iphone5sGold') {
+        } else if (
+          e.target.className == 'appleBtn4' ||
+          e.target.className == 'iphone5sGold'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1680,7 +1729,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[4].preco} no boleto bancário</p>
-                <p>${produtos[4].preco} no cartão de crédito em até 10x de R$ 89,90 s/ juros</p>
+                <p>${
+                  produtos[4].preco
+                } no cartão de crédito em até 10x de R$ 89,90 s/ juros</p>
                 <p>R$ 819,90 no cartão Logo.com em até 12x de R$ 56,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1759,7 +1810,10 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn5' || e.target.className == 'iphone5c') {
+        } else if (
+          e.target.className == 'appleBtn5' ||
+          e.target.className == 'iphone5c'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1785,7 +1839,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[5].preco} no boleto bancário</p>
-                <p>${produtos[5].preco} no cartão de crédito em até 10x de R$ 50,99 s/ juros</p>
+                <p>${
+                  produtos[5].preco
+                } no cartão de crédito em até 10x de R$ 50,99 s/ juros</p>
                 <p>R$ 420,99 no cartão Logo.com em até 12x de R$ 29,23 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1864,7 +1920,10 @@ function appleProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'appleBtn6' || e.target.className == 'iphone6Splus') {
+        } else if (
+          e.target.className == 'appleBtn6' ||
+          e.target.className == 'iphone6Splus'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -1890,7 +1949,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[6].preco} no boleto bancário</p>
-                <p>${produtos[6].preco} no cartão de crédito em até 10x de R$ 129,99 s/ juros</p>
+                <p>${
+                  produtos[6].preco
+                } no cartão de crédito em até 10x de R$ 129,99 s/ juros</p>
                 <p>R$ 1569,00 no cartão Logo.com em até 12x de R$ 39,99 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -1995,7 +2056,9 @@ function appleProd() {
                 </div>
                 <br>
                 <p>${produtos[7].preco} no boleto bancário</p>
-                <p>${produtos[7].preco} no cartão de crédito em até 10x de R$ 123,99 s/ juros</p>
+                <p>${
+                  produtos[7].preco
+                } no cartão de crédito em até 10x de R$ 123,99 s/ juros</p>
                 <p>R$ 1750,90 no cartão Logo.com em até 12x de R$ 59,99 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
@@ -2095,8 +2158,6 @@ function samsungProd() {
   xhr.onload = () => {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
-      const produtosMenor = produtos.sort((a,b) => a.preco - b.preco) // Menor preco sort
-      console.log(produtosMenor)
       let output = `
       `;
       output += `
@@ -2197,9 +2258,123 @@ function samsungProd() {
              </div>
              `;
 
+
+      document.addEventListener('click', e => {
+        if(e.target.className == 'menorPreco'){
+          // const produtosMenor = JSON.parse(xhr.responseText);
+          const produtosMenor = produtos.sort((a, b) => a.preco - b.preco); // Menor preco sort
+
+          let test = ``
+          test +=` 
+                <div class = "item">
+                <img src   = "${produtos[0].imagem}">
+                <h3>${produtos[0].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[0].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[0].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn0" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[1].imagem}">
+                <h3>${produtos[1].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[1].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[1].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn1" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[2].imagem}">
+                <h3>${produtos[2].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[2].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[2].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn2" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[3].imagem}">
+                <h3>${produtos[3].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[3].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[3].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn3" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[4].imagem}">
+                <h3>${produtos[4].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[4].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[4].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn4" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[5].imagem}">
+                <h3>${produtos[5].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[5].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[5].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn5" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[6].imagem}">
+                <h3>${produtos[6].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[6].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[6].parcela}</p>
+                  </span>
+                   <a class = "samsungBtn6" href = "#">Comprar</a>
+                </div>
+
+                <div class = "item">
+                <img src   = "${produtos[7].imagem}">
+                <h3>${produtos[7].titulo}</h3>
+                <span class = "preco">
+                    <p>${produtos[7].preco}</p>
+                </span>
+                <span class = "parcela">
+                    <p>${produtos[7].parcela}</p>
+                  </span>
+              <a class = "samsungBtn7" href = "#">Comprar</a>
+             </div>
+             `
+
+          document.getElementById('destaquesSam').innerHTML = test;
+          console.log(produtosMenor);
+        }
+      })       
+
+
       //Product details
       document.addEventListener('click', e => {
-        if (e.target.className == 'samsungBtn0' || e.target.className == 'galaxyJ5') {
+        if (
+          e.target.className == 'samsungBtn0' ||
+          e.target.className == 'galaxyJ5'    
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2225,7 +2400,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[0].preco} no boleto bancário</p>
-                      <p>${produtos[0].preco} no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
+                      <p>${
+                        produtos[0].preco
+                      } no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
                       <p>R$ 710,95 no cartão Logo.com em até 12x de R$ 38,92 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2330,7 +2507,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[1].preco} no boleto bancário</p>
-                      <p>${produtos[1].preco} no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
+                      <p>${
+                        produtos[1].preco
+                      } no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
                       <p>R$ 1780,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2409,7 +2588,10 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn2' || e.target.className == 'galaxys6edge') {
+        } else if (
+          e.target.className == 'samsungBtn2' ||
+          e.target.className == 'galaxys6edge'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2435,7 +2617,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[2].preco} no boleto bancário</p>
-                      <p>${produtos[2].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+                      <p>${
+                        produtos[2].preco
+                      } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
                       <p>R$ 1290,99 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2540,7 +2724,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[3].preco} no boleto bancário</p>
-                      <p>${produtos[3].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+                      <p>${
+                        produtos[3].preco
+                      } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
                       <p>R$ 1599,90 no cartão Logo.com em até 12x de R$ 65,60 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2619,7 +2805,10 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn4' || e.target.className == 'galaxyA7') {
+        } else if (
+          e.target.className == 'samsungBtn4' ||
+          e.target.className == 'galaxyA7'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2645,7 +2834,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[4].preco} no boleto bancário</p>
-                      <p>${produtos[4].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
+                      <p>${
+                        produtos[4].preco
+                      } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
                       <p>R$ 1299,90 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2724,7 +2915,10 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn5' || e.target.className == 'galaxyA5') {
+        } else if (
+          e.target.className == 'samsungBtn5' ||
+          e.target.className == 'galaxyA5'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2750,7 +2944,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[5].preco} no boleto bancário</p>
-                      <p>${produtos[5].preco} no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
+                      <p>${
+                        produtos[5].preco
+                      } no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
                       <p>R$ 689,90 no cartão Logo.com em até 12x de R$ 50,68 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2829,7 +3025,10 @@ function samsungProd() {
       </div>
               `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'samsungBtn6' || e.target.className == 'galaxys9') {
+        } else if (
+          e.target.className == 'samsungBtn6' ||
+          e.target.className == 'galaxys9'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -2855,7 +3054,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[6].preco} no boleto bancário</p>
-                      <p>${produtos[6].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
+                      <p>${
+                        produtos[6].preco
+                      } no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
                       <p>R$ 2020,90 no cartão em Logo.com até 12x de R$ 129,08 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -2960,7 +3161,9 @@ function samsungProd() {
                       </div>
                       <br>
                       <p>${produtos[7].preco} no boleto bancário</p>
-                      <p>${produtos[7].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
+                      <p>${
+                        produtos[7].preco
+                      } no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
                       <p>R$ 589,90 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
                       <div class = "frete">
                           <p>Calcular o frete: </p>
@@ -3043,8 +3246,7 @@ function samsungProd() {
       });
 
       document.getElementById('destaquesSam').innerHTML = output;
-
-    }else if (xhr.status === 404) {
+    } else if (xhr.status === 404) {
       document.getElementById('destaquesSam').innerHTML =
         'Produto não encontrado';
     }
@@ -3190,7 +3392,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[0].preco} no boleto bancário</p>
-            <p>${produtos[0].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
+            <p>${
+              produtos[0].preco
+            } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
             <p>R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3295,7 +3499,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[1].preco} no boleto bancário</p>
-            <p>${produtos[1].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
+            <p>${
+              produtos[1].preco
+            } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
             <p>R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3374,7 +3580,10 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn2' || e.target.className == 'motoG3') {
+        } else if (
+          e.target.className == 'motoBtn2' ||
+          e.target.className == 'motoG3'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3400,7 +3609,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[2].preco} no boleto bancário</p>
-            <p>${produtos[2].preco} no cartão de crédito em até 10x de R$ 90,99 s/ juros</p>
+            <p>${
+              produtos[2].preco
+            } no cartão de crédito em até 10x de R$ 90,99 s/ juros</p>
             <p>R$ 1150,90 no cartão Logo.com em até 12x de R$ 55,96 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3479,7 +3690,10 @@ function motoProd() {
         </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn3' || e.target.className == 'motoZ') {
+        } else if (
+          e.target.className == 'motoBtn3' ||
+          e.target.className == 'motoZ'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3505,7 +3719,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[3].preco} no boleto bancário</p>
-            <p>${produtos[3].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
+            <p>${
+              produtos[3].preco
+            } no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
             <p>R$ 2200,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3584,7 +3800,10 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn4' || e.target.className == 'motoX4') {
+        } else if (
+          e.target.className == 'motoBtn4' ||
+          e.target.className == 'motoX4'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3610,7 +3829,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[4].preco} no boleto bancário</p>
-            <p>${produtos[4].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+            <p>${
+              produtos[4].preco
+            } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
             <p>R$ 1190,90 no cartão Logo.com em até 12x de R$ 56,99 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3715,7 +3936,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[5].preco} no boleto bancário</p>
-            <p>${produtos[5].preco} no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
+            <p>${
+              produtos[5].preco
+            } no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
             <p>R$ 720,90 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3794,7 +4017,10 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn6' || e.target.className == 'motoX2') {
+        } else if (
+          e.target.className == 'motoBtn6' ||
+          e.target.className == 'motoX2'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3820,7 +4046,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[6].preco} no boleto bancário</p>
-            <p>${produtos[6].preco} no cartão de crédito em até 10x de R$ 98,99 s/ juros</p>
+            <p>${
+              produtos[6].preco
+            } no cartão de crédito em até 10x de R$ 98,99 s/ juros</p>
             <p>R$ 1101,95 no cartão Logo.com em até 12x de R$ 50,99 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -3899,7 +4127,10 @@ function motoProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'motoBtn7' || e.target.className == 'motoG6') {
+        } else if (
+          e.target.className == 'motoBtn7' ||
+          e.target.className == 'motoG6'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -3925,7 +4156,9 @@ function motoProd() {
             </div>
             <br>
             <p>${produtos[7].preco} no boleto bancário</p>
-            <p>${produtos[7].preco} no cartão de crédito em até 10x de R$ 105,99 s/ juros</p>
+            <p>${
+              produtos[7].preco
+            } no cartão de crédito em até 10x de R$ 105,99 s/ juros</p>
             <p>R$ 1180,90 no cartão Logo.com em até 12x de R$ 40,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -4080,7 +4313,10 @@ function asusProd() {
 
       //Product details
       document.addEventListener('click', e => {
-        if (e.target.className == 'asusBtn0' || e.target.className == 'zenfone4') {
+        if (
+          e.target.className == 'asusBtn0' ||
+          e.target.className == 'zenfone4'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4106,7 +4342,9 @@ function asusProd() {
               </div>
               <br>
               <p>${produtosAsus[0].preco} no boleto bancário</p>
-              <p>${produtosAsus[0].preco} no cartão de crédito em até 10x de R$ 85,99 s/ juros</p>
+              <p>${
+                produtosAsus[0].preco
+              } no cartão de crédito em até 10x de R$ 85,99 s/ juros</p>
               <p>R$ 1520,50 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
@@ -4186,7 +4424,10 @@ function asusProd() {
         `;
 
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'asusBtn1' || e.target.className == 'zenfone4pro') {
+        } else if (
+          e.target.className == 'asusBtn1' ||
+          e.target.className == 'zenfone4pro'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4212,7 +4453,9 @@ function asusProd() {
             </div>
             <br>
             <p>${produtosAsus[1].preco} no boleto bancário</p>
-            <p>${produtosAsus[1].preco} no cartão de crédito em até 10x de R$ 102,90 s/ juros</p>
+            <p>${
+              produtosAsus[1].preco
+            } no cartão de crédito em até 10x de R$ 102,90 s/ juros</p>
             <p>R$ 1520,00 no cartão Logo.com em até 12x de R$ 69,99 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -4291,7 +4534,10 @@ function asusProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'asusBtn2' || e.target.className == 'zenfone3') {
+        } else if (
+          e.target.className == 'asusBtn2' ||
+          e.target.className == 'zenfone3'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4317,7 +4563,9 @@ function asusProd() {
             </div>
             <br>
             <p>${produtosAsus[2].preco} no boleto bancário</p>
-            <p>${produtosAsus[2].preco} no cartão de crédito em até 10x de R$ 110,90 s/ juros</p>
+            <p>${
+              produtosAsus[2].preco
+            } no cartão de crédito em até 10x de R$ 110,90 s/ juros</p>
             <p>R$ 899,90 no cartão Logo.com em até 12x de R$ 45,60 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
@@ -4396,7 +4644,10 @@ function asusProd() {
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        } else if (e.target.className == 'asusBtn3' || e.target.className == 'zenfone4max') {
+        } else if (
+          e.target.className == 'asusBtn3' ||
+          e.target.className == 'zenfone4max'
+        ) {
           menuDiv.style.display = 'none';
           bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
@@ -4422,7 +4673,9 @@ function asusProd() {
             </div>
             <br>
             <p>${produtosAsus[3].preco} no boleto bancário</p>
-            <p>${produtosAsus[3].preco} no cartão de crédito em até 10x de R$ 132,90 s/ juros</p>
+            <p>${
+              produtosAsus[3].preco
+            } no cartão de crédito em até 10x de R$ 132,90 s/ juros</p>
             <p>R$ 1750,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>

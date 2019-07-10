@@ -88,7 +88,7 @@ main {
     .menu-items {
       @include flexCenter();
       flex-direction: column;
-      margin-left: 15px;
+      // margin-left: 15px;
       h3 {
         margin-top: 15px;
         font-family: $titleFont;

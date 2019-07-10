@@ -129,7 +129,6 @@ main .menu .menu-items {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 15px;
 }
 
 main .menu .menu-items h3 {
