@@ -120,7 +120,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[0].parcela}</p>
            </span>
-           <a class = "appleBtn0" href = "#">Comprar</a>
+           <a class = "motoBtn0" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -132,7 +132,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[1].parcela}</p>
            </span>
-           <a class = "appleBtn1" href = "#">Comprar</a>
+           <a class = "motoBtn1" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -144,7 +144,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[2].parcela}</p>
            </span>
-           <a class = "appleBtn2" href = "#">Comprar</a>
+           <a class = "motoBtn2" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -156,7 +156,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[3].parcela}</p>
            </span>
-           <a class = "appleBtn3" href = "#">Comprar</a>
+           <a class = "motoBtn3" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -168,7 +168,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[4].parcela}</p>
            </span>
-           <a class = "appleBtn4" href = "#">Comprar</a>
+           <a class = "motoBtn4" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -180,7 +180,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[5].parcela}</p>
            </span>
-           <a class = "appleBtn5" href = "#">Comprar</a>
+           <a class = "motoBtn5" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -192,7 +192,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[6].parcela}</p>
            </span>
-           <a class = "appleBtn6" href = "#">Comprar</a>
+           <a class = "motoBtn6" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -204,7 +204,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[7].parcela}</p>
            </span>
-           <a class = "appleBtn7" href = "#">Comprar</a>
+           <a class = "motoBtn7" href = "#">Comprar</a>
        </div>
         `
         document.getElementById('destaquesMoto').innerHTML = menorSaida
@@ -223,7 +223,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[0].parcela}</p>
            </span>
-           <a class = "appleBtn0" href = "#">Comprar</a>
+           <a class = "motoBtn0" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -235,7 +235,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[1].parcela}</p>
            </span>
-           <a class = "appleBtn1" href = "#">Comprar</a>
+           <a class = "motoBtn1" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -247,7 +247,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[2].parcela}</p>
            </span>
-           <a class = "appleBtn2" href = "#">Comprar</a>
+           <a class = "motoBtn2" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -259,7 +259,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[3].parcela}</p>
            </span>
-           <a class = "appleBtn3" href = "#">Comprar</a>
+           <a class = "motoBtn3" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -271,7 +271,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[4].parcela}</p>
            </span>
-           <a class = "appleBtn4" href = "#">Comprar</a>
+           <a class = "motoBtn4" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -283,7 +283,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[5].parcela}</p>
            </span>
-           <a class = "appleBtn5" href = "#">Comprar</a>
+           <a class = "motoBtn5" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -295,7 +295,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[6].parcela}</p>
            </span>
-           <a class = "appleBtn6" href = "#">Comprar</a>
+           <a class = "motoBtn6" href = "#">Comprar</a>
        </div>
 
        <div class = "item">
@@ -307,7 +307,7 @@ function motoProd() {
            <span class = "parcela">
                <p>${produtos[7].parcela}</p>
            </span>
-           <a class = "appleBtn7" href = "#">Comprar</a>
+           <a class = "motoBtn7" href = "#">Comprar</a>
        </div>
         `
         document.getElementById('destaquesMoto').innerHTML = maiorSaida
@@ -334,7 +334,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[0].preco}</h2>
+                  <h2>R$ ${produtos[0].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -342,8 +342,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[0].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[0].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[0].preco
               } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
               <p>R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
@@ -441,7 +441,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[1].preco}</h2>
+                  <h2>R$ ${produtos[1].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -449,8 +449,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[1].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[1].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[1].preco
               } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
               <p>R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
@@ -551,7 +551,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[2].preco}</h2>
+                  <h2>R$ ${produtos[2].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -559,8 +559,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[2].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[2].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[2].preco
               } no cartão de crédito em até 10x de R$ 90,99 s/ juros</p>
               <p>R$ 1150,90 no cartão Logo.com em até 12x de R$ 55,96 s/ juros</p>
@@ -661,7 +661,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[3].preco}</h2>
+                  <h2>R$ ${produtos[3].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -669,8 +669,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[3].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[3].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[3].preco
               } no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
               <p>R$ 2200,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
@@ -771,7 +771,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[4].preco}</h2>
+                  <h2>R$ ${produtos[4].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -779,8 +779,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[4].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[4].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[4].preco
               } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
               <p>R$ 1190,90 no cartão Logo.com em até 12x de R$ 56,99 s/ juros</p>
@@ -878,7 +878,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[5].preco}</h2>
+                  <h2>R$ ${produtos[5].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -886,8 +886,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[5].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[5].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[5].preco
               } no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
               <p>R$ 720,90 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
@@ -988,7 +988,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[6].preco}</h2>
+                  <h2>R$ ${produtos[6].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -996,8 +996,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[6].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[6].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[6].preco
               } no cartão de crédito em até 10x de R$ 98,99 s/ juros</p>
               <p>R$ 1101,95 no cartão Logo.com em até 12x de R$ 50,99 s/ juros</p>
@@ -1098,7 +1098,7 @@ function motoProd() {
                   <p>vendido e entregue por
                       Logo.com
                   </p>
-                  <h2>${produtos[7].preco}</h2>
+                  <h2>R$ ${produtos[7].preco}</h2>
                   <p>à vista no cartão</p>
               </div>
               <div class = "buttonsPag">
@@ -1106,8 +1106,8 @@ function motoProd() {
                   <button>Adicionar ao carrinho</button>
               </div>
               <br>
-              <p>${produtos[7].preco} no boleto bancário</p>
-              <p>${
+              <p>R$ ${produtos[7].preco} no boleto bancário</p>
+              <p>R$ ${
                 produtos[7].preco
               } no cartão de crédito em até 10x de R$ 105,99 s/ juros</p>
               <p>R$ 1180,90 no cartão Logo.com em até 12x de R$ 40,90 s/ juros</p>

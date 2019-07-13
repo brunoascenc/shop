@@ -336,7 +336,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[0].preco}</h2>
+                            <h2>R$ ${produtos[0].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -344,8 +344,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[0].preco} no boleto bancário</p>
-                        <p>${
+                        <p>R$ ${produtos[0].preco} no boleto bancário</p>
+                        <p>R$ ${
                           produtos[0].preco
                         } no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
                         <p>R$ 710,95 no cartão Logo.com em até 12x de R$ 38,92 s/ juros</p>
@@ -443,7 +443,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[1].preco}</h2>
+                            <h2>R$ ${produtos[1].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -451,8 +451,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[1].preco} no boleto bancário</p>
-                        <p>${
+                        <p>R$ ${produtos[1].preco} no boleto bancário</p>
+                        <p>R$ ${
                           produtos[1].preco
                         } no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
                         <p>R$ 1780,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
@@ -553,7 +553,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[2].preco}</h2>
+                            <h2>R$ ${produtos[2].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -561,8 +561,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[2].preco} no boleto bancário</p>
-                        <p>${
+                        <p>R$ ${produtos[2].preco} no boleto bancário</p>
+                        <p>R$ ${
                           produtos[2].preco
                         } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
                         <p>R$ 1290,99 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
@@ -660,7 +660,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[3].preco}</h2>
+                            <h2>R$ ${produtos[3].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -668,8 +668,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[3].preco} no boleto bancário</p>
-                        <p>${
+                        <p>R$ ${produtos[3].preco} no boleto bancário</p>
+                        <p>R$ ${
                           produtos[3].preco
                         } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
                         <p>R$ 1599,90 no cartão Logo.com em até 12x de R$ 65,60 s/ juros</p>
@@ -770,7 +770,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[4].preco}</h2>
+                            <h2>R$ ${produtos[4].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -778,8 +778,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[4].preco} no boleto bancário</p>
-                        <p>${
+                        <p>R$ ${produtos[4].preco} no boleto bancário</p>
+                        <p>R$ ${
                           produtos[4].preco
                         } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
                         <p>R$ 1299,90 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
@@ -880,7 +880,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[5].preco}</h2>
+                            <h2>R$ ${produtos[5].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -888,8 +888,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[5].preco} no boleto bancário</p>
-                        <p>${
+                        <p>R$ ${produtos[5].preco} no boleto bancário</p>
+                        <p>R$ ${
                           produtos[5].preco
                         } no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
                         <p>R$ 689,90 no cartão Logo.com em até 12x de R$ 50,68 s/ juros</p>
@@ -979,7 +979,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
-                    <a   href  = "index.html">Voltar</a>
+                    <a   href  = "samsung.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
                         <img src = "${produtos[6].imagem}">
@@ -990,7 +990,7 @@ function samsungProd() {
                             <p>vendido e entregue por
                                 Logo.com
                             </p>
-                            <h2>${produtos[6].preco}</h2>
+                            <h2>R$ ${produtos[6].preco}</h2>
                             <p>à vista no cartão</p>
                         </div>
                         <div class = "buttonsPag">
@@ -998,8 +998,8 @@ function samsungProd() {
                             <button>Adicionar ao carrinho</button>
                         </div>
                         <br>
-                        <p>${produtos[6].preco} no boleto bancário</p>
-                        <p>${produtos[6].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
+                        <p>R$ ${produtos[6].preco} no boleto bancário</p>
+                        <p>R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
                         <p>R$ 2020,90 no cartão em Logo.com até 12x de R$ 129,08 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>

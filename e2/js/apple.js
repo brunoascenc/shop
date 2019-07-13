@@ -333,7 +333,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[0].preco}</h2>
+                      <h2>R$ ${produtos[0].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -341,8 +341,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[0].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[0].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[0].preco
                   } no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
                   <p>R$ 1899,90 no cartão Logo.com em até 12x de R$ 49,60 s/ juros</p>
@@ -443,7 +443,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[1].preco}</h2>
+                      <h2>R$ ${produtos[1].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -451,8 +451,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[1].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[1].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[1].preco
                   } no cartão de crédito em até 10x de R$ 130,99 s/ juros</p>
                   <p>R$ 1389,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
@@ -550,7 +550,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[2].preco}</h2>
+                      <h2>R$ ${produtos[2].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -558,8 +558,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[2].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[2].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[2].preco
                   } no cartão de crédito em até 10x de R$ 109,99 s/ juros</p>
                   <p>R$ 1259,99 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
@@ -660,7 +660,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[3].preco}</h2>
+                      <h2>R$ ${produtos[3].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -668,8 +668,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[3].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[3].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[3].preco
                   } no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
                   <p>R$ 1005,90 no cartão Logo.com em até 12x de R$ 29,99 s/ juros</p>
@@ -770,7 +770,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[4].preco}</h2>
+                      <h2>R$ ${produtos[4].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -778,8 +778,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[4].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[4].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[4].preco
                   } no cartão de crédito em até 10x de R$ 89,90 s/ juros</p>
                   <p>R$ 819,90 no cartão Logo.com em até 12x de R$ 56,90 s/ juros</p>
@@ -880,7 +880,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[5].preco}</h2>
+                      <h2>R$ ${produtos[5].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -888,8 +888,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[5].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[5].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[5].preco
                   } no cartão de crédito em até 10x de R$ 50,99 s/ juros</p>
                   <p>R$ 420,99 no cartão Logo.com em até 12x de R$ 29,23 s/ juros</p>
@@ -950,7 +950,7 @@ function appleProd() {
               <td>Tela:</td>
               <td>${produtos[5].tipo_tela}</td>
             </tr>
-            <tr>
+            <tr>R$ 
               <td>Tamanho:</td>
               <td>${produtos[5].tamanho_display}</td>
             </tr>
@@ -990,7 +990,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[6].preco}</h2>
+                      <h2>R$ ${produtos[6].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -998,8 +998,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[6].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[6].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[6].preco
                   } no cartão de crédito em até 10x de R$ 129,99 s/ juros</p>
                   <p>R$ 1569,00 no cartão Logo.com em até 12x de R$ 39,99 s/ juros</p>
@@ -1097,7 +1097,7 @@ function appleProd() {
                       <p>vendido e entregue por
                           Logo.com
                       </p>
-                      <h2>${produtos[7].preco}</h2>
+                      <h2>R$ ${produtos[7].preco}</h2>
                       <p>à vista no cartão</p>
                   </div>
                   <div class = "buttonsPag">
@@ -1105,8 +1105,8 @@ function appleProd() {
                       <button>Adicionar ao carrinho</button>
                   </div>
                   <br>
-                  <p>${produtos[7].preco} no boleto bancário</p>
-                  <p>${
+                  <p>R$ ${produtos[7].preco} no boleto bancário</p>
+                  <p>R$ ${
                     produtos[7].preco
                   } no cartão de crédito em até 10x de R$ 123,99 s/ juros</p>
                   <p>R$ 1750,90 no cartão Logo.com em até 12x de R$ 59,99 s/ juros</p>

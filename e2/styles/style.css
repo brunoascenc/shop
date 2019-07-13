@@ -86,15 +86,63 @@ header a {
 
 /*Banner*/
 .banner {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-bottom: solid 1px #e0dfdf;
   border-top: solid 1px #e0dfdf;
   background-color: white;
   height: 35vh;
   margin-top: 5px;
+  position: relative;
   background: url("https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000") no-repeat;
   background-size: cover;
+}
+
+.banner .carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation-name: slide_animation;
+          animation-name: slide_animation;
+  -webkit-animation-duration: 0.5s ease;
+          animation-duration: 0.5s ease;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.banner .carousel img {
+  width: 100%;
+}
+
+#prevButton {
+  position: absolute;
+  top: 42%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  background: #0d9cd4;
+  color: #ffffff;
+  padding: 6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#nextButton {
+  position: absolute;
+  top: 42%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  background: #0d9cd4;
+  color: #ffffff;
+  padding: 6px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*Conteudo*/

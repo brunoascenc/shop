@@ -72,3 +72,42 @@ voltarLink.forEach(button => {
     loginDiv.style.display = 'flex';
   });
 });
+
+
+//Banner slider
+const carouselSlide = document.querySelector('.carousel')
+const carouselImages = document.querySelectorAll('.carousel img')
+const prevBtn = document.querySelector('#prevButton')
+const nextBtn = document.querySelector('#nextButton')
+
+let counterImg = 1
+const sizeImg = carouselImages[0].clientWidth
+
+carouselSlide.style.transform = 'translateX('+(-sizeImg * counterImg ) + 'px)'
+
+nextBtn.addEventListener('click', () => {
+  if(counterImg >= carouselImages.length -1) return
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out'
+  counterImg++
+  carouselSlide.style.transform = 'translateX('+(-sizeImg * counterImg ) + 'px)'
+})
+
+prevBtn.addEventListener('click', () => {
+  if(counterImg <= 0) return
+  carouselSlide.style.transition = 'transform 0.5s ease-in-out'
+  counterImg--
+  carouselSlide.style.transform = 'translateX('+(-sizeImg * counterImg ) + 'px)'
+})
+
+carouselSlide.addEventListener('transitionend', () =>{
+  if(carouselImages[counterImg].id === 'lastClone'){
+    carouselSlide.style.transition = 'none'
+    counterImg = carouselImages.length -2
+    carouselSlide.style.transform = 'translateX('+(-sizeImg * counterImg ) + 'px)'
+  }
+  else if(carouselImages[counterImg].id === 'firstClone'){
+    carouselSlide.style.transition = 'none'
+    counterImg = carouselImages.length - counterImg
+    carouselSlide.style.transform = 'translateX('+(-sizeImg * counterImg ) + 'px)'
+  }
+})

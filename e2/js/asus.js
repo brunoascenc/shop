@@ -72,7 +72,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[0].parcela}</p>
           </span>
-          <a class = "appleBtn0" href = "#">Comprar</a>
+          <a class = "asusBtn0" href = "#">Comprar</a>
       </div>
 
       <div class = "item">
@@ -84,7 +84,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[1].parcela}</p>
           </span>
-          <a class = "appleBtn1" href = "#">Comprar</a>
+          <a class = "asusBtn1" href = "#">Comprar</a>
       </div>
 
       <div class = "item">
@@ -96,7 +96,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[2].parcela}</p>
           </span>
-          <a class = "appleBtn2" href = "#">Comprar</a>
+          <a class = "asusBtn2" href = "#">Comprar</a>
       </div>
 
       <div class = "item">
@@ -108,7 +108,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[3].parcela}</p>
           </span>
-          <a class = "appleBtn3" href = "#">Comprar</a>
+          <a class = "asusBtn3" href = "#">Comprar</a>
       </div>
        `
        document.getElementById('destaquesAsus').innerHTML = menorSaida
@@ -127,7 +127,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[0].parcela}</p>
           </span>
-          <a class = "appleBtn0" href = "#">Comprar</a>
+          <a class = "asusBtn0" href = "#">Comprar</a>
       </div>
 
       <div class = "item">
@@ -139,7 +139,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[1].parcela}</p>
           </span>
-          <a class = "appleBtn1" href = "#">Comprar</a>
+          <a class = "asusBtn1" href = "#">Comprar</a>
       </div>
 
       <div class = "item">
@@ -151,7 +151,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[2].parcela}</p>
           </span>
-          <a class = "appleBtn2" href = "#">Comprar</a>
+          <a class = "asusBtn2" href = "#">Comprar</a>
       </div>
 
       <div class = "item">
@@ -163,7 +163,7 @@ function asusProd() {
           <span class = "parcela">
               <p>${produtosAsus[3].parcela}</p>
           </span>
-          <a class = "appleBtn3" href = "#">Comprar</a>
+          <a class = "asusBtn3" href = "#">Comprar</a>
       </div>
        `
        document.getElementById('destaquesAsus').innerHTML = maiorSaida

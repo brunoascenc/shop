@@ -62,15 +62,53 @@ header {
 
 /*Banner*/
 .banner {
-  display: grid;
+  display: flex;
   border-bottom: $borderStyle;
   border-top: $borderStyle;
   background-color: white;
   height: 35vh;
   margin-top: 5px;
+  position: relative;
   background: url('https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000')
     no-repeat;
   background-size: cover;
+  .carousel {
+    display: flex;
+    animation-name: slide_animation;
+    animation-duration: 0.5s ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+#prevButton {
+  position: absolute;
+  top: 42%;
+  z-index: 10;
+  left: 5%;
+  font-size: 30px;
+  background: $mainBlue;
+  color: #ffffff;
+  padding: 6px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#nextButton {
+  position: absolute;
+  top: 42%;
+  z-index: 10;
+  right: 5%;
+  font-size: 30px;
+  background: $mainBlue;
+  color: #ffffff;
+  padding: 6px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 /*Conteudo*/
