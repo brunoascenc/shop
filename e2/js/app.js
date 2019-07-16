@@ -111,3 +111,4 @@ carouselSlide.addEventListener('transitionend', () =>{
     carouselSlide.style.transform = 'translateX('+(-sizeImg * counterImg ) + 'px)'
   }
 })
+

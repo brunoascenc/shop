@@ -5,6 +5,24 @@ $titleFont: 'Noto Sans KR', sans-serif;
 $borderStyle: solid 1px #e0dfdf;
 $dark : black;
 $mainBlue: rgb(13, 156, 212);
+$max-slides: 5;
+$prefix: true;
+$responsive: true;
+$breakpoint-small: 500px;
+$fade-time: 1;
+$prev-next-fontfamily: sans-serif;
+$prev-next-icon-size: 3vw;
+$prev-next-icon-color: rgba(255,255,255,0.5);
+$prev-next-bg: rgba(255,255,255,0);
+$prev-next-bg-hover: rgba(255,255,255,0.1);
+$prev-icon: '❮';
+$next-icon:	'❯';
+$autohide-next-prev: true;
+$quick-nav-color: rgba(255,255,255,0.8);
+$quick-nav-active-color: $mainBlue;
+$fade-color: #fff;
+$autoplay: true;
+$autoplay-duration: 3;
 
 @mixin flexCenter {
     display: flex;
@@ -44,4 +62,61 @@ $mainBlue: rgb(13, 156, 212);
     width: 120px !important;
     margin-top: 0 !important;
     margin-left: 0 !important;
+}
+
+
+
+
+@mixin fadeshow-transition($value...) {
+	@if length($value) < 1 {
+		$value: all 150ms linear;
+	}
+	@if $prefix == true {
+		-webkit-transition: $value;
+	}
+				  transition: $value;
+}
+
+@mixin fadeshow-transform($value...) {
+	@if length($value) < 1 {
+		$value: all 150ms linear;
+	}
+	@if $prefix == true {
+		-webkit-transform: $value;
+			 -ms-transform: $value;
+	}
+				  transform: $value;
+}
+
+@mixin fadeshow-animation($value...) {
+	@if $prefix == true {
+		-webkit-animation: $value;
+	}
+				  animation: $value;
+}
+
+@mixin fadeshow-animation-delay($value) {
+	@if $prefix == true {
+		-webkit-animation-delay: $value;
+	}
+				  animation-delay: $value;
+}
+
+@mixin fadeshow-unselectable() {
+	@if $prefix == true {
+		-webkit-user-select: none;
+		   -moz-user-select: none;
+			 -ms-user-select: none;
+	}
+				  user-select: none;
+}
+
+/* Mixins to handle Quick Navigation Button states */
+
+@mixin quickNavBtnActive() {
+	background-color: $quick-nav-active-color;
+}
+
+@mixin quickNavBtnInactive() {
+	background-color: $quick-nav-color;
 }

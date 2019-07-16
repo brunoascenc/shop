@@ -14,8 +14,8 @@ function homeProd() {
     if (xhr.status === 200) {
       const produtos = JSON.parse(xhr.responseText);
       let output = `
-         `;  
-        output += `
+         `;
+      output += `
         <div class = "item">
         <img src   = "${produtos[0].imagem}">
            <h3>${produtos[0].titulo}</h3>
@@ -150,10 +150,10 @@ function homeProd() {
        </div>
                  `;
 
-      document.addEventListener('click', e =>{
-        if(e.target.className === 'menorPreco'){
+      document.addEventListener('click', e => {
+        if (e.target.className === 'menorPreco') {
           const produtosMenor = produtos.sort((a, b) => a.preco - b.preco);
-          let menorSaida = ``
+          let menorSaida = ``;
           menorSaida += `
           <div class = "item">
         <img src   = "${produtos[0].imagem}">
@@ -287,13 +287,11 @@ function homeProd() {
            </span>
            <a class = "asusBtn2" href = "#">Comprar</a>
        </div>
-          `
-        document.getElementById('destaques').innerHTML = menorSaida;
-        }
-
-        else if (e.target.className === 'maiorPreco'){
+          `;
+          document.getElementById('destaques').innerHTML = menorSaida;
+        } else if (e.target.className === 'maiorPreco') {
           const produtosMenor = produtos.sort((a, b) => b.preco - a.preco);
-          let maiorSaida = ``
+          let maiorSaida = ``;
           maiorSaida += `
           <div class = "item">
         <img src   = "${produtos[0].imagem}">
@@ -427,11 +425,10 @@ function homeProd() {
            </span>
            <a class = "asusBtn2" href = "#">Comprar</a>
        </div>
-          `
-        document.getElementById('destaques').innerHTML = maiorSaida;
+          `;
+          document.getElementById('destaques').innerHTML = maiorSaida;
         }
-      })       
-    
+      });
 
       //Product details
       document.addEventListener('click', e => {
@@ -557,8 +554,14 @@ function homeProd() {
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
             <div>
-                <img src = "${produtos[1].imagem}">
+                <img class = "img-container" src = "${produtos[1].imagem}">
+                <div class = "card-nav">
+                   <img src = "${produtos[1].imagem}">
+                   <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5ab2a7f1-iphone-x-cinzaespacial-perfil.png">
+                   <img onclick = "" src =  "https://imagens.trocafone.com/images/phones/dt-5ab2a7f2-iphone-x-cinzaespacial-traseira.png">
+                </div>
             </div>
+
             <div class = "detalhes-pag">
                 <h1>${produtos[1].tituloDetalhe}</h1>
                 <div class = "precodet">
@@ -654,6 +657,14 @@ function homeProd() {
          </table>
        </div>
         `;
+           
+         /*Product UI Nav*/
+          const imgContainer = document.getElementsByClassName('img-container')
+          window.changeImg = (image) => {
+             imgContainer.src = image.src
+             console.log('hi')
+          }
+
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
           e.target.className == 'homeBtn2' ||
@@ -1425,9 +1436,7 @@ function homeProd() {
       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
-        }
-
-        else if (
+        } else if (
           e.target.className == 'homeBtn9' ||
           e.target.className == 'zenfone4'
         ) {
@@ -1536,18 +1545,16 @@ function homeProd() {
         </table>
       </div>
         `;
-      document.getElementById('finalizarCompra').innerHTML = saida; 
-      } 
+          document.getElementById('finalizarCompra').innerHTML = saida;
+        } else if (
+          e.target.className == 'homeBtn10' ||
+          e.target.className == 'zenfone4pro'
+        ) {
+          menuDiv.style.display = 'none';
+          bannerDiv.style.display = 'none';
+          compraDiv.style.display = 'block';
 
-      else if (
-        e.target.className == 'homeBtn10' ||
-        e.target.className == 'zenfone4pro'
-      ) {
-        menuDiv.style.display = 'none';
-        bannerDiv.style.display = 'none';
-        compraDiv.style.display = 'block';
-
-        let saida = `
+          let saida = `
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -1648,18 +1655,16 @@ function homeProd() {
       </table>
     </div>
       `;
-    document.getElementById('finalizarCompra').innerHTML = saida; 
-    }
+          document.getElementById('finalizarCompra').innerHTML = saida;
+        } else if (
+          e.target.className == 'homeBtn11' ||
+          e.target.className == 'zenfone3'
+        ) {
+          menuDiv.style.display = 'none';
+          bannerDiv.style.display = 'none';
+          compraDiv.style.display = 'block';
 
-    else if (
-      e.target.className == 'homeBtn11' ||
-      e.target.className == 'zenfone3'
-    ) {
-      menuDiv.style.display = 'none';
-      bannerDiv.style.display = 'none';
-      compraDiv.style.display = 'block';
-
-      let saida = `
+          let saida = `
         <a   href  = "index.html">Voltar</a>
         <div class = "opcoes">
         <div>
@@ -1760,10 +1765,9 @@ function homeProd() {
     </table>
   </div>
     `;
-  document.getElementById('finalizarCompra').innerHTML = saida; 
-  }
-      
-  });
+          document.getElementById('finalizarCompra').innerHTML = saida;
+        }
+      });
 
       document.getElementById('destaques').innerHTML = output;
     } else if (xhr.status === 404) {
