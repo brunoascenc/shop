@@ -67,7 +67,7 @@ header {
   border-top: $borderStyle;
   background-color: white;
   animation: slide 12s infinite;
-  height: 35vh;
+  height: 320px;
   margin-top: 5px;
   position: relative;
   // background: url('https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000')
@@ -78,29 +78,6 @@ header {
     img {
       width: 100%;
     }
-    .bannerImg1 {
-      left: 0%;
-      animation-delay: -1s;
-    }
-    .bannerImg2 {
-      animation-delay: 2s;
-    }
-    .bannerImg3 {
-      animation-delay: 5s;
-    }
-    .bannerImg4 {
-      left: 0%;
-      animation-delay: 8s;
-    }
-
-    // @keyframes slide {
-    //   0% { left: 100%; width: 100%; }
-    //   5% { left: 0%; }
-    //   25% { left: 0%; }
-    //   30% { left: -100%; width: 100%; }
-    //   30.0001%{ left: -100%; width: 0%; }
-    //   100% { left: 100%; width: 0%; }
-    //  }
   }
 }
 
@@ -719,7 +696,8 @@ th {
     left: 0;
     right: 0;
     opacity: 0;
-    background-size: cover;
+    // background-size: cover;
+    max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
     @include fadeshow-transition(opacity #{$fade-time}s ease);
@@ -1072,4 +1050,8 @@ th {
       $i: $i - 1;
     }
   }
+}
+
+img{
+  max-width: 100% !important;
 }
