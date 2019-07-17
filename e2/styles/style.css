@@ -12,12 +12,13 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #f1efef;
+  background-color: #f6f4f4;
 }
 
 /* Nav*/
 header {
   height: 9vh;
+  padding: 0 4%;
 }
 
 header .topo-nav,
@@ -45,6 +46,17 @@ header .navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+header .navbar input {
+  outline: none;
+  border: none;
+  padding: 5px;
+  height: 25px;
+  margin-top: 37px;
+  margin-left: 35px;
+  border: solid 1px #d6d4d4;
+  border-radius: 4px;
 }
 
 header #main {
@@ -80,7 +92,7 @@ header a {
 .sticky-nav {
   position: fixed;
   width: 100%;
-  background: #faf8f8;
+  background: #fbfafa;
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -152,8 +164,8 @@ main {
 main .menu {
   width: 220px;
   height: 100%;
-  background: #ffffff;
-  border: solid 1px #e0dfdf;
+  background: #fbfafa;
+  border: solid 1px #c3c1c1;
   border-right: none;
   border-top: none;
   padding: 0 26px 12px;
@@ -215,7 +227,7 @@ main #destaquesAsus {
       grid-template-columns: repeat(4, 200px);
   grid-column-gap: 45px;
   grid-row-gap: 80px;
-  border-left: solid 1px #e0dfdf;
+  border-left: solid 1px #c3c1c1;
 }
 
 main #destaques .item,
@@ -226,8 +238,8 @@ main #destaquesAsus .item {
   width: 235px;
   height: 420px;
   padding: 6%;
-  background-color: #ffffff;
-  border: solid 1px #e0dede;
+  background-color: #fbfafa;
+  border: solid 1px #cfcdcd;
 }
 
 main #destaques h3,
@@ -373,7 +385,6 @@ main .organizar .fa-search {
           justify-content: center;
   margin-top: 50px;
   margin-bottom: 25px;
-  background: #f7f8f8;
   padding: 6%;
   margin-left: 0;
 }
@@ -466,7 +477,7 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  border-top: solid 1px #dbdada;
+  border-top: solid 1px #c3c1c1;
   background: #f6f5f5;
   height: 40vh;
   -ms-flex-pack: distribute;
@@ -775,7 +786,7 @@ footer .copyright {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: #fbfbfb;
+  background: #fbfafa;
   border: solid 1px #e0dfdf;
   padding: 28px;
 }
