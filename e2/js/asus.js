@@ -184,7 +184,12 @@ function asusProd() {
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
             <div>
-                <img src = "${produtosAsus[0].imagem}">
+            <img id = "img-container" src = "${produtosAsus[0].imagem}">
+             <div class = "card-nav">
+               <img onclick = "changeImg(this)" src = "${produtosAsus[0].imagem}">
+               <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5b3134b4-zenfone-4-verde-perfil.png">
+               <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5b3134b5-zenfone-4-verde-traseira.png">
+             </div>
             </div>
             <div class = "detalhes-pag">
                 <h1>${produtosAsus[0].tituloDetalhe}</h1>
@@ -295,7 +300,12 @@ function asusProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtosAsus[1].imagem}">
+          <img id = "img-container" src = "${produtosAsus[1].imagem}">
+            <div class = "card-nav">
+              <img onclick = "changeImg(this)" src = "${produtosAsus[1].imagem}">
+              <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-zenfone-4-selfie-pro-vermelho-perfil.png">
+              <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-zenfone-4-selfie-pro-vermelho-traseira.png">
+            </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtosAsus[1].tituloDetalhe}</h1>
@@ -405,7 +415,12 @@ function asusProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtosAsus[2].imagem}">
+            <img id = "img-container" src = "${produtosAsus[2].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtosAsus[2].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5aa96fd9-zenfone-3-preto-2.jpg">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5aa96fd9-zenfone-3-preto-3.jpg">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtosAsus[2].tituloDetalhe}</h1>
@@ -515,7 +530,12 @@ function asusProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtosAsus[3].imagem}">
+          <img id = "img-container" src = "${produtosAsus[3].imagem}">
+           <div class = "card-nav">
+             <img onclick = "changeImg(this)" src = "${produtosAsus[3].imagem}">
+             <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5c23a991-zenfone-4-max-preto-perfil.png">
+             <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5c23a991-zenfone-4-max-preto-traseira.png">
+           </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtosAsus[3].tituloDetalhe}</h1>
@@ -613,6 +633,10 @@ function asusProd() {
     </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
+          }
+          const imgContainer = document.getElementById('img-container')
+          window.changeImg = (image) => {
+             imgContainer.src = image.src
           }
         });
   

@@ -1021,7 +1021,7 @@ function homeProd() {
           let saida = `
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
-                        <div>
+            <div>
                <img id = "img-container" src = "${produtos[5].imagem}">
                 <div class = "card-nav">
                   <img onclick = "changeImg(this)" src = "${produtos[5].imagem}">
@@ -1596,14 +1596,14 @@ function homeProd() {
           let saida = `
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
-              <div>
-               <img id = "img-container" src = "${produtos[10].imagem}">
+            <div>
+              <img id = "img-container" src = "${produtos[10].imagem}">
                 <div class = "card-nav">
                   <img onclick = "changeImg(this)" src = "${produtos[10].imagem}">
                   <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-zenfone-4-selfie-pro-vermelho-perfil.png">
                   <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-zenfone-4-selfie-pro-vermelho-traseira.png">
                 </div>
-              </div>
+            </div>
           <div class = "detalhes-pag">
               <h1>${produtos[10].tituloDetalhe}</h1>
               <div class = "precodet">
@@ -1711,14 +1711,14 @@ function homeProd() {
           let saida = `
         <a   href  = "index.html">Voltar</a>
         <div class = "opcoes">
-              <div>
-               <img id = "img-container" src = "${produtos[11].imagem}">
-                <div class = "card-nav">
-                  <img onclick = "changeImg(this)" src = "${produtos[11].imagem}">
-                  <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5aa96fd9-zenfone-3-preto-2.jpg">
-                  <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5aa96fd9-zenfone-3-preto-3.jpg">
-                </div>
+          <div>
+            <img id = "img-container" src = "${produtos[11].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[11].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5aa96fd9-zenfone-3-preto-2.jpg">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5aa96fd9-zenfone-3-preto-3.jpg">
               </div>
+          </div>
         <div class = "detalhes-pag">
             <h1>${produtos[11].tituloDetalhe}</h1>
             <div class = "precodet">

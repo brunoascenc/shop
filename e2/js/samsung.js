@@ -328,7 +328,12 @@ function samsungProd() {
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[0].imagem}">
+                    <img id = "img-container" src = "${produtos[0].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[0].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-j5-2016-metal-dourado-3.jpg">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-j5-2016-metal-dourado-2.jpg">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[0].tituloDetalhe}</h1>
@@ -435,7 +440,12 @@ function samsungProd() {
                     <a href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[1].imagem}">
+                    <img id = "img-container" src = "${produtos[1].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[1].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-s8-preto-2.jpg">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-s8-preto-3.jpg">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[1].tituloDetalhe}</h1>
@@ -545,7 +555,12 @@ function samsungProd() {
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[2].imagem}">
+                    <img id = "img-container" src = "${produtos[2].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[2].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58593d7f-galaxys6edgepretolateral.png">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58593d80-galaxys6edgepretotraseira.png">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[2].tituloDetalhe}</h1>
@@ -652,7 +667,12 @@ function samsungProd() {
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[3].imagem}">
+                    <img id = "img-container" src = "${produtos[3].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[3].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-s7-edge-dourado-3.png">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-s7-edge-dourado-4.png">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[3].tituloDetalhe}</h1>
@@ -762,7 +782,12 @@ function samsungProd() {
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[4].imagem}">
+                    <img id = "img-container" src = "${produtos[4].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[4].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58ff99e7-a5-2017-dourado-2.jpg">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58ff99e8-a5-2017-dourado-3.jpg">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[4].tituloDetalhe}</h1>
@@ -872,7 +897,12 @@ function samsungProd() {
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[5].imagem}">
+                    <img id = "img-container" src = "${produtos[5].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[5].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-a5-a500m-dour-2.jpg">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-585aa4fe-dt-traseiraa5dourado.png">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[5].tituloDetalhe}</h1>
@@ -982,7 +1012,12 @@ function samsungProd() {
                     <a   href  = "samsung.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[6].imagem}">
+                    <img id = "img-container" src = "${produtos[6].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[6].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-galaxy-s9-azul-perfil.png">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-galaxy-s9-azul-traseira.png">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[6].tituloDetalhe}</h1>
@@ -1087,7 +1122,12 @@ function samsungProd() {
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
-                        <img src = "${produtos[7].imagem}">
+                    <img id = "img-container" src = "${produtos[7].imagem}">
+                     <div class = "card-nav">
+                       <img onclick = "changeImg(this)" src = "${produtos[7].imagem}">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-galaxy-s6-flat-bran-2.png">
+                       <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-galaxy-s6-flat-bran-3.png">
+                     </div>
                     </div>
                     <div class = "detalhes-pag">
                         <h1>${produtos[7].tituloDetalhe}</h1>
@@ -1183,6 +1223,10 @@ function samsungProd() {
         </div>`
             ;
           document.getElementById('finalizarCompra').innerHTML = saida;
+        }
+        const imgContainer = document.getElementById('img-container')
+        window.changeImg = (image) => {
+           imgContainer.src = image.src
         }
       });
 

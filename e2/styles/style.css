@@ -18,7 +18,9 @@ body {
 /* Nav*/
 header {
   height: 9vh;
-  padding: 0 4%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 header .topo-nav,
@@ -27,16 +29,13 @@ header .nav-contato {
   display: -ms-flexbox;
   display: flex;
   height: 10vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 2%;
-  border-bottom: solid 1px #e0dfdf;
 }
 
 header .navbar {
@@ -92,10 +91,11 @@ header a {
 .sticky-nav {
   position: fixed;
   width: 100%;
-  background: #fbfafa;
+  background: #f6f4f4;
   z-index: 1;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border-bottom: solid 1px #e0dede;
 }
 
 /*Banner*/
@@ -162,7 +162,7 @@ main {
 }
 
 main .menu {
-  width: 220px;
+  width: 235px;
   height: 100%;
   background: #fbfafa;
   border: solid 1px #c3c1c1;

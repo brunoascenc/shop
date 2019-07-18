@@ -326,7 +326,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[0].imagem}">
+            <img id = "img-container" src = "${produtos[0].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[0].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-maxx-2a-g-2.png">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-maxx-2a-g-3.png">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[0].tituloDetalhe}</h1>
@@ -433,7 +438,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[1].imagem}">
+            <img id = "img-container" src = "${produtos[1].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[1].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-x-style-pret-2.png">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-x-style-pret-3.png">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[1].tituloDetalhe}</h1>
@@ -543,7 +553,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[2].imagem}">
+            <img id = "img-container" src = "${produtos[2].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[2].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58bd610f-moto-g-3a-geracao-16gb-4g-dual-preto-2.png">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58bd6110-moto-g-3a-geracao-16gb-4g-dual-preto-3.png">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[2].tituloDetalhe}</h1>
@@ -653,7 +668,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[3].imagem}">
+            <img id = "img-container" src = "${produtos[3].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[3].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-z-play-preto-2.jpg">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-z-play-preto-3.jpg">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[3].tituloDetalhe}</h1>
@@ -763,7 +783,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[4].imagem}">
+            <img id = "img-container" src = "${produtos[4].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[4].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-x4-preto-lado.png">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-x4-preto-costas.png">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[4].tituloDetalhe}</h1>
@@ -870,7 +895,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[5].imagem}">
+            <img id = "img-container" src = "${produtos[5].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[5].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-g5-plus-platinum-2.jpg">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-moto-g5-plus-platinum-3.jpg">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[5].tituloDetalhe}</h1>
@@ -980,7 +1010,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[6].imagem}">
+            <img id = "img-container" src = "${produtos[6].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[6].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58bd6172-moto-x-2a-geracao-32-gb-preto-2.png">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-58bd6174-moto-x-2a-geracao-32-gb-preto-3.png">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[6].tituloDetalhe}</h1>
@@ -1090,7 +1125,12 @@ function motoProd() {
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
-              <img src = "${produtos[7].imagem}">
+            <img id = "img-container" src = "${produtos[7].imagem}">
+              <div class = "card-nav">
+                <img onclick = "changeImg(this)" src = "${produtos[7].imagem}">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5c0eb064-moto-g6-indigo-lado.png">
+                <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5c0eb064-moto-g6-indigo-costas.png">
+              </div>
           </div>
           <div class = "detalhes-pag">
               <h1>${produtos[7].tituloDetalhe}</h1>
@@ -1188,6 +1228,10 @@ function motoProd() {
     </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
+          }
+          const imgContainer = document.getElementById('img-container')
+          window.changeImg = (image) => {
+             imgContainer.src = image.src
           }
         });
   
