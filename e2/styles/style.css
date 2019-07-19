@@ -239,6 +239,87 @@ main .menu .menu-items input {
   width: 130px;
 }
 
+main .menu .cores-opcoes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .menu .cores-opcoes li {
+  padding: 6px;
+}
+
+main .menu .cores-opcoes .branco {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+}
+
+main .menu .cores-opcoes .dourado {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+  background: #D4AF37;
+}
+
+main .menu .cores-opcoes .preto {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+  background: #141414;
+}
+
+main .menu .cores-opcoes .cinza {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+  background: #4B4B4C;
+}
+
+main .menu .cores-opcoes .vermelho {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+  background: #ec3030;
+}
+
+main .menu .cores-opcoes .verde {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+  background: #4eec7d;
+}
+
+main .menu .cores-opcoes .azul {
+  height: 25px;
+  width: 25px;
+  border-radius: 50px;
+  background: #f0f0f3;
+  cursor: pointer;
+  border: solid 1px #afaaaa;
+  background: #2462e6;
+}
+
 main #destaques,
 main #destaquesApple,
 main #destaquesMoto,

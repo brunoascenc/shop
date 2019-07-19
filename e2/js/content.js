@@ -427,8 +427,19 @@ function homeProd() {
        </div>
           `;
           document.getElementById('destaques').innerHTML = maiorSaida;
+        }else if (e.target.className === 'branco'){
+          const cores = produtos.filter(p => {
+            if (p.cor === 'branco') {
+                return p
+            }
+            console.log(cores);
+            
+        })
+
         }
       });
+
+     
 
       //Product details
       document.addEventListener('click', e => {

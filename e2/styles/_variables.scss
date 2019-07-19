@@ -66,6 +66,15 @@ $autoplay-duration: 3;
     margin-left: 0 !important;
 }
 
+@mixin dots {
+	height: 25px;
+	width: 25px;
+	border-radius: 50px;
+	background: rgb(240, 240, 243);
+	cursor: pointer;
+	border: solid 1px rgb(175, 170, 170);
+}
+
 
 
 

@@ -187,6 +187,40 @@ main {
         // border-radius: 6px;
       }
     }
+    .cores-opcoes {
+      display: flex;
+      flex-wrap: wrap;
+      li {
+        padding: 6px;
+      }
+      .branco {
+        @include dots();
+      }
+      .dourado {
+        @include dots();
+        background: #D4AF37;
+      }
+      .preto{
+        @include dots();
+        background: #141414;
+      }
+      .cinza{
+        @include dots();
+        background: #4B4B4C;
+      }
+      .vermelho{
+        @include dots();
+        background: #ec3030;
+      }
+      .verde{
+        @include dots();
+        background: #4eec7d;
+      }
+      .azul {
+        @include dots();
+        background: #2462e6;
+      }
+    }
   }
   /*Side menu end*/
 
