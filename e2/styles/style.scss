@@ -16,12 +16,13 @@ header {
   height: 9vh;
   // padding: 0 4%;
   // display: flex;
-  justify-content: space-evenly;
+  // justify-content: space-evenly;
   .topo-nav,
   .nav-contato {
     display: flex;
     height: 10vh;
-    justify-content: space-evenly;
+    // justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-bottom: 2%;
     // border-bottom: $borderStyle;
@@ -30,11 +31,12 @@ header {
   .navbar {
     @include flexCenter();
     // position: relative;
+    
     input {
       @include inputReset();
       height: 25px;
       margin-top: 37px;
-      margin-left: 35px;
+      margin-left: 50px;
       border: solid 1px rgb(214, 212, 212);
       border-radius: 4px;
     }
@@ -46,6 +48,7 @@ header {
 
   .logo {
     margin-top: 22px;
+    margin-right: 162px;
     font-family: $titleFont;
     text-transform: uppercase;
     background: rgb(0, 183, 255);
@@ -61,6 +64,30 @@ header {
     font-size: 1rem;
     margin-top: 40px;
     text-transform: uppercase;
+  }
+
+  .fa-shopping-cart {
+    margin-top: 35px;
+    margin-left: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    color: $mainBlue;
+    transition: 0.1s ease;
+    border-bottom: solid 2px $mainBlue;
+    &:hover{
+      color: $hoverBlue;
+      border-bottom: solid 2px $hoverBlue;
+    }
+  }
+
+  .searchNav {
+    position: relative;
+    i {
+      position: absolute;
+      top: 41px;
+      right: 5px;
+      color: #a8a6a6;
+    }
   }
 
 }
@@ -125,7 +152,7 @@ main {
   display: flex;
   /*Side menu*/
   .menu {
-    width: 235px;
+    width: 230px;
     height: 100%;
     background: rgb(251, 250, 250);
     border: $item-border;
@@ -177,15 +204,15 @@ main {
     grid-row-gap: 80px;
     border-left: $item-border;
     .item {
-      width: 235px;
-      height: 420px;
+      width: 211px;
+      height: 380px;
       padding: 6%;
       background-color: rgb(251, 250, 250);
       border: solid 1px rgb(207, 205, 205);
     }
 
     h3 {
-      font-size: 0.9em;
+      font-size: 0.8em;
       align-self: center;
     }
 
@@ -207,20 +234,31 @@ main {
       padding: 11px;
       width: 150px;
       margin-top: 10px;
-      margin-left: 15%;
+      margin-left: 18px;
       text-transform: uppercase;
+      transition: all 0.1s ease;
       color: #fdf5f5;
+      &:hover {
+        background: $hoverBlue;
+      }
     }
 
     p {
       @include flexCenter();
       margin-top: 5px;
+      font-size: 12px;
     }
 
     .parcela {
       // font-weight: bold;
       color: rgb(75, 74, 74);
       font-size: 0.9em;
+    }
+
+    .preco {
+      p{
+        font-size: 17px;
+      }
     }
   }
 
