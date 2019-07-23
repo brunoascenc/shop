@@ -148,7 +148,7 @@ function homeProd() {
            </span>
            <a class = "homeBtn11" href = "#">Comprar</a>
        </div>
-                 `;
+        `;
 
       document.addEventListener('click', e => {
         if (e.target.className === 'menorPreco') {
@@ -427,17 +427,222 @@ function homeProd() {
        </div>
           `;
           document.getElementById('destaques').innerHTML = maiorSaida;
-        }else if (e.target.className === 'branco'){
-          const cores = produtos.filter(p => {
-            if (p.cor === 'branco') {
-                return p
-            }
-            console.log(cores);
-            
-        })
+        }
+        /* COLORS FILTER  */
+       /***** */
+        else if (e.target.className === 'branco'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Branco'
+          })
+          let saida = ``
+          for(let i in cores ){
+           saida += `
+           <div class = "item">
+             <img src   = "${cores[i].imagem}">
+             <h3>${cores[i].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[i].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[i].parcela}</p>
+               </span>
+             <a class = "asusBtn2" href = "#">Comprar</a>
+           </div>
+           `
+          }
+          
+          document.getElementById('destaques').innerHTML = saida;
+        }
+        else if (e.target.className === 'dourado'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Dourado'
+          })
+          let saida = ``
+          for(let i in cores ){
+           saida += `
+           <div class = "item">
+             <img src   = "${cores[i].imagem}">
+             <h3>${cores[i].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[i].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[i].parcela}</p>
+               </span>
+             <a class = "asusBtn2" href = "#">Comprar</a>
+           </div>
+           `
+          }
+          
+          document.getElementById('destaques').innerHTML = saida;
+        }
+        else if (e.target.className === 'preto'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Preto'
+          })
+          let saida = ``
+           saida += `
+           <div class = "item">
+             <img src   = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[0].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[0].parcela}</p>
+               </span>
+             <a class = "homeBtn0" href = "#">Comprar</a>
+           </div>
 
+           <div class = "item">
+           <img src   = "${cores[1].imagem}">
+           <h3>${cores[1].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[1].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[1].parcela}</p>
+             </span>
+           <a class = "homeBtn2" href = "#">Comprar</a>
+         </div>
+
+         <div class = "item">
+         <img src   = "${cores[2].imagem}">
+         <h3>${cores[2].titulo}</h3>
+           <span class = "preco">
+             <p>R$ ${cores[2].preco} à vista</p>
+           </span>
+           <span class = "parcela">
+             <p>${cores[2].parcela}</p>
+           </span>
+          <a class = "homeBtn3" href = "#">Comprar</a>
+         </div>
+
+         <div class = "item">
+          <img src   = "${cores[3].imagem}">
+           <h3>${cores[3].titulo}</h3>
+           <span class = "preco">
+           <p>R$ ${cores[3].preco} à vista</p>
+           </span>
+           <span class = "parcela">
+           <p>${cores[3].parcela}</p>
+           </span>
+          <a class = "homeBtn7" href = "#">Comprar</a>
+          </div>
+
+          <div class = "item">
+           <img src   = "${cores[4].imagem}">
+            <h3>${cores[4].titulo}</h3>
+             <span class = "preco">
+              <p>R$ ${cores[4].preco} à vista</p>
+             </span>
+              <span class = "parcela">
+               <p>${cores[4].parcela}</p>
+              </span>
+             <a class = "homeBtn11" href = "#">Comprar</a>
+           </div>
+           `
+          
+          document.getElementById('destaques').innerHTML = saida;
+        }
+
+        else if (e.target.className === 'azul'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Azul'
+          })
+          let saida = ``
+          for(let i in cores ){
+           saida += `
+           <div class = "item">
+             <img src   = "${cores[i].imagem}">
+             <h3>${cores[i].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[i].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[i].parcela}</p>
+               </span>
+             <a class = "asusBtn2" href = "#">Comprar</a>
+           </div>
+           `
+          }
+          
+          document.getElementById('destaques').innerHTML = saida;
+        }
+
+        else if (e.target.className === 'cinza'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Cinza'
+          })
+          let saida = ``
+          for(let i in cores ){
+           saida += `
+           <div class = "item">
+             <img src   = "${cores[i].imagem}">
+             <h3>${cores[i].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[i].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[i].parcela}</p>
+               </span>
+             <a class = "homeBtn1" href = "#">Comprar</a>
+           </div>
+           `
+          }
+          
+          document.getElementById('destaques').innerHTML = saida;
+        }
+        else if (e.target.className === 'vermelho'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Vermelho'
+          })
+          let saida = ``
+          for(let i in cores ){
+           saida += `
+           <div class = "item">
+             <img src   = "${cores[i].imagem}">
+             <h3>${cores[i].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[i].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[i].parcela}</p>
+               </span>
+             <a class = "homeBtn10" href = "#">Comprar</a>
+           </div>
+           `
+          }
+          
+          document.getElementById('destaques').innerHTML = saida;
+        }
+
+        else if (e.target.className === 'verde'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Verde'
+          })
+          let saida = ``
+          for(let i in cores){
+           saida += `
+           <div class = "item">
+             <img src = "${cores[i].imagem}">
+             <h3>${cores[i].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[i].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[i].parcela}</p>
+               </span>
+             <a class = "homeBtn9" href = "#">Comprar</a>
+           </div>
+           `
+          }
+          
+          
+          document.getElementById('destaques').innerHTML = saida;
         }
       });
+
 
      
 
