@@ -428,28 +428,27 @@ function homeProd() {
           `;
           document.getElementById('destaques').innerHTML = maiorSaida;
         }
+        /******/
         /* COLORS FILTER  */
-       /***** */
+       /******/
         else if (e.target.className === 'branco'){
           let cores = produtos.filter(coresBranco => {
             return coresBranco.cor === 'Branco'
           })
           let saida = ``
-          for(let i in cores ){
            saida += `
            <div class = "item">
-             <img src   = "${cores[i].imagem}">
-             <h3>${cores[i].titulo}</h3>
+             <img src   = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
                <span class = "preco">
-                 <p>R$ ${cores[i].preco} à vista</p>
+                 <p>R$ ${cores[0].preco} à vista</p>
                </span>
                <span class = "parcela">
-                 <p>${cores[i].parcela}</p>
+                 <p>${cores[0].parcela}</p>
                </span>
              <a class = "asusBtn2" href = "#">Comprar</a>
            </div>
            `
-          }
           
           document.getElementById('destaques').innerHTML = saida;
         }
@@ -461,15 +460,15 @@ function homeProd() {
           for(let i in cores ){
            saida += `
            <div class = "item">
-             <img src   = "${cores[i].imagem}">
-             <h3>${cores[i].titulo}</h3>
+             <img src   = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
                <span class = "preco">
-                 <p>R$ ${cores[i].preco} à vista</p>
+                 <p>R$ ${cores[0].preco} à vista</p>
                </span>
                <span class = "parcela">
-                 <p>${cores[i].parcela}</p>
+                 <p>${cores[0].parcela}</p>
                </span>
-             <a class = "asusBtn2" href = "#">Comprar</a>
+             <a class = "homeBtn5" href = "#">Comprar</a>
            </div>
            `
           }
@@ -551,21 +550,19 @@ function homeProd() {
             return coresBranco.cor === 'Azul'
           })
           let saida = ``
-          for(let i in cores ){
            saida += `
            <div class = "item">
-             <img src   = "${cores[i].imagem}">
-             <h3>${cores[i].titulo}</h3>
+             <img src   = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
                <span class = "preco">
-                 <p>R$ ${cores[i].preco} à vista</p>
+                 <p>R$ ${cores[0].preco} à vista</p>
                </span>
                <span class = "parcela">
-                 <p>${cores[i].parcela}</p>
+                 <p>${cores[0].parcela}</p>
                </span>
              <a class = "asusBtn2" href = "#">Comprar</a>
            </div>
            `
-          }
           
           document.getElementById('destaques').innerHTML = saida;
         }
@@ -575,22 +572,20 @@ function homeProd() {
             return coresBranco.cor === 'Cinza'
           })
           let saida = ``
-          for(let i in cores ){
            saida += `
            <div class = "item">
-             <img src   = "${cores[i].imagem}">
-             <h3>${cores[i].titulo}</h3>
+             <img src   = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
                <span class = "preco">
-                 <p>R$ ${cores[i].preco} à vista</p>
+                 <p>R$ ${cores[0].preco} à vista</p>
                </span>
                <span class = "parcela">
-                 <p>${cores[i].parcela}</p>
+                 <p>${cores[0].parcela}</p>
                </span>
              <a class = "homeBtn1" href = "#">Comprar</a>
            </div>
            `
-          }
-          
+
           document.getElementById('destaques').innerHTML = saida;
         }
         else if (e.target.className === 'vermelho'){
@@ -598,21 +593,20 @@ function homeProd() {
             return coresBranco.cor === 'Vermelho'
           })
           let saida = ``
-          for(let i in cores ){
            saida += `
            <div class = "item">
-             <img src   = "${cores[i].imagem}">
-             <h3>${cores[i].titulo}</h3>
+             <img src   = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
                <span class = "preco">
-                 <p>R$ ${cores[i].preco} à vista</p>
+                 <p>R$ ${cores[0].preco} à vista</p>
                </span>
                <span class = "parcela">
-                 <p>${cores[i].parcela}</p>
+                 <p>${cores[0].parcela}</p>
                </span>
              <a class = "homeBtn10" href = "#">Comprar</a>
            </div>
            `
-          }
+
           
           document.getElementById('destaques').innerHTML = saida;
         }
@@ -622,7 +616,6 @@ function homeProd() {
             return coresBranco.cor === 'Verde'
           })
           let saida = ``
-          for(let i in cores){
            saida += `
            <div class = "item">
              <img src = "${cores[i].imagem}">
@@ -635,10 +628,7 @@ function homeProd() {
                </span>
              <a class = "homeBtn9" href = "#">Comprar</a>
            </div>
-           `
-          }
-          
-          
+            `
           document.getElementById('destaques').innerHTML = saida;
         }
       });

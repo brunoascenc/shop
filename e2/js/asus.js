@@ -168,6 +168,83 @@ function asusProd() {
        `
        document.getElementById('destaquesAsus').innerHTML = maiorSaida
        }
+
+       else if (e.target.className === 'vermelho'){
+        let cores = produtosAsus.filter(coresBranco => {
+          return coresBranco.cor === 'Vermelho'
+        })
+        let saida = ``
+         saida += `
+         <div class = "item">
+           <img src   = "${cores[0].imagem}">
+           <h3>${cores[0].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[0].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[0].parcela}</p>
+             </span>
+           <a class = "asusBtn1" href = "#">Comprar</a>
+         </div>
+         `
+
+        
+        document.getElementById('destaquesAsus').innerHTML = saida;
+      }
+
+      else if (e.target.className === 'verde'){
+        let cores = produtosAsus.filter(coresBranco => {
+          return coresBranco.cor === 'Verde'
+        })
+        let saida = ``
+         saida += `
+         <div class = "item">
+           <img src = "${cores[0].imagem}">
+           <h3>${cores[0].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[0].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[0].parcela}</p>
+             </span>
+           <a class = "asusBtn0" href = "#">Comprar</a>
+         </div>
+          `
+        document.getElementById('destaquesAsus').innerHTML = saida;
+      }
+
+      else if (e.target.className === 'preto'){
+        let cores = produtosAsus.filter(coresBranco => {
+          return coresBranco.cor === 'Preto'
+        })
+        let saida = ``
+         saida += `
+         <div class = "item">
+           <img src = "${cores[0].imagem}">
+           <h3>${cores[0].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[0].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[0].parcela}</p>
+             </span>
+           <a class = "asusBtn2" href = "#">Comprar</a>
+         </div>
+
+         <div class = "item">
+           <img src = "${cores[1].imagem}">
+           <h3>${cores[1].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[1].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[1].parcela}</p>
+             </span>
+           <a class = "asusBtn3" href = "#">Comprar</a>
+         </div>
+          `
+        document.getElementById('destaquesAsus').innerHTML = saida;
+      }
     })
 
         //Product details

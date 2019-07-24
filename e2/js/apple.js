@@ -310,7 +310,132 @@ function appleProd() {
            </div>
             `
             document.getElementById('destaquesApple').innerHTML = maiorSaida
+          }
 
+          
+          /** COLORS FILTER  **/
+
+          else if (e.target.className === 'branco'){
+            let cores = produtos.filter(coresPrata => {
+              return coresPrata.cor === 'Prata'
+            })
+             let saida = ``
+             saida += `
+             <div class = "item">
+               <img src   = "${cores[0].imagem}">
+               <h3>${cores[0].titulo}</h3>
+                 <span class = "preco">
+                   <p>R$ ${cores[0].preco} à vista</p>
+                 </span>
+                 <span class = "parcela">
+                   <p>${cores[0].parcela}</p>
+                 </span>
+               <a class = "appleBtn2" href = "#">Comprar</a>
+             </div>
+             `
+            
+            document.getElementById('destaquesApple').innerHTML = saida;
+          }
+          else if (e.target.className === 'dourado'){
+            let cores = produtos.filter(coresBranco => {
+              return coresBranco.cor === 'Dourado'
+            })
+            let saida = ``
+             saida += `
+             <div class = "item">
+               <img src   = "${cores[0].imagem}">
+               <h3>${cores[0].titulo}</h3>
+                 <span class = "preco">
+                   <p>R$ ${cores[0].preco} à vista</p>
+                 </span>
+                 <span class = "parcela">
+                   <p>${cores[0].parcela}</p>
+                 </span>
+               <a class = "appleBtn4" href = "#">Comprar</a>
+             </div>
+             `
+            
+            document.getElementById('destaquesApple').innerHTML = saida;
+          }
+          else if (e.target.className === 'preto'){
+            let cores = produtos.filter(coresBranco => {
+              return coresBranco.cor === 'Preto'
+            })
+            let saida = ``
+             saida += `
+             <div class = "item">
+               <img src   = "${cores[0].imagem}">
+               <h3>${cores[0].titulo}</h3>
+                 <span class = "preco">
+                   <p>R$ ${cores[0].preco} à vista</p>
+                 </span>
+                 <span class = "parcela">
+                   <p>${cores[0].parcela}</p>
+                 </span>
+               <a class = "appleBtn7" href = "#">Comprar</a>
+             </div>
+             `
+            
+            document.getElementById('destaquesApple').innerHTML = saida;
+          }
+  
+          else if (e.target.className === 'cinza'){
+            let cores = produtos.filter(coresBranco => {
+              return coresBranco.cor === 'Cinza'
+            })
+            let saida = ``
+             saida += `
+             <div class = "item">
+               <img src  = "${cores[0].imagem}">
+               <h3>${cores[0].titulo}</h3>
+                 <span class = "preco">
+                   <p>R$ ${cores[0].preco} à vista</p>
+                 </span>
+                 <span class = "parcela">
+                   <p>${cores[0].parcela}</p>
+                 </span>
+               <a class = "appleBtn0" href = "#">Comprar</a>
+             </div>
+
+             <div class = "item">
+             <img src  = "${cores[1].imagem}">
+             <h3>${cores[1].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[1].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[1].parcela}</p>
+               </span>
+             <a class = "appleBtn1" href = "#">Comprar</a>
+           </div>
+
+           <div class = "item">
+           <img src  = "${cores[2].imagem}">
+           <h3>${cores[2].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[2].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[2].parcela}</p>
+             </span>
+           <a class = "appleBtn3" href = "#">Comprar</a>
+         </div>
+
+         <div class = "item">
+         <img src  = "${cores[3].imagem}">
+         <h3>${cores[3].titulo}</h3>
+           <span class = "preco">
+             <p>R$ ${cores[3].preco} à vista</p>
+           </span>
+           <span class = "parcela">
+             <p>${cores[3].parcela}</p>
+           </span>
+         <a class = "appleBtn6" href = "#">Comprar</a>
+       </div>
+            `
+            
+            
+            document.getElementById('destaquesApple').innerHTML = saida;
           }
         })          
   

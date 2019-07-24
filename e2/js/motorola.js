@@ -312,6 +312,122 @@ function motoProd() {
         `
         document.getElementById('destaquesMoto').innerHTML = maiorSaida
        }
+
+       else if (e.target.className === 'preto'){
+        let cores = produtos.filter(coresBranco => {
+          return coresBranco.cor === 'Preto'
+        })
+        let saida = ``
+         saida += `
+         <div class = "item">
+           <img src   = "${cores[0].imagem}">
+           <h3>${cores[0].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[0].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[0].parcela}</p>
+             </span>
+           <a class = "motoBtn0" href = "#">Comprar</a>
+         </div>
+
+         <div class = "item">
+         <img src   = "${cores[1].imagem}">
+         <h3>${cores[1].titulo}</h3>
+           <span class = "preco">
+             <p>R$ ${cores[1].preco} à vista</p>
+           </span>
+           <span class = "parcela">
+             <p>${cores[1].parcela}</p>
+           </span>
+         <a class = "motoBtn1" href = "#">Comprar</a>
+       </div>
+
+       <div class = "item">
+        <img src   = "${cores[2].imagem}">
+        <h3>${cores[2].titulo}</h3>
+         <span class = "preco">
+           <p>R$ ${cores[2].preco} à vista</p>
+         </span>
+         <span class = "parcela">
+           <p>${cores[2].parcela}</p>
+          </span>
+         <a class = "motoBtn2" href = "#">Comprar</a>
+       </div>
+
+       <div class = "item">
+       <img src   = "${cores[3].imagem}">
+       <h3>${cores[3].titulo}</h3>
+        <span class = "preco">
+          <p>R$ ${cores[3].preco} à vista</p>
+        </span>
+        <span class = "parcela">
+          <p>${cores[3].parcela}</p>
+         </span>
+        <a class = "motoBtn3" href = "#">Comprar</a>
+      </div>
+
+      <div class = "item">
+      <img src   = "${cores[4].imagem}">
+      <h3>${cores[4].titulo}</h3>
+       <span class = "preco">
+         <p>R$ ${cores[4].preco} à vista</p>
+       </span>
+       <span class = "parcela">
+         <p>${cores[4].parcela}</p>
+        </span>
+       <a class = "motoBtn4" href = "#">Comprar</a>
+     </div>
+
+     <div class = "item">
+     <img src   = "${cores[5].imagem}">
+     <h3>${cores[5].titulo}</h3>
+      <span class = "preco">
+        <p>R$ ${cores[5].preco} à vista</p>
+      </span>
+      <span class = "parcela">
+        <p>${cores[5].parcela}</p>
+       </span>
+      <a class = "motoBtn6" href = "#">Comprar</a>
+    </div>
+
+    <div class = "item">
+    <img src   = "${cores[6].imagem}">
+    <h3>${cores[6].titulo}</h3>
+     <span class = "preco">
+       <p>R$ ${cores[6].preco} à vista</p>
+     </span>
+     <span class = "parcela">
+       <p>${cores[6].parcela}</p>
+      </span>
+     <a class = "motoBtn7" href = "#">Comprar</a>
+   </div>
+         `
+        
+        document.getElementById('destaquesMoto').innerHTML = saida;
+      }
+
+      else if (e.target.className === 'cinza'){
+        let cores = produtos.filter(coresBranco => {
+          return coresBranco.cor === 'Platinum'
+        })
+        let saida = ``
+         saida += `
+         <div class = "item">
+           <img src  = "${cores[0].imagem}">
+           <h3>${cores[0].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[0].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[0].parcela}</p>
+             </span>
+           <a class = "motoBtn5" href = "#">Comprar</a>
+         </div>
+        `  
+        document.getElementById('destaquesMoto').innerHTML = saida;
+      }
+
      })
 
 

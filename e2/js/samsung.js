@@ -312,6 +312,142 @@ function samsungProd() {
                `;
           document.getElementById('destaquesSam').innerHTML = maiorSaida;
         }
+
+        else if (e.target.className === 'preto'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Preto'
+          })
+          console.log(cores)
+          let saida = ``
+           saida += `
+           <div class = "item">
+             <img src = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[0].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[0].parcela}</p>
+               </span>
+             <a class = "samsungBtn0" href = "#">Comprar</a>
+           </div>
+  
+           <div class = "item">
+             <img src = "${cores[1].imagem}">
+             <h3>${cores[1].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[1].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[1].parcela}</p>
+               </span>
+             <a class = "samsungBtn1" href = "#">Comprar</a>
+           </div>
+            `
+          document.getElementById('destaquesSam').innerHTML = saida;
+        }
+
+        else if (e.target.className === 'azul'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Azul'
+          })
+          console.log(cores)
+          let saida = ``
+           saida += `
+           <div class = "item">
+             <img src = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[0].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[0].parcela}</p>
+               </span>
+             <a class = "samsungBtn6" href = "#">Comprar</a>
+           </div>
+            `
+          document.getElementById('destaquesSam').innerHTML = saida;
+        }
+
+        else if (e.target.className === 'branco'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Branco'
+          })
+          console.log(cores)
+          let saida = ``
+           saida += `
+           <div class = "item">
+             <img src = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[0].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[0].parcela}</p>
+               </span>
+             <a class = "samsungBtn7" href = "#">Comprar</a>
+           </div>
+            `
+          document.getElementById('destaquesSam').innerHTML = saida;
+        }
+
+        else if (e.target.className === 'dourado'){
+          let cores = produtos.filter(coresBranco => {
+            return coresBranco.cor === 'Dourado'
+          })
+          console.log(cores)
+          let saida = ``
+           saida += `
+           <div class = "item">
+             <img src = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
+               <span class = "preco">
+                 <p>R$ ${cores[0].preco} à vista</p>
+               </span>
+               <span class = "parcela">
+                 <p>${cores[0].parcela}</p>
+               </span>
+             <a class = "samsungBtn0" href = "#">Comprar</a>
+           </div>
+
+           <div class = "item">
+           <img src = "${cores[1].imagem}">
+           <h3>${cores[1].titulo}</h3>
+             <span class = "preco">
+               <p>R$ ${cores[1].preco} à vista</p>
+             </span>
+             <span class = "parcela">
+               <p>${cores[1].parcela}</p>
+             </span>
+           <a class = "samsungBtn3" href = "#">Comprar</a>
+         </div>
+
+         <div class = "item">
+         <img src = "${cores[2].imagem}">
+         <h3>${cores[2].titulo}</h3>
+           <span class = "preco">
+             <p>R$ ${cores[2].preco} à vista</p>
+           </span>
+           <span class = "parcela">
+             <p>${cores[2].parcela}</p>
+           </span>
+         <a class = "samsungBtn4" href = "#">Comprar</a>
+       </div>
+
+       <div class = "item">
+       <img src = "${cores[3].imagem}">
+       <h3>${cores[3].titulo}</h3>
+         <span class = "preco">
+           <p>R$ ${cores[3].preco} à vista</p>
+         </span>
+         <span class = "parcela">
+           <p>${cores[3].parcela}</p>
+         </span>
+       <a class = "samsungBtn5" href = "#">Comprar</a>
+     </div>
+            `
+          document.getElementById('destaquesSam').innerHTML = saida;
+        }
       });
 
       //Product details
