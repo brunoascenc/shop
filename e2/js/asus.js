@@ -9,6 +9,9 @@ function asusProd() {
         `;
   
         output += `
+        <div class = "itemBanner">
+          <img src = "https://www.celulardireto.com.br/wp-content/uploads/2019/04/Asus-ZenFone-5Z.jpg">
+        </div>
         <div class = "item">
         <img src   = "${produtosAsus[0].imagem}">
         <h3>${produtosAsus[0].titulo}</h3>
@@ -254,7 +257,6 @@ function asusProd() {
             e.target.className == 'zenfone4'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -370,7 +372,6 @@ function asusProd() {
             e.target.className == 'zenfone4pro'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -485,7 +486,6 @@ function asusProd() {
             e.target.className == 'zenfone3'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -600,7 +600,6 @@ function asusProd() {
             e.target.className == 'zenfone4max'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `

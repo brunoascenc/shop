@@ -8,6 +8,9 @@ function appleProd() {
         let output = `
            `;
         output += `
+         <div class = "itemBanner">
+           <img src = "https://novemberfive.co/images/blog/apple-september-iphoneX-apps/u_img_header.jpg">
+         </div>
                <div class = "item">
                <img src   = "${produtos[0].imagem}">
                   <h3>${produtos[0].titulo}</h3>
@@ -443,7 +446,6 @@ function appleProd() {
         document.addEventListener('click', e => {
           if (e.target.className == 'appleBtn0') {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -558,7 +560,6 @@ function appleProd() {
             e.target.className == 'iphone6s'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -670,7 +671,6 @@ function appleProd() {
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'appleBtn2') {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -785,7 +785,6 @@ function appleProd() {
             e.target.className == 'iphone5s'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -900,7 +899,6 @@ function appleProd() {
             e.target.className == 'iphone5sGold'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -1015,7 +1013,6 @@ function appleProd() {
             e.target.className == 'iphone5c'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -1130,7 +1127,6 @@ function appleProd() {
             e.target.className == 'iphone6Splus'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -1242,7 +1238,6 @@ function appleProd() {
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'appleBtn7') {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `

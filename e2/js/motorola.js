@@ -9,6 +9,9 @@ function motoProd() {
         `;
   
         output += `
+        <div class = "itemBanner">
+          <img src = "https://4.bp.blogspot.com/-uYsnKoHPUow/WagNrUkOnMI/AAAAAAAA2Qw/eMNDHMyoFyUjQD-l2ipDK0sA0AnSRPAdwCLcBGAs/s1600/motox4banner.png">
+        </div>
         <div class = "item">
         <img src   = "${produtos[0].imagem}">
         <h3>${produtos[0].titulo}</h3>
@@ -435,7 +438,6 @@ function motoProd() {
         document.addEventListener('click', e => {
           if (e.target.className == 'motoBtn0') {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -547,7 +549,6 @@ function motoProd() {
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'motoBtn1') {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -662,7 +663,6 @@ function motoProd() {
             e.target.className == 'motoG3'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -777,7 +777,6 @@ function motoProd() {
             e.target.className == 'motoZ'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -892,7 +891,6 @@ function motoProd() {
             e.target.className == 'motoX4'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -1004,7 +1002,6 @@ function motoProd() {
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'motoBtn5') {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -1119,7 +1116,6 @@ function motoProd() {
             e.target.className == 'motoX2'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `
@@ -1234,7 +1230,6 @@ function motoProd() {
             e.target.className == 'motoG6'
           ) {
             menuDiv.style.display = 'none';
-            bannerDiv.style.display = 'none';
             compraDiv.style.display = 'block';
   
             let saida = `

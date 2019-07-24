@@ -8,6 +8,9 @@ function samsungProd() {
       let output = `
         `;
       output += `
+      <div class = "itemBanner">
+        <img src = "https://soundmachine.com.mt/wp-content/uploads/2019/02/SM_Jan_Small_Banners_Mob.jpg">
+      </div>
                   <div class = "item">
                   <img src   = "${produtos[0].imagem}">
                   <h3>${produtos[0].titulo}</h3>
@@ -329,7 +332,7 @@ function samsungProd() {
                <span class = "parcela">
                  <p>${cores[0].parcela}</p>
                </span>
-             <a class = "samsungBtn0" href = "#">Comprar</a>
+             <a class = "samsungBtn1" href = "#">Comprar</a>
            </div>
   
            <div class = "item">
@@ -341,7 +344,7 @@ function samsungProd() {
                <span class = "parcela">
                  <p>${cores[1].parcela}</p>
                </span>
-             <a class = "samsungBtn1" href = "#">Comprar</a>
+             <a class = "samsungBtn2" href = "#">Comprar</a>
            </div>
             `
           document.getElementById('destaquesSam').innerHTML = saida;
@@ -457,7 +460,6 @@ function samsungProd() {
           e.target.className == 'galaxyJ5'
         ) {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -569,7 +571,6 @@ function samsungProd() {
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'samsungBtn1') {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -684,7 +685,6 @@ function samsungProd() {
           e.target.className == 'galaxys6edge'
         ) {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -796,7 +796,6 @@ function samsungProd() {
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'samsungBtn3') {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -911,7 +910,6 @@ function samsungProd() {
           e.target.className == 'galaxyA7'
         ) {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -1026,7 +1024,6 @@ function samsungProd() {
           e.target.className == 'galaxyA5'
         ) {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -1141,7 +1138,6 @@ function samsungProd() {
           e.target.className == 'galaxys9'
         ) {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
 
           let saida = `
@@ -1251,7 +1247,6 @@ function samsungProd() {
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'samsungBtn7') {
           menuDiv.style.display = 'none';
-          bannerDiv.style.display = 'none';
           compraDiv.style.display = 'block';
   
           let saida = `

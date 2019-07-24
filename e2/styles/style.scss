@@ -14,9 +14,7 @@ body {
 /* Nav*/
 header {
   height: 9vh;
-  // padding: 0 4%;
-  // display: flex;
-  // justify-content: space-evenly;
+  // border-bottom: solid 1px rgb(227, 227, 230);
   .topo-nav,
   .nav-contato {
     display: flex;
@@ -25,7 +23,8 @@ header {
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
-    // border-bottom: $borderStyle;
+    border-bottom: $borderStyle;
+    background: #fdfcfc;
   }
 
   .navbar {
@@ -37,8 +36,10 @@ header {
       height: 25px;
       margin-top: 37px;
       margin-left: 50px;
-      border: solid 1px rgb(214, 212, 212);
+      border: solid 1px rgb(240, 237, 237);
+      border-bottom: solid 3px rgb(228, 228, 228);
       border-radius: 4px;
+      background: #faf9f9;
     }
   }
 
@@ -64,6 +65,12 @@ header {
     font-size: 1rem;
     margin-top: 40px;
     text-transform: uppercase;
+    color: #6b6969;
+    // font-weight: bold;
+    transition: 0.1s ease;
+    &:hover {
+      color: #4395bb;
+    }
   }
 
   .fa-shopping-cart {
@@ -86,7 +93,7 @@ header {
       position: absolute;
       top: 41px;
       right: 5px;
-      color: #a8a6a6;
+      color: #ccc9c9;
     }
   }
 
@@ -150,6 +157,7 @@ header {
 /*Conteudo*/
 main {
   display: flex;
+  margin-top: 25px;
   /*Side menu*/
   .menu {
     width: 230px;
@@ -157,7 +165,8 @@ main {
     background: rgb(251, 250, 250);
     border: $item-border;
     border-right: none;
-    border-top: none;
+    margin-bottom: 200px;
+    // border-top: none;
     padding: 0 26px 12px;
     .menu-items {
       @include flexCenter();
@@ -232,7 +241,7 @@ main {
   #destaquesAsus {
     display: grid;
     margin-left: 0%;
-    padding: 12px;
+    padding: 0 12px 25px ;
     grid-template-columns: repeat(4, 200px);
     grid-column-gap: 45px;
     grid-row-gap: 80px;
@@ -243,6 +252,16 @@ main {
       padding: 6%;
       background-color: rgb(251, 250, 250);
       border: solid 1px rgb(207, 205, 205);
+    }
+    .itemBanner {
+      display: grid;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      img {
+        max-width: 100%;
+        height: 100%;
+        border: $item-border
+      }
     }
 
     h3 {
@@ -340,13 +359,14 @@ main {
   }
 }
 /*Conteudo end*/
+
+/*Contato*/
 .contato-form {
   display: flex;
   grid-template-columns: 1fr 1fr;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 25px;
-  // background: rgb(247, 248, 248);
   padding: 6%;
   margin-left: 0;
   h2 {
@@ -363,7 +383,12 @@ main {
     margin-top: 4px;
     outline: none;
     width: 450px;
+    border-radius: 4px;
+    border: none;
+    border-bottom: solid 3px rgb(208, 213, 216);
+    background: rgb(241, 240, 240);
   }
+
   button {
     @include btnReset();
     text-transform: uppercase;
@@ -379,6 +404,7 @@ main {
     width: 60%;
     align-items: center;
     border: $borderStyle;
+    background: rgb(250, 249, 249);
     padding: 3%;
     margin-left: 5px;
     .endereco {
@@ -387,6 +413,7 @@ main {
     p {
       margin-top: 5px;
       width: 90%;
+      color: #3a3939;
     }
   }
 }
@@ -410,6 +437,7 @@ footer {
   border-top: $item-border;
   background: #f6f5f5;
   height: 40vh;
+  // margin-top: 25px;
   justify-content: space-around;
 
   .info {
@@ -442,16 +470,19 @@ footer {
       input {
         width: 122%;
         height: 27px;
-        padding: 2px;
+        padding: 4px;
         outline: none;
         border-radius: 4px;
-        border: solid 2px #ccc;
+        border: solid 1px rgb(248, 242, 242);
+        border-bottom: solid 3px rgb(211, 209, 209);
+        border-radius: 4px;
+        background: #e9e8e8;
       }
 
       button {
         @include btnReset();
         margin-top: 2px;
-        width: 122%;
+        width: 121%;
         height: 25px;
         text-transform: uppercase;
         font-weight: bold;
@@ -616,24 +647,32 @@ footer {
   a {
     @include linksReset();
     text-transform: uppercase;
-    color: #313030;
+    color: rgb(97, 97, 98);
+    // background: #2462e6;
+    font-size: 15px;
     position: absolute;
+    font-weight: bold;
     left: 200px;
     top: 100px;
-    border-bottom: solid 1px #6b6969;
+    border-bottom: solid 2px #949191;
   }
 }
-
+.itemBanner {
+  img {
+    width: 2500px !important;
+    height: 100%;
+  }
+}
 .opcoes {
   display: flex;
   margin-left: 56px;
   width: 91.4%;
   justify-content: center;
-  background: rgb(251, 250, 250);
-  border: $borderStyle;
+  background: rgb(253, 253, 253);
+  border: $item-border;
   padding: 28px;
   img{
-    border: solid 1px rgb(195, 193, 193);
+    // border: solid 1px rgb(190, 190, 190);
     padding: 4px;
   }
 
@@ -676,8 +715,8 @@ footer {
     margin-left: 20px;
     height: 95%;
     width: 90%;
-    border: $borderStyle;
-    background: #faf8f8;
+    // border: $borderStyle;
+    // background: #faf8f8;
     padding: 28px;
     .buttonsPag {
       display: flex;
@@ -741,20 +780,20 @@ footer {
   }
 }
 
-.fichaTectr:nth-child(odd) {
-  background: #f8f6f6;
+.fichaTec tr:nth-child(odd) {
+  background: #f5f4f4;
 }
 .fichaTec tr:nth-child(even) {
-  background: rgb(230, 229, 229);
+  background: #eeecec;
 }
 
 th {
   display: flex;
-  background: #f1efef;
+  background: #f6f4f4;
   padding: 6px;
   text-transform: uppercase;
   font-family: $titleFont;
-  color: #444040;
+  color: #535050;
   // align-self: center;
 }
 
