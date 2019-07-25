@@ -70,7 +70,7 @@ header #main {
 
 header .logo {
   margin-top: 22px;
-  margin-right: 162px;
+  margin-right: 210px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
   background: #00b7ff;
@@ -236,11 +236,13 @@ main .menu .menu-items a {
   color: #3b3b3b;
   margin-top: 11px;
   font-size: 16px;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
 }
 
 main .menu .menu-items li:hover,
 main .menu .menu-items a:hover {
-  color: #00b7ff;
+  color: #0d9cd4;
 }
 
 main .menu .menu-items input {
@@ -345,7 +347,7 @@ main #destaquesAsus {
   -ms-grid-columns: (200px)[4];
       grid-template-columns: repeat(4, 200px);
   grid-column-gap: 45px;
-  grid-row-gap: 80px;
+  grid-row-gap: 35px;
   border-left: solid 1px #c3c1c1;
 }
 
@@ -620,6 +622,25 @@ main .organizar .fa-search {
   color: #3a3939;
 }
 
+.contato-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contato-title h1 {
+  background: #0d9cd4;
+  margin-top: 45px;
+  margin-bottom: -55px;
+  font-family: "Noto Sans KR", sans-serif;
+  text-transform: uppercase;
+  padding: 4px;
+  color: #f8f5f5;
+}
+
 .pagamento {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -633,19 +654,19 @@ main .organizar .fa-search {
 }
 
 .pagamento img {
-  margin-left: 65px;
+  padding: 0 45px;
 }
 
 /* Footer */
 footer {
-  padding: 0% 12%;
+  padding: 0 12%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-top: solid 1px #c3c1c1;
-  background: #f6f5f5;
+  background: #fdfcfc;
   height: 40vh;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -662,6 +683,11 @@ footer .info a {
   color: #3b3b3b;
   font-size: 0.9em;
   color: #3f3e3e;
+}
+
+footer .info li:hover,
+footer .info a:hover {
+  color: #2462e6;
 }
 
 footer .info h4 {
@@ -710,13 +736,12 @@ footer .newsletter .email h5 {
 footer .newsletter .email input {
   width: 122%;
   height: 27px;
-  padding: 4px;
+  padding: 16px;
   outline: none;
   border-radius: 4px;
-  border: solid 1px #f8f2f2;
-  border-bottom: solid 3px #d3d1d1;
-  border-radius: 4px;
-  background: #e9e8e8;
+  border: none;
+  border-bottom: solid 3px #d1d3d4;
+  background: #e7e5e5;
 }
 
 footer .newsletter .email button {
@@ -744,6 +769,7 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #3b3b3b;
 }
 
 /* Footer end */
@@ -931,6 +957,7 @@ footer .copyright {
 }
 
 /*Modal end*/
+/*BUY SECTION*/
 #finalizarCompra {
   padding: 4%;
 }
@@ -946,7 +973,7 @@ footer .copyright {
   font-weight: bold;
   left: 200px;
   top: 100px;
-  border-bottom: solid 2px #949191;
+  border-bottom: solid 1px #e0dfdf;
 }
 
 .itemBanner img {
@@ -964,7 +991,7 @@ footer .copyright {
       -ms-flex-pack: center;
           justify-content: center;
   background: #fdfdfd;
-  border: solid 1px #c3c1c1;
+  border: solid 1px #e0dddd;
   padding: 28px;
 }
 
@@ -1026,6 +1053,7 @@ footer .copyright {
   margin-left: 20px;
   height: 95%;
   width: 90%;
+  border: solid 1px #e0dfdf;
   padding: 28px;
 }
 
@@ -1050,6 +1078,7 @@ footer .copyright {
   cursor: pointer;
   color: #5d5c5c;
   background: transparent;
+  border-radius: 2px;
 }
 
 .opcoes .detalhes-pag .buttonsPag button:first-child {
@@ -1062,6 +1091,12 @@ footer .copyright {
   font-size: 20px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
+  -webkit-transition: 0.1s ease;
+  transition: 0.1s ease;
+}
+
+.opcoes .detalhes-pag .buttonsPag button:first-child:hover {
+  background: #4fc8f8;
 }
 
 .opcoes .card-nav {
@@ -1073,7 +1108,7 @@ footer .copyright {
 .opcoes .card-nav img {
   margin-top: 6px;
   width: 80px;
-  border: solid 1px #c3c1c1;
+  border: solid 1px #cfcdcd;
   cursor: pointer;
 }
 
@@ -1986,5 +2021,127 @@ th {
 
 img {
   max-width: 100% !important;
+}
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+@media (max-width: 1250px) {
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
+    -ms-grid-columns: (200px)[3] !important;
+        grid-template-columns: repeat(3, 200px) !important;
+  }
+  header .logo {
+    margin-right: 43px;
+  }
+  header li,
+  header a {
+    margin-left: 12px;
+    font-size: 14.6px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .navbar, .login {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1000px) {
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
+    -ms-grid-columns: (200px)[2] !important;
+        grid-template-columns: repeat(2, 200px) !important;
+  }
+  header {
+    position: relative;
+  }
+  header .logo {
+    margin-left: 245px;
+  }
+  header li,
+  header a {
+    margin-left: 12px;
+    font-size: 14.6px;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu {
+    display: none;
+  }
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
+    -ms-grid-columns: (200px)[2] !important;
+        grid-template-columns: repeat(2, 200px) !important;
+    border-left: none !important;
+  }
+  .navbar, .login {
+    display: none !important;
+  }
+  .logo {
+    margin-left: 0 !important;
+    margin-right: 330px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
+    -ms-grid-columns: (200px)[1] !important;
+        grid-template-columns: repeat(1, 200px) !important;
+  }
+  main {
+    margin-right: 75px;
+  }
+  .item {
+    width: 280px !important;
+    height: 420px !important;
+  }
+  .item h3 {
+    font-size: 15px !important;
+  }
+  .item p {
+    font-size: 15px !important;
+  }
+  .item a {
+    margin-left: 51px !important;
+  }
+  .item img {
+    margin-left: 18px;
+  }
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    padding: 4%;
+  }
+  footer .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

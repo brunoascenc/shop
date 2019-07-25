@@ -49,7 +49,7 @@ header {
 
   .logo {
     margin-top: 22px;
-    margin-right: 162px;
+    margin-right: 210px;
     font-family: $titleFont;
     text-transform: uppercase;
     background: rgb(0, 183, 255);
@@ -184,8 +184,9 @@ main {
         @include linksReset();
         margin-top: 11px;
         font-size: 16px;
+        transition: 0.1s ease;
         &:hover {
-          color: rgb(0, 183, 255);
+          color: #0d9cd4;
         }
       }
       input {
@@ -244,7 +245,7 @@ main {
     padding: 0 12px 25px ;
     grid-template-columns: repeat(4, 200px);
     grid-column-gap: 45px;
-    grid-row-gap: 80px;
+    grid-row-gap: 35px;
     border-left: $item-border;
     .item {
       width: 211px;
@@ -417,6 +418,19 @@ main {
     }
   }
 }
+.contato-title {
+  display: flex;
+  justify-content: center;
+  h1{
+    background: $mainBlue;
+    margin-top: 45px;
+    margin-bottom: -55px;
+    font-family: $titleFont;
+    text-transform: uppercase;
+    padding: 4px;
+    color: #f8f5f5;
+  }
+ }
 
 .pagamento {
   display: flex;
@@ -425,17 +439,17 @@ main {
   margin-bottom: 35px;
   width: 100vw;
   img {
-    margin-left: 65px;
+    padding: 0 45px;
   }
 }
 
 /* Footer */
 footer {
-  padding: 0% 12%;
+  padding: 0 12%;
   display: flex;
   flex-wrap: wrap;
   border-top: $item-border;
-  background: #f6f5f5;
+  background: #fdfcfc;
   height: 40vh;
   // margin-top: 25px;
   justify-content: space-around;
@@ -447,6 +461,9 @@ footer {
       @include linksReset();
       font-size: 0.9em;
       color: #3f3e3e;
+      &:hover{
+        color: #2462e6;
+      }
     }
     h4 {
       text-transform: uppercase;
@@ -470,13 +487,12 @@ footer {
       input {
         width: 122%;
         height: 27px;
-        padding: 4px;
+        padding: 16px;
         outline: none;
         border-radius: 4px;
-        border: solid 1px rgb(248, 242, 242);
-        border-bottom: solid 3px rgb(211, 209, 209);
-        border-radius: 4px;
-        background: #e9e8e8;
+        border: none;
+        border-bottom: solid 3px rgb(209, 211, 212);
+        background: rgb(231, 229, 229);
       }
 
       button {
@@ -495,6 +511,7 @@ footer {
     width: 100%;
     justify-content: center;
     align-items: center;
+    color: #3b3b3b;
   }
 }
 /* Footer end */
@@ -640,9 +657,8 @@ footer {
 }
 /*Modal end*/
 
-//compra section
+/*BUY SECTION*/
 #finalizarCompra {
-  // justify-content: ;
   padding: 4%;
   a {
     @include linksReset();
@@ -654,7 +670,7 @@ footer {
     font-weight: bold;
     left: 200px;
     top: 100px;
-    border-bottom: solid 2px #949191;
+    border-bottom: $borderStyle;
   }
 }
 .itemBanner {
@@ -669,7 +685,7 @@ footer {
   width: 91.4%;
   justify-content: center;
   background: rgb(253, 253, 253);
-  border: $item-border;
+  border: solid 1px rgb(224, 221, 221);
   padding: 28px;
   img{
     // border: solid 1px rgb(190, 190, 190);
@@ -715,7 +731,7 @@ footer {
     margin-left: 20px;
     height: 95%;
     width: 90%;
-    // border: $borderStyle;
+    border: $borderStyle;
     // background: #faf8f8;
     padding: 28px;
     .buttonsPag {
@@ -732,6 +748,7 @@ footer {
         cursor: pointer;
         color: #5d5c5c;
         background: transparent;
+        border-radius: 2px;
       }
       button:first-child {
         padding: 11px;
@@ -743,6 +760,10 @@ footer {
         font-size: 20px;
         font-family: $titleFont;
         text-transform: uppercase;
+        transition: 0.1s ease;
+        &:hover{
+          background: $hoverBlue;
+        }
       }
     }
   }
@@ -753,7 +774,7 @@ footer {
     img{
       margin-top: 6px;
       width: 80px;
-      border: solid 1px rgb(195, 193, 193);
+      border: solid 1px rgb(207, 205, 205);
       cursor: pointer;
     }
     img:nth-child(2), img:nth-child(3){
@@ -1180,4 +1201,129 @@ th {
 
 img{
   max-width: 100% !important;
+}
+
+
+
+/*****************/
+/* MEDIA QUERIES */
+/*****************/
+@media (max-width: 1250px){
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus{
+    grid-template-columns: repeat(3,200px) !important;
+  }
+
+  header {
+    .logo {
+      margin-right: 43px;;
+    }
+  
+    li,
+    a {
+      margin-left: 12px;
+      font-size: 14.6px;
+    }
+  }
+}
+
+@media (max-width: 1100px){
+  .navbar, .login {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 1000px){
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus{
+    grid-template-columns: repeat(2,200px) !important;
+  }
+
+  header {
+    position: relative;
+    .logo {
+      margin-left: 245px;
+      // position: absolute;
+      // top: 8px;
+      // left: 150px;
+    }
+  
+    li,
+    a {
+      margin-left: 12px;
+      font-size: 14.6px;
+    }
+  }
+}
+
+@media (max-width: 750px){
+  .menu {
+    display: none;
+  }
+
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus{
+    grid-template-columns: repeat(2,200px) !important;
+    border-left: none !important;
+  }
+
+  .navbar, .login {
+    display: none !important;
+  }
+  .logo{
+    margin-left: 0 !important;
+    margin-right: 330px !important;
+  }
+}
+
+@media (max-width: 500px){
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus{
+    grid-template-columns: repeat(1,200px) !important;
+  }
+
+  main {
+    margin-right: 75px;
+  }
+
+  .item {
+    width: 280px !important;
+    height: 420px !important;
+    h3{
+      font-size: 15px !important;
+    }
+    p{
+      font-size: 15px !important;
+    }
+    a{
+      margin-left: 51px !important; 
+    }
+    img {
+      margin-left: 18px;
+    }
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+    padding: 4%;
+    .info{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
