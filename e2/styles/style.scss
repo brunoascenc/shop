@@ -18,8 +18,8 @@ header {
   .topo-nav,
   .nav-contato {
     display: flex;
-    height: 10vh;
-    // justify-content: space-evenly;
+    height: 85px;
+    // justify-content: space-around;
     justify-content: center;
     align-items: center;
     margin-bottom: 2%;
@@ -35,7 +35,7 @@ header {
       @include inputReset();
       height: 25px;
       margin-top: 37px;
-      margin-left: 50px;
+      margin-left: 55px;
       border: solid 1px rgb(240, 237, 237);
       border-bottom: solid 3px rgb(228, 228, 228);
       border-radius: 4px;
@@ -48,8 +48,9 @@ header {
   }
 
   .logo {
-    margin-top: 22px;
-    margin-right: 210px;
+    margin-top: 15px;
+    margin-right: 200px;
+    margin-left: 12px;
     font-family: $titleFont;
     text-transform: uppercase;
     background: rgb(0, 183, 255);
@@ -87,14 +88,63 @@ header {
     }
   }
 
+  .login-link {
+    position: relative;
+    i{
+      cursor: pointer;
+      position: absolute;
+      top: 2px;
+      right: 54px;
+      color: rgb(128, 128, 128);
+    }
+  }
+
   .searchNav {
     position: relative;
+    // input{
+    //   // @include inputReset;
+    //   // border: $item-border;
+    //   // border-radius: 4px;
+    //   // padding: 7px 12px;
+    //   // width: 200px;
+    //   // margin-top: 30px;
+    //   // margin-left: -105px;
+    // }
     i {
       position: absolute;
-      top: 41px;
+      top: 40px;
       right: 5px;
       color: #ccc9c9;
     }
+  }
+
+  .show-menu-btn, .hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    &:hover{
+      color: $mainBlue;
+    }
+  }
+
+  .hide-menu-btn {
+    color: rgb(245, 244, 244);
+  }
+
+  .show-menu-btn{
+    // position: absolute;
+    // top: 0;
+    // right: 153px;
+    i{
+      line-height: 100px;
+    }
+  }
+
+  #check{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
   }
 
 }
@@ -102,7 +152,7 @@ header {
   position: fixed;
   width: 100%;
   background: #f6f4f4;
-  z-index: 1;
+  z-index: 100;
   transition: 0.5s;
   border-bottom: solid 1px rgb(224, 222, 222);
 }
@@ -115,7 +165,7 @@ header {
   background-color: white;
   animation: slide 12s infinite;
   height: 320px;
-  margin-top: 5px;
+  margin-top: 14px;
   position: relative;
   // background: url('https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000')
   //   no-repeat;
@@ -153,6 +203,14 @@ header {
   opacity: 0.8;
   cursor: pointer;
 }
+#check-menu {
+  visibility: hidden;
+  z-index: -1111;
+}
+.show-menu-item,.hide-menu-item {
+  display: none;
+  cursor: pointer;
+}
 
 /*Conteudo*/
 main {
@@ -175,7 +233,7 @@ main {
       h3 {
         margin-top: 15px;
         font-family: $titleFont;
-        color: rgb(62, 63, 63);
+        color: rgb(77, 77, 77);
         text-transform: uppercase;
       }
 
@@ -359,6 +417,7 @@ main {
     }
   }
 }
+
 /*Conteudo end*/
 
 /*Contato*/
@@ -1230,9 +1289,44 @@ img{
   }
 }
 
-@media (max-width: 1100px){
-  .navbar, .login {
-    visibility: hidden;
+@media (max-width: 1000px){
+  .show-menu-btn, .hide-menu-btn, .login{
+    display: block !important;
+  }
+  .navbar,.login {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: $mainBlue;
+    right: -100%;
+    top: 0;
+    transition: 0.7s;
+    z-index: 1;
+    #main {
+      display: flex;
+      flex-direction: column;
+      a{
+        color: rgb(245, 244, 244);
+        font-size: 17px;
+      }
+      .searchNav {
+        display: none;
+      }
+    }
+    .hide-menu-btn{
+      position: absolute;
+      top: 40px;
+      right: 40px;
+    }
+  }
+  .banner {
+    z-index: -1;
+  }
+  #check:checked ~ .navbar{
+    right: 0 !important;
+  }
+  .logo {
+    margin-right: 500px !important;
   }
 }
 
@@ -1243,15 +1337,17 @@ img{
   #destaquesSam,
   #destaquesAsus{
     grid-template-columns: repeat(2,200px) !important;
+    border-left: none !important;
+  }
+
+  .menu {
+    border-right: $item-border !important;
   }
 
   header {
-    position: relative;
+    // position: relative;
     .logo {
-      margin-left: 245px;
-      // position: absolute;
-      // top: 8px;
-      // left: 150px;
+      margin-right: 557px !important;
     }
   
     li,
@@ -1263,8 +1359,83 @@ img{
 }
 
 @media (max-width: 750px){
+  .show-menu-item, .hide-menu-item {
+    display: block !important;
+  }
+
   .menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100% !important;
+    background: #f4f5f5 !important;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+    input{
+      border: solid 2px #ccc !important;
+      border-radius: 4px;
+      width: 250px !important;
+    }
+    ul {
+      border-bottom: solid 1px rgb(219, 219, 221);
+      padding: 4px;
+    }
+    .cores-opcoes {
+      border-bottom: none;
+    }
+    .ordenar-menu {
+      position: relative;
+      i {
+        position: absolute;
+        top: 132px;
+        left: 230px;
+        color: #adadad;
+      }
+    }
+  }
+
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .show-menu-item{
+    display: flex;
+    background: #f8fafa;
+    border: solid 2px rgb(200, 199, 199);
+    border-radius: 4px;
+    padding: 10px;
+    width: 466px;
+    margin-bottom: 7px;
+    a{
+      color: #333333;
+    }
+    i{
+      margin-left: 365px;
+      color: rgb(141, 138, 138);
+      font-size: 18px;
+    }
+  }
+
+  #check-menu:checked ~ .menu{
+    left: 0 !important;
+  }
+
+  .hide-menu-item {
+    border-bottom: solid 2px rgb(219, 216, 216);
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+    a{
+      margin-left: 15px;
+      color: #464646;
+    }
+    i{
+      color: rgb(195, 193, 193);
+      font-size: 18px;
+    }
   }
 
   #destaques,
@@ -1272,17 +1443,20 @@ img{
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus{
-    grid-template-columns: repeat(2,200px) !important;
-    border-left: none !important;
+    grid-template-columns: repeat(2,1fr) !important;
   }
 
-  .navbar, .login {
-    display: none !important;
-  }
   .logo{
-    margin-left: 0 !important;
-    margin-right: 330px !important;
+    position: absolute;
+    // top: -15px;
+    left: 115px;
+    padding: 0 0px;
   }
+
+  // .show-menu-btn {
+  //   position: absolute;
+  //   right: 115px;
+  // }
 }
 
 @media (max-width: 500px){
@@ -1291,28 +1465,24 @@ img{
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus{
-    grid-template-columns: repeat(1,200px) !important;
-  }
-
-  main {
-    margin-right: 75px;
+    grid-template-columns: repeat(2,1fr) !important;
   }
 
   .item {
-    width: 280px !important;
-    height: 420px !important;
-    h3{
-      font-size: 15px !important;
-    }
-    p{
-      font-size: 15px !important;
-    }
-    a{
-      margin-left: 51px !important; 
-    }
-    img {
-      margin-left: 18px;
-    }
+    // width: 280px !important;
+    // height: 420px !important;
+    // h3{
+    //   font-size: 15px !important;
+    // }
+    // p{
+    //   font-size: 15px !important;
+    // }
+    // a{
+    //   margin-left: 51px !important; 
+    // }
+    // img {
+    //   margin-left: 18px;
+    // }
   }
 
   footer {

@@ -25,7 +25,7 @@ header .nav-contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 10vh;
+  height: 85px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -52,7 +52,7 @@ header .navbar input {
   padding: 5px;
   height: 25px;
   margin-top: 37px;
-  margin-left: 50px;
+  margin-left: 55px;
   border: solid 1px #f0eded;
   border-bottom: solid 3px #e4e4e4;
   border-radius: 4px;
@@ -69,8 +69,9 @@ header #main {
 }
 
 header .logo {
-  margin-top: 22px;
-  margin-right: 210px;
+  margin-top: 15px;
+  margin-right: 200px;
+  margin-left: 12px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
   background: #00b7ff;
@@ -114,22 +115,60 @@ header .fa-shopping-cart:hover {
   border-bottom: solid 2px #4fc8f8;
 }
 
+header .login-link {
+  position: relative;
+}
+
+header .login-link i {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 54px;
+  color: gray;
+}
+
 header .searchNav {
   position: relative;
 }
 
 header .searchNav i {
   position: absolute;
-  top: 41px;
+  top: 40px;
   right: 5px;
   color: #ccc9c9;
+}
+
+header .show-menu-btn, header .hide-menu-btn {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+header .show-menu-btn:hover, header .hide-menu-btn:hover {
+  color: #0d9cd4;
+}
+
+header .hide-menu-btn {
+  color: #f5f4f4;
+}
+
+header .show-menu-btn i {
+  line-height: 100px;
+}
+
+header #check {
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
 }
 
 .sticky-nav {
   position: fixed;
   width: 100%;
   background: #f6f4f4;
-  z-index: 1;
+  z-index: 100;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   border-bottom: solid 1px #e0dede;
@@ -146,7 +185,7 @@ header .searchNav i {
   -webkit-animation: slide 12s infinite;
           animation: slide 12s infinite;
   height: 320px;
-  margin-top: 5px;
+  margin-top: 14px;
   position: relative;
   background-size: cover;
 }
@@ -184,6 +223,16 @@ header .searchNav i {
   color: #ffffff;
   padding: 6px;
   opacity: 0.8;
+  cursor: pointer;
+}
+
+#check-menu {
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.show-menu-item, .hide-menu-item {
+  display: none;
   cursor: pointer;
 }
 
@@ -225,7 +274,7 @@ main .menu .menu-items {
 main .menu .menu-items h3 {
   margin-top: 15px;
   font-family: "Noto Sans KR", sans-serif;
-  color: #3e3f3f;
+  color: #4d4d4d;
   text-transform: uppercase;
 }
 
@@ -2045,9 +2094,50 @@ img {
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+  .show-menu-btn, .hide-menu-btn, .login {
+    display: block !important;
+  }
   .navbar, .login {
-    visibility: hidden;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: #0d9cd4;
+    right: -100%;
+    top: 0;
+    -webkit-transition: 0.7s;
+    transition: 0.7s;
+    z-index: 1;
+  }
+  .navbar #main, .login #main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar #main a, .login #main a {
+    color: #f5f4f4;
+    font-size: 17px;
+  }
+  .navbar #main .searchNav, .login #main .searchNav {
+    display: none;
+  }
+  .navbar .hide-menu-btn, .login .hide-menu-btn {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  .banner {
+    z-index: -1;
+  }
+  #check:checked ~ .navbar {
+    right: 0 !important;
+  }
+  .logo {
+    margin-right: 500px !important;
   }
 }
 
@@ -2059,12 +2149,13 @@ img {
   #destaquesAsus {
     -ms-grid-columns: (200px)[2] !important;
         grid-template-columns: repeat(2, 200px) !important;
+    border-left: none !important;
   }
-  header {
-    position: relative;
+  .menu {
+    border-right: solid 1px #c3c1c1 !important;
   }
   header .logo {
-    margin-left: 245px;
+    margin-right: 557px !important;
   }
   header li,
   header a {
@@ -2074,24 +2165,98 @@ img {
 }
 
 @media (max-width: 750px) {
+  .show-menu-item, .hide-menu-item {
+    display: block !important;
+  }
   .menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100% !important;
+    background: #f4f5f5 !important;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+  }
+  .menu input {
+    border: solid 2px #ccc !important;
+    border-radius: 4px;
+    width: 250px !important;
+  }
+  .menu ul {
+    border-bottom: solid 1px #dbdbdd;
+    padding: 4px;
+  }
+  .menu .cores-opcoes {
+    border-bottom: none;
+  }
+  .menu .ordenar-menu {
+    position: relative;
+  }
+  .menu .ordenar-menu i {
+    position: absolute;
+    top: 132px;
+    left: 230px;
+    color: #adadad;
+  }
+  .home-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .show-menu-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: #f8fafa;
+    border: solid 2px #c8c7c7;
+    border-radius: 4px;
+    padding: 10px;
+    width: 466px;
+    margin-bottom: 7px;
+  }
+  .show-menu-item a {
+    color: #333333;
+  }
+  .show-menu-item i {
+    margin-left: 365px;
+    color: #8d8a8a;
+    font-size: 18px;
+  }
+  #check-menu:checked ~ .menu {
+    left: 0 !important;
+  }
+  .hide-menu-item {
+    border-bottom: solid 2px #dbd8d8;
+    width: 100%;
+    padding: 6px;
+    margin-top: 15px;
+  }
+  .hide-menu-item a {
+    margin-left: 15px;
+    color: #464646;
+  }
+  .hide-menu-item i {
+    color: #c3c1c1;
+    font-size: 18px;
   }
   #destaques,
   #destaquesApple,
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus {
-    -ms-grid-columns: (200px)[2] !important;
-        grid-template-columns: repeat(2, 200px) !important;
-    border-left: none !important;
-  }
-  .navbar, .login {
-    display: none !important;
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
   }
   .logo {
-    margin-left: 0 !important;
-    margin-right: 330px !important;
+    position: absolute;
+    left: 115px;
+    padding: 0 0px;
   }
 }
 
@@ -2101,27 +2266,8 @@ img {
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus {
-    -ms-grid-columns: (200px)[1] !important;
-        grid-template-columns: repeat(1, 200px) !important;
-  }
-  main {
-    margin-right: 75px;
-  }
-  .item {
-    width: 280px !important;
-    height: 420px !important;
-  }
-  .item h3 {
-    font-size: 15px !important;
-  }
-  .item p {
-    font-size: 15px !important;
-  }
-  .item a {
-    margin-left: 51px !important;
-  }
-  .item img {
-    margin-left: 18px;
+    -ms-grid-columns: (1fr)[2] !important;
+        grid-template-columns: repeat(2, 1fr) !important;
   }
   footer {
     display: -ms-grid;
