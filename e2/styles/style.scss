@@ -35,7 +35,8 @@ header {
       @include inputReset();
       height: 25px;
       margin-top: 37px;
-      margin-left: 55px;
+      margin-left: 43px;
+      margin-right: 15px;
       border: solid 1px rgb(240, 237, 237);
       border-bottom: solid 3px rgb(228, 228, 228);
       border-radius: 4px;
@@ -93,27 +94,18 @@ header {
     i{
       cursor: pointer;
       position: absolute;
-      top: 2px;
-      right: 54px;
-      color: rgb(128, 128, 128);
+      top: 1px;
+      right: 53px;
+      color: rgb(191, 192, 194);
     }
   }
 
   .searchNav {
     position: relative;
-    // input{
-    //   // @include inputReset;
-    //   // border: $item-border;
-    //   // border-radius: 4px;
-    //   // padding: 7px 12px;
-    //   // width: 200px;
-    //   // margin-top: 30px;
-    //   // margin-left: -105px;
-    // }
     i {
       position: absolute;
       top: 40px;
-      right: 5px;
+      right: 20px;
       color: #ccc9c9;
     }
   }
@@ -123,13 +115,10 @@ header {
     font-size: 30px;
     cursor: pointer;
     display: none;
-    &:hover{
-      color: $mainBlue;
-    }
   }
 
   .hide-menu-btn {
-    color: rgb(245, 244, 244);
+    color: rgb(235, 232, 232);
   }
 
   .show-menu-btn{
@@ -577,18 +566,18 @@ footer {
 
 /* Modal */
 .modal {
-  position: fixed; /* vai se mover junto com a tela */
+  position: fixed;
   top: 50%;
   left: 50%;
   border: none;
   border-radius: 2px;
-  z-index: 10; /* ficar acima de tudo e todos */
+  z-index: 10;
   transition: 200ms ease-in-out;
   background-color: rgb(255, 255, 255);
   width: 380px;
   height: 400px;
   max-width: 80%;
-  transform: translate(-50%, -50%) scale(0); /*conteudo fica centralizado na tela*/
+  transform: translate(-50%, -50%) scale(0);
 
   .modal-header {
     padding: 10px 15px;
@@ -596,7 +585,10 @@ footer {
     align-items: center;
     justify-content: center;
     border-bottom: solid 1px #e7e6e6;
-    color: #353434;
+    background: #f1eeee;
+    .title a {
+      margin-right: 20px;
+    }
   }
 
   .modal-body {
@@ -640,10 +632,14 @@ footer {
       @include columnCenter();
       input {
         width: 220px;
+        background: rgb(235, 232, 232);
+        padding: 12px;
+        height: 35px;
       }
       button {
         width: 220px;
       }
+      
     }
 
     .registrar-form {
@@ -683,13 +679,14 @@ footer {
   }
   .close-button {
     cursor: pointer;
-    background: none;
+    background: #f1eeee;
     color: rgb(59, 59, 59);
     padding: 4px;
     border: none;
-    font-size: 1.5rem;
+    font-size: 30px;
     font-weight: bold;
     outline: none;
+    position: absolute;
   }
 }
 
@@ -1278,7 +1275,7 @@ img{
 
   header {
     .logo {
-      margin-right: 43px;;
+      margin-right: 34px;;
     }
   
     li,
@@ -1306,8 +1303,9 @@ img{
       display: flex;
       flex-direction: column;
       a{
-        color: rgb(245, 244, 244);
+        color: rgb(235, 233, 233);
         font-size: 17px;
+        border-bottom: solid 1px rgb(62, 192, 231);
       }
       .searchNav {
         display: none;
@@ -1319,6 +1317,16 @@ img{
       right: 40px;
     }
   }
+
+  .login-link {
+    i{
+      position: absolute;
+      top: 4px !important;
+      right: 99px !important;
+      color: #e0e0e0 !important;
+    }
+  }
+
   .banner {
     z-index: -1;
   }
@@ -1326,11 +1334,9 @@ img{
     right: 0 !important;
   }
   .logo {
-    margin-right: 500px !important;
+    margin-top: 0px !important;
   }
-}
 
-@media (max-width: 1000px){
   #destaques,
   #destaquesApple,
   #destaquesMoto,
@@ -1345,9 +1351,8 @@ img{
   }
 
   header {
-    // position: relative;
     .logo {
-      margin-right: 557px !important;
+      margin-right: 555px !important;
     }
   
     li,
@@ -1356,11 +1361,18 @@ img{
       font-size: 14.6px;
     }
   }
+
+  .show-menu-btn{
+    color: #323333;
+  }
 }
 
 @media (max-width: 750px){
   .show-menu-item, .hide-menu-item {
     display: block !important;
+  }
+  .navbar {
+    width: 100%;
   }
 
   .menu {
@@ -1446,17 +1458,17 @@ img{
     grid-template-columns: repeat(2,1fr) !important;
   }
 
-  .logo{
+  .logo {
     position: absolute;
-    // top: -15px;
-    left: 115px;
-    padding: 0 0px;
+    left: 55px;
   }
 
-  // .show-menu-btn {
-  //   position: absolute;
-  //   right: 115px;
-  // }
+  .show-menu-btn {
+    position: absolute;
+    right: 60px;
+    margin-top: 4px;
+  }
+
 }
 
 @media (max-width: 500px){
@@ -1465,24 +1477,18 @@ img{
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus{
-    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-columns: repeat(1,1fr) !important;
   }
 
   .item {
-    // width: 280px !important;
-    // height: 420px !important;
-    // h3{
-    //   font-size: 15px !important;
-    // }
-    // p{
-    //   font-size: 15px !important;
-    // }
-    // a{
-    //   margin-left: 51px !important; 
-    // }
-    // img {
-    //   margin-left: 18px;
-    // }
+    width: 300px !important;
+    img {
+      width: 65% !important;
+      margin-left: 45px;
+    }
+    a{
+      margin-left: 55px !important;
+    }
   }
 
   footer {
