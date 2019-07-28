@@ -113,7 +113,7 @@ function appleProd() {
             const menorPreco = produtos.sort((a,b) => a.preco - b.preco)
             let menorSaida = ``
             menorSaida += `
-            <div class = "item">
+            <div class = "orderBy item">
             <img src   = "${produtos[0].imagem}">
                <h3>${produtos[0].titulo}</h3>
                <span class = "preco">
@@ -125,7 +125,7 @@ function appleProd() {
                <a class = "appleBtn0" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[1].imagem}">
                <h3>${produtos[1].titulo}</h3>
                <span class = "preco">
@@ -137,7 +137,7 @@ function appleProd() {
                <a class = "appleBtn1" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[2].imagem}">
                <h3>${produtos[2].titulo}</h3>
                <span class = "preco">
@@ -149,7 +149,7 @@ function appleProd() {
                <a class = "appleBtn2" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[3].imagem}">
                <h3>${produtos[3].titulo}</h3>
                <span class = "preco">
@@ -161,7 +161,7 @@ function appleProd() {
                <a class = "appleBtn3" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[4].imagem}">
                <h3>${produtos[4].titulo}</h3>
                <span class = "preco">
@@ -173,7 +173,7 @@ function appleProd() {
                <a class = "appleBtn4" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[5].imagem}">
                <h3>${produtos[5].titulo}</h3>
                <span class = "preco">
@@ -185,7 +185,7 @@ function appleProd() {
                <a class = "appleBtn5" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[6].imagem}">
                <h3>${produtos[6].titulo}</h3>
                <span class = "preco">
@@ -197,7 +197,7 @@ function appleProd() {
                <a class = "appleBtn6" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[7].imagem}">
                <h3>${produtos[7].titulo}</h3>
                <span class = "preco">
@@ -216,7 +216,7 @@ function appleProd() {
             const menorPreco = produtos.sort((a,b) => b.preco - a.preco)
             let maiorSaida = ``
             maiorSaida += `
-            <div class = "item">
+            <div class = "orderBy item">
             <img src   = "${produtos[0].imagem}">
                <h3>${produtos[0].titulo}</h3>
                <span class = "preco">
@@ -228,7 +228,7 @@ function appleProd() {
                <a class = "appleBtn0" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[1].imagem}">
                <h3>${produtos[1].titulo}</h3>
                <span class = "preco">
@@ -240,7 +240,7 @@ function appleProd() {
                <a class = "appleBtn1" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[2].imagem}">
                <h3>${produtos[2].titulo}</h3>
                <span class = "preco">
@@ -252,7 +252,7 @@ function appleProd() {
                <a class = "appleBtn2" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[3].imagem}">
                <h3>${produtos[3].titulo}</h3>
                <span class = "preco">
@@ -264,7 +264,7 @@ function appleProd() {
                <a class = "appleBtn3" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[4].imagem}">
                <h3>${produtos[4].titulo}</h3>
                <span class = "preco">
@@ -276,7 +276,7 @@ function appleProd() {
                <a class = "appleBtn4" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[5].imagem}">
                <h3>${produtos[5].titulo}</h3>
                <span class = "preco">
@@ -288,7 +288,7 @@ function appleProd() {
                <a class = "appleBtn5" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[6].imagem}">
                <h3>${produtos[6].titulo}</h3>
                <span class = "preco">
@@ -300,7 +300,7 @@ function appleProd() {
                <a class = "appleBtn6" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src   = "${produtos[7].imagem}">
                <h3>${produtos[7].titulo}</h3>
                <span class = "preco">
@@ -324,7 +324,7 @@ function appleProd() {
             })
              let saida = ``
              saida += `
-             <div class = "item">
+             <div class = "orderBy item">
                <img src   = "${cores[0].imagem}">
                <h3>${cores[0].titulo}</h3>
                  <span class = "preco">
@@ -345,7 +345,7 @@ function appleProd() {
             })
             let saida = ``
              saida += `
-             <div class = "item">
+             <div class = "orderBy item">
                <img src   = "${cores[0].imagem}">
                <h3>${cores[0].titulo}</h3>
                  <span class = "preco">
@@ -366,7 +366,7 @@ function appleProd() {
             })
             let saida = ``
              saida += `
-             <div class = "item">
+             <div class = "orderBy item">
                <img src   = "${cores[0].imagem}">
                <h3>${cores[0].titulo}</h3>
                  <span class = "preco">
@@ -388,7 +388,7 @@ function appleProd() {
             })
             let saida = ``
              saida += `
-             <div class = "item">
+             <div class = "orderBy item">
                <img src  = "${cores[0].imagem}">
                <h3>${cores[0].titulo}</h3>
                  <span class = "preco">
@@ -400,7 +400,7 @@ function appleProd() {
                <a class = "appleBtn0" href = "#">Comprar</a>
              </div>
 
-             <div class = "item">
+             <div class = "orderBy item">
              <img src  = "${cores[1].imagem}">
              <h3>${cores[1].titulo}</h3>
                <span class = "preco">
@@ -412,7 +412,7 @@ function appleProd() {
              <a class = "appleBtn1" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src  = "${cores[2].imagem}">
            <h3>${cores[2].titulo}</h3>
              <span class = "preco">
@@ -424,7 +424,7 @@ function appleProd() {
            <a class = "appleBtn3" href = "#">Comprar</a>
          </div>
 
-         <div class = "item">
+         <div class = "orderBy item">
          <img src  = "${cores[3].imagem}">
          <h3>${cores[3].titulo}</h3>
            <span class = "preco">

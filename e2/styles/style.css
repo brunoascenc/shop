@@ -161,6 +161,10 @@ header #check {
   z-index: -1111;
 }
 
+.pages-content .login-link {
+  margin-right: 12px;
+}
+
 .sticky-nav {
   position: fixed;
   width: 100%;
@@ -2086,6 +2090,16 @@ img {
     -ms-grid-columns: (200px)[3] !important;
         grid-template-columns: repeat(3, 200px) !important;
   }
+  .itemBanner {
+    -ms-grid-column: 1 !important;
+        grid-column-start: 1 !important;
+    grid-column-end: 3 !important;
+  }
+  .itemBanner img {
+    max-width: 100% !important;
+    height: 100% !important;
+    border: solid 1px #c3c1c1;
+  }
   header .logo {
     margin-right: 34px;
   }
@@ -2153,9 +2167,17 @@ img {
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus {
-    -ms-grid-columns: (200px)[2] !important;
-        grid-template-columns: repeat(2, 200px) !important;
+    -ms-grid-columns: (210px)[2] !important;
+        grid-template-columns: repeat(2, 210px) !important;
     border-left: none !important;
+  }
+  .itemBanner {
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 2 !important;
+    grid-column: 1/3 !important;
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 8 !important;
+    grid-row: 1/9 !important;
   }
   .menu {
     border-right: solid 1px #c3c1c1 !important;
@@ -2262,8 +2284,16 @@ img {
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus {
-    -ms-grid-columns: (1fr)[2] !important;
-        grid-template-columns: repeat(2, 1fr) !important;
+    -ms-grid-columns: (210px)[2] !important;
+        grid-template-columns: repeat(2, 210px) !important;
+  }
+  .itemBanner {
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 2 !important;
+    grid-column: 1/3 !important;
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 9 !important;
+    grid-row: 1/10 !important;
   }
   .logo {
     position: absolute;
@@ -2284,6 +2314,29 @@ img {
   #destaquesAsus {
     -ms-grid-columns: (1fr)[1] !important;
         grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .itemBanner {
+    -ms-grid-column: 1 !important;
+    -ms-grid-column-span: 1 !important;
+    grid-column: 1/2 !important;
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 8 !important;
+    grid-row: 1/9 !important;
+  }
+  #destaquesApple .item,
+  #destaquesAsus .item,
+  #destaquesMoto .item,
+  #destaquesSam .item {
+    margin-left: 17.8%;
+  }
+  #destaquesApple .item a,
+  #destaquesAsus .item a,
+  #destaquesMoto .item a,
+  #destaquesSam .item a {
+    margin-left: 45.5px !important;
+  }
+  .orderBy {
+    margin-left: 0 !important;
   }
   .item {
     width: 300px !important;

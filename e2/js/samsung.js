@@ -113,7 +113,7 @@ function samsungProd() {
           const produtosMenor = produtos.sort((a, b) => a.preco - b.preco); // Menor preco sort
           let menorSaida = ``;
           menorSaida += ` 
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[0].imagem}">
                   <h3>${produtos[0].titulo}</h3>
                   <span class = "preco">
@@ -125,7 +125,7 @@ function samsungProd() {
                      <a class = "samsungBtn0" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[1].imagem}">
                   <h3>${produtos[1].titulo}</h3>
                   <span class = "preco">
@@ -137,7 +137,7 @@ function samsungProd() {
                      <a class = "samsungBtn1" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[2].imagem}">
                   <h3>${produtos[2].titulo}</h3>
                   <span class = "preco">
@@ -149,7 +149,7 @@ function samsungProd() {
                      <a class = "samsungBtn2" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[3].imagem}">
                   <h3>${produtos[3].titulo}</h3>
                   <span class = "preco">
@@ -161,7 +161,7 @@ function samsungProd() {
                      <a class = "samsungBtn3" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[4].imagem}">
                   <h3>${produtos[4].titulo}</h3>
                   <span class = "preco">
@@ -173,7 +173,7 @@ function samsungProd() {
                      <a class = "samsungBtn4" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[5].imagem}">
                   <h3>${produtos[5].titulo}</h3>
                   <span class = "preco">
@@ -185,7 +185,7 @@ function samsungProd() {
                      <a class = "samsungBtn5" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[6].imagem}">
                   <h3>${produtos[6].titulo}</h3>
                   <span class = "preco">
@@ -197,7 +197,7 @@ function samsungProd() {
                      <a class = "samsungBtn6" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[7].imagem}">
                   <h3>${produtos[7].titulo}</h3>
                   <span class = "preco">
@@ -217,7 +217,7 @@ function samsungProd() {
           const produtosMaior = produtos.sort((a, b) => b.preco - a.preco); // Maior preco sort
           let maiorSaida = ``;
           maiorSaida += ` 
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[0].imagem}">
                   <h3>${produtos[0].titulo}</h3>
                   <span class = "preco">
@@ -229,7 +229,7 @@ function samsungProd() {
                      <a class = "samsungBtn0" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[1].imagem}">
                   <h3>${produtos[1].titulo}</h3>
                   <span class = "preco">
@@ -241,7 +241,7 @@ function samsungProd() {
                      <a class = "samsungBtn1" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[2].imagem}">
                   <h3>${produtos[2].titulo}</h3>
                   <span class = "preco">
@@ -253,7 +253,7 @@ function samsungProd() {
                      <a class = "samsungBtn2" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[3].imagem}">
                   <h3>${produtos[3].titulo}</h3>
                   <span class = "preco">
@@ -265,7 +265,7 @@ function samsungProd() {
                      <a class = "samsungBtn3" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[4].imagem}">
                   <h3>${produtos[4].titulo}</h3>
                   <span class = "preco">
@@ -277,7 +277,7 @@ function samsungProd() {
                      <a class = "samsungBtn4" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[5].imagem}">
                   <h3>${produtos[5].titulo}</h3>
                   <span class = "preco">
@@ -289,7 +289,7 @@ function samsungProd() {
                      <a class = "samsungBtn5" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[6].imagem}">
                   <h3>${produtos[6].titulo}</h3>
                   <span class = "preco">
@@ -301,7 +301,7 @@ function samsungProd() {
                      <a class = "samsungBtn6" href = "#">Comprar</a>
                   </div>
   
-                  <div class = "item">
+                  <div class = "orderBy item">
                   <img src   = "${produtos[7].imagem}">
                   <h3>${produtos[7].titulo}</h3>
                   <span class = "preco">
@@ -323,7 +323,7 @@ function samsungProd() {
           console.log(cores)
           let saida = ``
            saida += `
-           <div class = "item">
+           <div class = "orderBy item">
              <img src = "${cores[0].imagem}">
              <h3>${cores[0].titulo}</h3>
                <span class = "preco">
@@ -335,7 +335,7 @@ function samsungProd() {
              <a class = "samsungBtn1" href = "#">Comprar</a>
            </div>
   
-           <div class = "item">
+           <div class = "orderBy item">
              <img src = "${cores[1].imagem}">
              <h3>${cores[1].titulo}</h3>
                <span class = "preco">
@@ -357,7 +357,7 @@ function samsungProd() {
           console.log(cores)
           let saida = ``
            saida += `
-           <div class = "item">
+           <div class = "orderBy item">
              <img src = "${cores[0].imagem}">
              <h3>${cores[0].titulo}</h3>
                <span class = "preco">
@@ -379,7 +379,7 @@ function samsungProd() {
           console.log(cores)
           let saida = ``
            saida += `
-           <div class = "item">
+           <div class = "orderBy item">
              <img src = "${cores[0].imagem}">
              <h3>${cores[0].titulo}</h3>
                <span class = "preco">
@@ -401,7 +401,7 @@ function samsungProd() {
           console.log(cores)
           let saida = ``
            saida += `
-           <div class = "item">
+           <div class = "orderBy item">
              <img src = "${cores[0].imagem}">
              <h3>${cores[0].titulo}</h3>
                <span class = "preco">
@@ -413,7 +413,7 @@ function samsungProd() {
              <a class = "samsungBtn0" href = "#">Comprar</a>
            </div>
 
-           <div class = "item">
+           <div class = "orderBy item">
            <img src = "${cores[1].imagem}">
            <h3>${cores[1].titulo}</h3>
              <span class = "preco">
@@ -425,7 +425,7 @@ function samsungProd() {
            <a class = "samsungBtn3" href = "#">Comprar</a>
          </div>
 
-         <div class = "item">
+         <div class = "orderBy item">
          <img src = "${cores[2].imagem}">
          <h3>${cores[2].titulo}</h3>
            <span class = "preco">
@@ -437,7 +437,7 @@ function samsungProd() {
          <a class = "samsungBtn4" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src = "${cores[3].imagem}">
        <h3>${cores[3].titulo}</h3>
          <span class = "preco">

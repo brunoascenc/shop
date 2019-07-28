@@ -114,7 +114,7 @@ function motoProd() {
         const menorPreco = produtos.sort((a,b) => a.preco - b.preco)
         let menorSaida = ``
         menorSaida += `
-        <div class = "item">
+        <div class = "orderBy item">
         <img src   = "${produtos[0].imagem}">
            <h3>${produtos[0].titulo}</h3>
            <span class = "preco">
@@ -126,7 +126,7 @@ function motoProd() {
            <a class = "motoBtn0" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[1].imagem}">
            <h3>${produtos[1].titulo}</h3>
            <span class = "preco">
@@ -138,7 +138,7 @@ function motoProd() {
            <a class = "motoBtn1" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[2].imagem}">
            <h3>${produtos[2].titulo}</h3>
            <span class = "preco">
@@ -150,7 +150,7 @@ function motoProd() {
            <a class = "motoBtn2" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[3].imagem}">
            <h3>${produtos[3].titulo}</h3>
            <span class = "preco">
@@ -162,7 +162,7 @@ function motoProd() {
            <a class = "motoBtn3" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[4].imagem}">
            <h3>${produtos[4].titulo}</h3>
            <span class = "preco">
@@ -174,7 +174,7 @@ function motoProd() {
            <a class = "motoBtn4" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[5].imagem}">
            <h3>${produtos[5].titulo}</h3>
            <span class = "preco">
@@ -186,7 +186,7 @@ function motoProd() {
            <a class = "motoBtn5" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[6].imagem}">
            <h3>${produtos[6].titulo}</h3>
            <span class = "preco">
@@ -198,7 +198,7 @@ function motoProd() {
            <a class = "motoBtn6" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[7].imagem}">
            <h3>${produtos[7].titulo}</h3>
            <span class = "preco">
@@ -217,7 +217,7 @@ function motoProd() {
         const maiorPreco = produtos.sort((a,b) => b.preco - a.preco)
         let maiorSaida = ``
         maiorSaida += `
-        <div class = "item">
+        <div class = "orderBy item">
         <img src   = "${produtos[0].imagem}">
            <h3>${produtos[0].titulo}</h3>
            <span class = "preco">
@@ -229,7 +229,7 @@ function motoProd() {
            <a class = "motoBtn0" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[1].imagem}">
            <h3>${produtos[1].titulo}</h3>
            <span class = "preco">
@@ -241,7 +241,7 @@ function motoProd() {
            <a class = "motoBtn1" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[2].imagem}">
            <h3>${produtos[2].titulo}</h3>
            <span class = "preco">
@@ -253,7 +253,7 @@ function motoProd() {
            <a class = "motoBtn2" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[3].imagem}">
            <h3>${produtos[3].titulo}</h3>
            <span class = "preco">
@@ -265,7 +265,7 @@ function motoProd() {
            <a class = "motoBtn3" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[4].imagem}">
            <h3>${produtos[4].titulo}</h3>
            <span class = "preco">
@@ -277,7 +277,7 @@ function motoProd() {
            <a class = "motoBtn4" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[5].imagem}">
            <h3>${produtos[5].titulo}</h3>
            <span class = "preco">
@@ -289,7 +289,7 @@ function motoProd() {
            <a class = "motoBtn5" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[6].imagem}">
            <h3>${produtos[6].titulo}</h3>
            <span class = "preco">
@@ -301,7 +301,7 @@ function motoProd() {
            <a class = "motoBtn6" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtos[7].imagem}">
            <h3>${produtos[7].titulo}</h3>
            <span class = "preco">
@@ -322,7 +322,7 @@ function motoProd() {
         })
         let saida = ``
          saida += `
-         <div class = "item">
+         <div class = "orderBy item">
            <img src   = "${cores[0].imagem}">
            <h3>${cores[0].titulo}</h3>
              <span class = "preco">
@@ -334,7 +334,7 @@ function motoProd() {
            <a class = "motoBtn0" href = "#">Comprar</a>
          </div>
 
-         <div class = "item">
+         <div class = "orderBy item">
          <img src   = "${cores[1].imagem}">
          <h3>${cores[1].titulo}</h3>
            <span class = "preco">
@@ -346,7 +346,7 @@ function motoProd() {
          <a class = "motoBtn1" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
         <img src   = "${cores[2].imagem}">
         <h3>${cores[2].titulo}</h3>
          <span class = "preco">
@@ -358,7 +358,7 @@ function motoProd() {
          <a class = "motoBtn2" href = "#">Comprar</a>
        </div>
 
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${cores[3].imagem}">
        <h3>${cores[3].titulo}</h3>
         <span class = "preco">
@@ -370,7 +370,7 @@ function motoProd() {
         <a class = "motoBtn3" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${cores[4].imagem}">
       <h3>${cores[4].titulo}</h3>
        <span class = "preco">
@@ -382,7 +382,7 @@ function motoProd() {
        <a class = "motoBtn4" href = "#">Comprar</a>
      </div>
 
-     <div class = "item">
+     <div class = "orderBy item">
      <img src   = "${cores[5].imagem}">
      <h3>${cores[5].titulo}</h3>
       <span class = "preco">
@@ -394,7 +394,7 @@ function motoProd() {
       <a class = "motoBtn6" href = "#">Comprar</a>
     </div>
 
-    <div class = "item">
+    <div class = "orderBy item">
     <img src   = "${cores[6].imagem}">
     <h3>${cores[6].titulo}</h3>
      <span class = "preco">
@@ -416,7 +416,7 @@ function motoProd() {
         })
         let saida = ``
          saida += `
-         <div class = "item">
+         <div class = "orderBy item">
            <img src  = "${cores[0].imagem}">
            <h3>${cores[0].titulo}</h3>
              <span class = "preco">

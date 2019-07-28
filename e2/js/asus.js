@@ -66,7 +66,7 @@ function asusProd() {
        const menorPreco = produtosAsus.sort((a,b) => a.preco - b.preco)
        let menorSaida = ``
        menorSaida += `
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtosAsus[0].imagem}">
           <h3>${produtosAsus[0].titulo}</h3>
           <span class = "preco">
@@ -78,7 +78,7 @@ function asusProd() {
           <a class = "asusBtn0" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${produtosAsus[1].imagem}">
           <h3>${produtosAsus[1].titulo}</h3>
           <span class = "preco">
@@ -90,7 +90,7 @@ function asusProd() {
           <a class = "asusBtn1" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${produtosAsus[2].imagem}">
           <h3>${produtosAsus[2].titulo}</h3>
           <span class = "preco">
@@ -102,7 +102,7 @@ function asusProd() {
           <a class = "asusBtn2" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${produtosAsus[3].imagem}">
           <h3>${produtosAsus[3].titulo}</h3>
           <span class = "preco">
@@ -121,7 +121,7 @@ function asusProd() {
        const maiorPreco = produtosAsus.sort((a,b) => b.preco - a.preco)
        let maiorSaida = ``
        maiorSaida += `
-       <div class = "item">
+       <div class = "orderBy item">
        <img src   = "${produtosAsus[0].imagem}">
           <h3>${produtosAsus[0].titulo}</h3>
           <span class = "preco">
@@ -133,7 +133,7 @@ function asusProd() {
           <a class = "asusBtn0" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${produtosAsus[1].imagem}">
           <h3>${produtosAsus[1].titulo}</h3>
           <span class = "preco">
@@ -145,7 +145,7 @@ function asusProd() {
           <a class = "asusBtn1" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${produtosAsus[2].imagem}">
           <h3>${produtosAsus[2].titulo}</h3>
           <span class = "preco">
@@ -157,7 +157,7 @@ function asusProd() {
           <a class = "asusBtn2" href = "#">Comprar</a>
       </div>
 
-      <div class = "item">
+      <div class = "orderBy item">
       <img src   = "${produtosAsus[3].imagem}">
           <h3>${produtosAsus[3].titulo}</h3>
           <span class = "preco">
@@ -178,7 +178,7 @@ function asusProd() {
         })
         let saida = ``
          saida += `
-         <div class = "item">
+         <div class = "orderBy item">
            <img src   = "${cores[0].imagem}">
            <h3>${cores[0].titulo}</h3>
              <span class = "preco">
@@ -201,7 +201,7 @@ function asusProd() {
         })
         let saida = ``
          saida += `
-         <div class = "item">
+         <div class = "orderBy item">
            <img src = "${cores[0].imagem}">
            <h3>${cores[0].titulo}</h3>
              <span class = "preco">
@@ -222,7 +222,7 @@ function asusProd() {
         })
         let saida = ``
          saida += `
-         <div class = "item">
+         <div class = "orderBy item">
            <img src = "${cores[0].imagem}">
            <h3>${cores[0].titulo}</h3>
              <span class = "preco">
@@ -234,7 +234,7 @@ function asusProd() {
            <a class = "asusBtn2" href = "#">Comprar</a>
          </div>
 
-         <div class = "item">
+         <div class = "orderBy item">
            <img src = "${cores[1].imagem}">
            <h3>${cores[1].titulo}</h3>
              <span class = "preco">
