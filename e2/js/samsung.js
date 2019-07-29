@@ -463,6 +463,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -567,6 +568,7 @@ function samsungProd() {
             </tr>
           </table>
         </div>
+        </div>
                     `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'samsungBtn1') {
@@ -574,6 +576,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -678,6 +681,7 @@ function samsungProd() {
             </tr>
           </table>
         </div>
+        </div>
                 `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -688,6 +692,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -792,6 +797,7 @@ function samsungProd() {
                   </tr>
                 </table>
               </div>
+              </div>
                 `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'samsungBtn3') {
@@ -799,6 +805,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -903,6 +910,7 @@ function samsungProd() {
             </tr>
           </table>
         </div>
+        </div>
                 `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -913,6 +921,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -1017,6 +1026,7 @@ function samsungProd() {
             </tr>
           </table>
         </div>
+        </div>
                 `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1027,6 +1037,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -1131,6 +1142,7 @@ function samsungProd() {
             </tr>
           </table>
         </div>
+        </div>
                 `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1141,6 +1153,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
                     <a   href  = "samsung.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -1243,6 +1256,7 @@ function samsungProd() {
             </tr>
           </table>
         </div>
+        </div>
                 `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (e.target.className == 'samsungBtn7') {
@@ -1250,6 +1264,7 @@ function samsungProd() {
           compraDiv.style.display = 'block';
   
           let saida = `
+          <div class = "container">
                     <a   href  = "index.html">Voltar</a>
                     <div class = "opcoes">
                     <div>
@@ -1351,7 +1366,9 @@ function samsungProd() {
               <td>${produtos[7].camera_frontal}</td>
             </tr>
           </table>
-        </div>`
+        </div>
+        </div>
+        `
             ;
           document.getElementById('finalizarCompra').innerHTML = saida;
         }

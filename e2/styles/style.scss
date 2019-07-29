@@ -417,13 +417,25 @@ main {
 /*Conteudo end*/
 
 /*Contato*/
+// #contato{
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   padding: 16%;
+// }
+
+.container-contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contato-form {
   display: flex;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center;
+  // justify-content: center;
   margin-top: 30px;
   margin-bottom: 25px;
-  padding: 6%;
+  padding: 90px;
   margin-left: 0;
   h2 {
     align-self: center;
@@ -438,7 +450,7 @@ main {
     padding: 2%;
     margin-top: 4px;
     outline: none;
-    width: 450px;
+    width: 85%;
     border-radius: 4px;
     border: none;
     border-bottom: solid 3px rgb(208, 213, 216);
@@ -457,7 +469,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 600px;
     align-items: center;
     border: $borderStyle;
     background: rgb(250, 249, 249);
@@ -492,11 +504,15 @@ main {
   justify-content: center;
   margin-top: -100px;
   margin-bottom: 35px;
-  width: 100vw;
+  width: 100%;
+  &:before {
+    content: 'Formas de pagamento';
+  }
   img {
-    padding: 0 45px;
+    padding: 0 40px;
   }
 }
+
 
 /* Footer */
 footer {
@@ -723,17 +739,17 @@ footer {
 /*BUY SECTION*/
 #finalizarCompra {
   padding: 4%;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
   a {
     @include linksReset();
     text-transform: uppercase;
     color: rgb(97, 97, 98);
-    // background: #2462e6;
     font-size: 15px;
-    position: absolute;
+    margin-left: -657px;
     font-weight: bold;
     left: 200px;
-    top: 100px;
-    border-bottom: $borderStyle;
   }
 }
 .itemBanner {
@@ -742,18 +758,29 @@ footer {
     height: 100%;
   }
 }
+// .rsrs {
+//   // width: 80%;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// }
 .opcoes {
   display: flex;
-  margin-left: 56px;
-  width: 91.4%;
+  // margin-left: 56px;
+  // width: 100%;
+  // width: 1200px;
   justify-content: center;
   background: rgb(253, 253, 253);
   border: solid 1px rgb(224, 221, 221);
   padding: 28px;
   img{
     // border: solid 1px rgb(190, 190, 190);
+    // width: 250px;
     padding: 4px;
+    width: 100%;
   }
+
+
 
   h1 {
     border-bottom: $borderStyle;
@@ -771,7 +798,8 @@ footer {
     display: flex;
     margin-top: 50px;
     border-top: solid 1px #c8c5c5;
-    padding: 20px;
+    padding: 16px 0px;
+    align-items: center;
     input {
       @include inputReset();
       border: solid 1px #dad7d7;
@@ -781,7 +809,7 @@ footer {
     }
     button {
       @include btnReset();
-      padding: 10px;
+      padding: 6px;
       margin-left: 4px;
       border-radius: 3px;
       font-weight: bold;
@@ -793,15 +821,16 @@ footer {
   .detalhes-pag {
     margin-left: 20px;
     height: 95%;
-    width: 90%;
+    width: 75%;
     border: $borderStyle;
     // background: #faf8f8;
     padding: 28px;
+    position: relative;
     .buttonsPag {
       display: flex;
       width: 215px;
       margin-top: -85px;
-      margin-left: 443px;
+      margin-left: 58%;
       flex-direction: column;
       button {
         margin-bottom: 7px;
@@ -834,6 +863,7 @@ footer {
   .card-nav {
     display: flex;
     // justify-content: space-between;
+    justify-content: center;
     img{
       margin-top: 6px;
       width: 80px;
@@ -848,19 +878,20 @@ footer {
 
 .fichaTec {
   display: flex;
-  width: 95%;
+  // width: 95%;
   border-collapse: collapse;
-  width: 100%;
-  justify-self: center;
+  // width: 100%;
+  // justify-self: center;
   color: rgb(100, 100, 100);
-  padding: 12px;
+  // padding: 12px;
   td {
-    padding: 12px 120px 4px 14px;
+    padding: 8px 255px 8px 6px;
+    // width: 100%;
   }
   table {
-    width: 93.3%;
-    justify-content: end;
-    margin-left: 43px;
+    width: 100%;
+    // justify-content: end;
+    // margin-left: 141px;
   }
 }
 
@@ -1280,6 +1311,11 @@ img{
     grid-template-columns: repeat(3,200px) !important;
   }
 
+  .duvidas-form,
+  .sobre {
+    width: 100% !important;
+  }
+
   .itemBanner {
     grid-column-start: 1 !important;
     grid-column-end: 3 !important;
@@ -1300,6 +1336,16 @@ img{
       margin-left: 12px;
       font-size: 14.6px;
     }
+  }
+
+  .buttonsPag {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+  }
+  .precodet {
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
   }
 }
 
@@ -1335,6 +1381,14 @@ img{
     }
   }
 
+  .contato-form {
+    flex-direction: column;
+  }
+  .sobre {
+    margin-top: 15px;
+    padding: 6px;
+  }
+
   .login-link {
     i{
       position: absolute;
@@ -1342,6 +1396,40 @@ img{
       right: 99px !important;
       color: #e0e0e0 !important;
     }
+  }
+  // .rsrs{
+  //   display: flex;
+  //   flex-direction: column;
+  //   align-items: center;
+  // }
+  .opcoes {
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+
+  .detalhes-pag {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+
+  .buttonsPag {
+    margin-top: -75px !important;
+    margin-left: 60% !important;
+  }
+
+  .precodet {
+    display: flex;
+    align-items: flex-start !important;
+    flex-direction: column;
+  }
+
+  table {
+    width: 98% !important;
+    margin-left: 0 !important;
   }
 
   .banner {
@@ -1393,8 +1481,44 @@ img{
   .show-menu-item, .hide-menu-item {
     display: block !important;
   }
+  // .rsrs{
+  //   display: flex !important;
+  //   flex-direction: column;
+  //   align-items: center !important;
+  // }
   .navbar {
     width: 100%;
+  }
+
+  .buttonsPag {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+  }
+  .precodet {
+    display: flex;
+    align-items: center !important;
+    flex-direction: column;
+  }
+  .opcoes {
+    margin-left: 0% !important;
+    // width: 100% !important;
+  }
+  table {
+    margin-left: 0 !important;
+    width: 100% !important;
+    p {
+      font-size: 100000px !important;
+    }
+    td {
+      padding: 12px 36px 4px 14px !important;
+    }
+  }
+
+  .detalhes-pag {
+    p{
+      font-size: 15px;
+      padding: 2px;
+    }
   }
 
   .menu {
@@ -1496,6 +1620,20 @@ img{
     margin-top: 4px;
   }
 
+  .container-contato {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 610px){
+  .contato-form {
+    padding: 30px;
+    margin-bottom: 15px;
+  }
+  .container-contato {
+    margin-bottom: 45px;
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 500px){
@@ -1507,6 +1645,7 @@ img{
     grid-template-columns: repeat(1, 1fr) !important;
     // align-items: center !important;
   }
+
 
   .itemBanner {
     grid-column: 1/2 !important;

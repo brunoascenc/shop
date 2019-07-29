@@ -449,7 +449,9 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
+           
               <div class = "opcoes">
                 <div>
                   <img id = "img-container" src = "${produtos[0].imagem}">
@@ -467,11 +469,12 @@ function appleProd() {
                       </p>
                       <h2>R$ ${produtos[0].preco}</h2>
                       <p>à vista no cartão</p>
-                  </div>
-                  <div class = "buttonsPag">
-                      <button>Comprar</button>
+                      <div class = "buttonsPag">
+                         <button>Comprar</button>
                       <button>Adicionar ao carrinho</button>
                   </div>
+                  </div>
+                 
                   <br>
                   <p>R$ ${produtos[0].preco} no boleto bancário</p>
                   <p>R$ ${
@@ -552,6 +555,7 @@ function appleProd() {
               <td>${produtos[0].camera_frontal}</td>
             </tr>
           </table>
+         </div>
         </div>
               `;
             document.getElementById('finalizarCompra').innerHTML = saida;
@@ -563,6 +567,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
               <div>
@@ -667,6 +672,7 @@ function appleProd() {
             </tr>
           </table>
         </div>
+        </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'appleBtn2') {
@@ -674,6 +680,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
               <div>
@@ -778,6 +785,7 @@ function appleProd() {
             </tr>
           </table>
         </div>
+        </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -788,6 +796,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
               <div>
@@ -892,6 +901,7 @@ function appleProd() {
             </tr>
           </table>
         </div>
+        </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -902,6 +912,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
               <div>
@@ -1006,6 +1017,7 @@ function appleProd() {
             </tr>
           </table>
         </div>
+        </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -1016,6 +1028,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
               <div>
@@ -1120,6 +1133,7 @@ function appleProd() {
             </tr>
           </table>
         </div>
+        </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -1130,6 +1144,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
               <div>
@@ -1234,6 +1249,7 @@ function appleProd() {
             </tr>
           </table>
         </div>
+        </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'appleBtn7') {
@@ -1241,6 +1257,7 @@ function appleProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
               <a   href  = "index.html">Voltar</a>
               <div class = "opcoes">
                 <div>
@@ -1345,6 +1362,7 @@ function appleProd() {
               <td>${produtos[7].camera_frontal}</td>
             </tr>
           </table>
+        </div>
         </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;

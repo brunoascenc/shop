@@ -441,6 +441,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -545,6 +546,7 @@ function motoProd() {
         </tr>
       </table>
     </div>
+    </div>
           `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'motoBtn1') {
@@ -552,6 +554,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -656,6 +659,7 @@ function motoProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -666,6 +670,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -770,6 +775,7 @@ function motoProd() {
               </tr>
             </table>
           </div>
+          </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -780,6 +786,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -884,6 +891,7 @@ function motoProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -894,6 +902,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -998,6 +1007,7 @@ function motoProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (e.target.className == 'motoBtn5') {
@@ -1005,6 +1015,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -1109,6 +1120,7 @@ function motoProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -1119,6 +1131,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -1223,6 +1236,7 @@ function motoProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -1233,6 +1247,7 @@ function motoProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -1336,6 +1351,7 @@ function motoProd() {
           <td>${produtos[7].camera_frontal}</td>
         </tr>
       </table>
+    </div>
     </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;

@@ -587,18 +587,26 @@ main .organizar .fa-search {
 
 /*Conteudo end*/
 /*Contato*/
+.container-contato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .contato-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 30px;
   margin-bottom: 25px;
-  padding: 6%;
+  padding: 90px;
   margin-left: 0;
 }
 
@@ -618,7 +626,7 @@ main .organizar .fa-search {
   padding: 2%;
   margin-top: 4px;
   outline: none;
-  width: 450px;
+  width: 85%;
   border-radius: 4px;
   border: none;
   border-bottom: solid 3px #d0d5d8;
@@ -650,7 +658,7 @@ main .organizar .fa-search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 60%;
+  width: 600px;
   align-items: center;
   border: solid 1px #e0dfdf;
   background: #faf9f9;
@@ -700,11 +708,15 @@ main .organizar .fa-search {
           justify-content: center;
   margin-top: -100px;
   margin-bottom: 35px;
-  width: 100vw;
+  width: 100%;
+}
+
+.pagamento:before {
+  content: 'Formas de pagamento';
 }
 
 .pagamento img {
-  padding: 0 45px;
+  padding: 0 40px;
 }
 
 /* Footer */
@@ -1015,6 +1027,16 @@ footer .copyright {
 /*BUY SECTION*/
 #finalizarCompra {
   padding: 4%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #finalizarCompra a {
@@ -1024,11 +1046,9 @@ footer .copyright {
   text-transform: uppercase;
   color: #616162;
   font-size: 15px;
-  position: absolute;
+  margin-left: -657px;
   font-weight: bold;
   left: 200px;
-  top: 100px;
-  border-bottom: solid 1px #e0dfdf;
 }
 
 .itemBanner img {
@@ -1040,8 +1060,6 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 56px;
-  width: 91.4%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1052,6 +1070,7 @@ footer .copyright {
 
 .opcoes img {
   padding: 4px;
+  width: 100%;
 }
 
 .opcoes h1 {
@@ -1075,7 +1094,10 @@ footer .copyright {
   display: flex;
   margin-top: 50px;
   border-top: solid 1px #c8c5c5;
-  padding: 20px;
+  padding: 16px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .opcoes .frete input {
@@ -1094,7 +1116,7 @@ footer .copyright {
   border: none;
   outline: none;
   color: #f8f8f8;
-  padding: 10px;
+  padding: 6px;
   margin-left: 4px;
   border-radius: 3px;
   font-weight: bold;
@@ -1107,9 +1129,10 @@ footer .copyright {
 .opcoes .detalhes-pag {
   margin-left: 20px;
   height: 95%;
-  width: 90%;
+  width: 75%;
   border: solid 1px #e0dfdf;
   padding: 28px;
+  position: relative;
 }
 
 .opcoes .detalhes-pag .buttonsPag {
@@ -1118,7 +1141,7 @@ footer .copyright {
   display: flex;
   width: 215px;
   margin-top: -85px;
-  margin-left: 443px;
+  margin-left: 58%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1158,6 +1181,9 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .opcoes .card-nav img {
@@ -1175,24 +1201,16 @@ footer .copyright {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 95%;
   border-collapse: collapse;
-  width: 100%;
-  justify-self: center;
   color: #646464;
-  padding: 12px;
 }
 
 .fichaTec td {
-  padding: 12px 120px 4px 14px;
+  padding: 8px 255px 8px 6px;
 }
 
 .fichaTec table {
-  width: 93.3%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  margin-left: 43px;
+  width: 100%;
 }
 
 .fichaTec tr:nth-child(odd) {
@@ -2090,6 +2108,10 @@ img {
     -ms-grid-columns: (200px)[3] !important;
         grid-template-columns: repeat(3, 200px) !important;
   }
+  .duvidas-form,
+  .sobre {
+    width: 100% !important;
+  }
   .itemBanner {
     -ms-grid-column: 1 !important;
         grid-column-start: 1 !important;
@@ -2107,6 +2129,22 @@ img {
   header a {
     margin-left: 12px;
     font-size: 14.6px;
+  }
+  .buttonsPag {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+  }
+  .precodet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2147,11 +2185,60 @@ img {
     top: 40px;
     right: 40px;
   }
+  .contato-form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .sobre {
+    margin-top: 15px;
+    padding: 6px;
+  }
   .login-link i {
     position: absolute;
     top: 4px !important;
     right: 99px !important;
     color: #e0e0e0 !important;
+  }
+  .opcoes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  .detalhes-pag {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-top: 15px;
+  }
+  .buttonsPag {
+    margin-top: -75px !important;
+    margin-left: 60% !important;
+  }
+  .precodet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  table {
+    width: 98% !important;
+    margin-left: 0 !important;
   }
   .banner {
     z-index: -1;
@@ -2201,6 +2288,39 @@ img {
   }
   .navbar {
     width: 100%;
+  }
+  .buttonsPag {
+    margin-top: 10px !important;
+    margin-left: 0 !important;
+  }
+  .precodet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .opcoes {
+    margin-left: 0% !important;
+  }
+  table {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  table p {
+    font-size: 100000px !important;
+  }
+  table td {
+    padding: 12px 36px 4px 14px !important;
+  }
+  .detalhes-pag p {
+    font-size: 15px;
+    padding: 2px;
   }
   .menu {
     position: fixed;
@@ -2303,6 +2423,20 @@ img {
     position: absolute;
     right: 60px;
     margin-top: 4px;
+  }
+  .container-contato {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 610px) {
+  .contato-form {
+    padding: 30px;
+    margin-bottom: 15px;
+  }
+  .container-contato {
+    margin-bottom: 45px;
+    margin-top: 15px;
   }
 }
 

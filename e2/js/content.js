@@ -647,6 +647,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
             <div>
@@ -751,6 +752,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
             `;
           document.getElementById('finalizarCompra').innerHTML = saida;
 
@@ -763,6 +765,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
                <div>
@@ -868,6 +871,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
 
@@ -880,6 +884,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
             <div>
@@ -984,6 +989,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -995,6 +1001,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
               <div>
@@ -1099,6 +1106,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1110,6 +1118,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
               <div>
@@ -1214,6 +1223,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1225,6 +1235,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
             <div>
@@ -1329,6 +1340,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1340,6 +1352,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
               <div>
@@ -1444,6 +1457,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1455,6 +1469,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
               <div>
@@ -1559,6 +1574,7 @@ function homeProd() {
            </tr>
          </table>
        </div>
+       </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1570,6 +1586,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
               <div>
@@ -1674,6 +1691,7 @@ function homeProd() {
           </tr>
         </table>
       </div>
+      </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1685,6 +1703,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
               <div>
@@ -1789,6 +1808,7 @@ function homeProd() {
           </tr>
         </table>
       </div>
+      </div>
         `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1800,6 +1820,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
             <div>
@@ -1904,6 +1925,7 @@ function homeProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
           document.getElementById('finalizarCompra').innerHTML = saida;
         } else if (
@@ -1915,6 +1937,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
+          <div class = "container">
         <a   href  = "index.html">Voltar</a>
         <div class = "opcoes">
           <div>
@@ -2018,6 +2041,7 @@ function homeProd() {
         <td>${produtos[11].camera_frontal}</td>
       </tr>
     </table>
+  </div>
   </div>
     `;
           document.getElementById('finalizarCompra').innerHTML = saida;

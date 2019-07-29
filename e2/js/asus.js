@@ -260,6 +260,7 @@ function asusProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+            <div class = "container">
             <a   href  = "index.html">Voltar</a>
             <div class = "opcoes">
             <div>
@@ -364,6 +365,7 @@ function asusProd() {
           </tr>
         </table>
       </div>
+      </div>
           `;
   
             document.getElementById('finalizarCompra').innerHTML = saida;
@@ -375,6 +377,7 @@ function asusProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -479,6 +482,7 @@ function asusProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -489,6 +493,7 @@ function asusProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -593,6 +598,7 @@ function asusProd() {
         </tr>
       </table>
     </div>
+    </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
           } else if (
@@ -603,6 +609,7 @@ function asusProd() {
             compraDiv.style.display = 'block';
   
             let saida = `
+          <div class = "container">
           <a   href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
@@ -706,6 +713,7 @@ function asusProd() {
           <td>${produtosAsus[3].camera_frontal}</td>
         </tr>
       </table>
+    </div>
     </div>
       `;
             document.getElementById('finalizarCompra').innerHTML = saida;
