@@ -48,9 +48,18 @@ header {
     @include flexCenter();
   }
 
+  .home-nav{
+    .logo{
+      margin-right: 229px;
+    }
+    .login-link{
+      margin-right: 11px;
+    }
+  }
+
   .logo {
     margin-top: 15px;
-    margin-right: 200px;
+    margin-right: 228px;
     margin-left: 12px;
     font-family: $titleFont;
     text-transform: uppercase;
@@ -161,7 +170,7 @@ header {
   background-color: white;
   animation: slide 12s infinite;
   height: 320px;
-  margin-top: 14px;
+  margin-top: 13px;
   position: relative;
   // background: url('https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000')
   //   no-repeat;
@@ -218,8 +227,8 @@ main {
     height: 100%;
     background: rgb(251, 250, 250);
     border: $item-border;
-    border-right: none;
     margin-bottom: 200px;
+    margin-top: 2%;
     // border-top: none;
     padding: 0 26px 12px;
     .menu-items {
@@ -296,22 +305,29 @@ main {
   #destaquesAsus {
     display: grid;
     margin-left: 0%;
+    height: 100000% !important;
     padding: 0 12px 25px ;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 210px);
     grid-column-gap: 45px;
     grid-row-gap: 35px;
-    border-left: $item-border;
+    margin-top: 2%;
+    // border-left: $item-border;
     .item {
-      width: 211px;
-      height: 380px;
+      display: flex;
+      flex-direction: column;
+      align-items: center !important;
+      width: 100%;
+      height: 100%;
       padding: 6%;
       background-color: rgb(251, 250, 250);
       border: solid 1px rgb(207, 205, 205);
+      border-radius: 2px;
     }
     .itemBanner {
       display: grid;
       grid-column-start: 1;
       grid-column-end: 4;
+      border-radius: 2px;
       img {
         max-width: 100%;
         height: 100%;
@@ -326,7 +342,7 @@ main {
 
     img {
       cursor: pointer;
-      width: 220px;
+      width: 100%;
     }
 
     h3,
@@ -342,7 +358,7 @@ main {
       padding: 11px;
       width: 150px;
       margin-top: 10px;
-      margin-left: 18px;
+      // margin-left: 18px;
       text-transform: uppercase;
       transition: all 0.1s ease;
       color: #fdf5f5;
@@ -352,9 +368,10 @@ main {
     }
 
     p {
-      @include flexCenter();
       margin-top: 5px;
-      font-size: 12px;
+      font-size: 0.9em;
+      font-weight: 600;
+      color: #434444;
     }
 
     .parcela {
@@ -366,6 +383,8 @@ main {
     .preco {
       p{
         font-size: 17px;
+        font-weight: 100;
+        color: #444343;
       }
     }
   }
@@ -521,7 +540,7 @@ footer {
   flex-wrap: wrap;
   border-top: $item-border;
   background: #fdfcfc;
-  height: 40vh;
+  height: 100%;
   // margin-top: 25px;
   justify-content: space-around;
 
@@ -583,6 +602,7 @@ footer {
     justify-content: center;
     align-items: center;
     color: #3b3b3b;
+    padding: 4% 0 2% 0%;
   }
 }
 /* Footer end */
@@ -758,12 +778,7 @@ footer {
     height: 100%;
   }
 }
-// .rsrs {
-//   // width: 80%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
+
 .opcoes {
   display: flex;
   // margin-left: 56px;
@@ -806,6 +821,7 @@ footer {
       border-radius: 3px;
       padding: 6px;
       margin-left: 7px;
+      width: 100%;
     }
     button {
       @include btnReset();
@@ -1302,13 +1318,13 @@ img{
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
-@media (max-width: 1250px){
+@media (max-width: 1275px){
   #destaques,
   #destaquesApple,
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus{
-    grid-template-columns: repeat(3,200px) !important;
+    grid-template-columns: repeat(3,210px) !important;
   }
 
   .duvidas-form,
@@ -1318,7 +1334,8 @@ img{
 
   .itemBanner {
     grid-column-start: 1 !important;
-    grid-column-end: 3 !important;
+    grid-column-end: 4 !important;
+    grid-row: 1/13;
     img {
       max-width: 100% !important;
       height: 100% !important;
@@ -1326,9 +1343,18 @@ img{
     }
   }
 
+  .home-nav{
+    .logo{
+      margin-right: 53px !important;
+    }
+    .login-link{
+      margin-right: 11px !important;
+    }
+  }
+
   header {
     .logo {
-      margin-right: 34px;;
+      margin-right: 53px;;
     }
   
     li,
@@ -1349,7 +1375,7 @@ img{
   }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1020px){
   .show-menu-btn, .hide-menu-btn, .login{
     display: block !important;
   }
@@ -1397,11 +1423,6 @@ img{
       color: #e0e0e0 !important;
     }
   }
-  // .rsrs{
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
   .opcoes {
     display: flex;
     align-items: center !important;
@@ -1462,7 +1483,9 @@ img{
 
   header {
     .logo {
-      margin-right: 555px !important;
+      // margin-right: 580px !important;
+      position: absolute;
+      left: 45px;
     }
   
     li,
@@ -1474,6 +1497,9 @@ img{
 
   .show-menu-btn{
     color: #323333;
+    position: absolute;
+    right: 58px;
+    margin-top: 5px;
   }
 }
 
@@ -1481,6 +1507,8 @@ img{
   .show-menu-item, .hide-menu-item {
     display: block !important;
   }
+
+
   // .rsrs{
   //   display: flex !important;
   //   flex-direction: column;
@@ -1500,8 +1528,15 @@ img{
     flex-direction: column;
   }
   .opcoes {
+    display: flex !important;
     margin-left: 0% !important;
-    // width: 100% !important;
+    img {
+      width: 70%;
+      margin-left: 15%;
+    }
+  }
+  .card-nav {
+    justify-content: end !important;
   }
   table {
     margin-left: 0 !important;
@@ -1519,7 +1554,13 @@ img{
       font-size: 15px;
       padding: 2px;
     }
+    h1{
+      font-size: 17px;
+      padding: 4px;
+    }
   }
+
+  
 
   .menu {
     position: fixed;
@@ -1564,9 +1605,13 @@ img{
     background: #f8fafa;
     border: solid 2px rgb(200, 199, 199);
     border-radius: 4px;
+    // padding: 10px 8px;
+    // height: 45px;
+    // width: 85%;
     padding: 10px;
     width: 466px;
-    margin-bottom: 7px;
+    margin-bottom: 2%;
+    margin-top: 3%;
     a{
       color: #333333;
     }
@@ -1611,12 +1656,12 @@ img{
 
   .logo {
     position: absolute;
-    left: 55px;
+    left: 6px !important;
   }
 
   .show-menu-btn {
     position: absolute;
-    right: 60px;
+    right: 20px !important;
     margin-top: 4px;
   }
 
@@ -1658,9 +1703,9 @@ img{
   #destaquesSam{
     .item{
       margin-left: 17.8%;
-      a{
-        margin-left: 45.5px !important;
-      }
+      // a{
+      //   margin-left: 45.5px !important;
+      // }
     }
   }
 
@@ -1673,11 +1718,11 @@ img{
     width: 300px !important;
     img {
       width: 65% !important;
-      margin-left: 45px;
+      // margin-left: 45px;
     }
-    a{
-      margin-left: 55px !important;
-    }
+    // a{
+    //   margin-left: 55px !important;
+    // }
   }
 
   footer {
@@ -1690,5 +1735,68 @@ img{
       flex-direction: column;
       align-items: center;
     }
+  }
+}
+
+@media (max-width: 475px){
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus{
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .item{
+    margin-left: 0 !important;
+    justify-self: center !important; 
+
+  }
+
+  .show-menu-item{
+    width: 93% !important;
+    position: relative;
+    i{
+      // margin-left: 210px;
+      position: absolute;
+      right: 15px;
+    }
+  }
+}
+
+@media (max-width: 375px){
+  .itemBanner {
+    grid-row: 1/8 !important;
+  }
+  #finalizarCompra {
+    align-items: unset;
+  }
+  .opcoes{
+    align-items: center !important;
+    margin-left: 0 !important;
+    img{
+      margin-left: 10px !important;
+    }
+    #img-container{
+      margin-left:37px !important;
+    }
+  }
+}
+
+@media (max-width: 320px){
+  .buttonsPag {
+    button{
+      width: 82% !important;
+    }
+  }
+  table{
+    width: 100% !important;
+  }
+  .card-nav {
+    img{
+      width: 65px !important;
+    }
+  }
+  .opcoes {
+    margin-top: 2%;
   }
 }

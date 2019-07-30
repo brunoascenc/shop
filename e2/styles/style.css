@@ -69,9 +69,17 @@ header #main {
           justify-content: center;
 }
 
+header .home-nav .logo {
+  margin-right: 229px;
+}
+
+header .home-nav .login-link {
+  margin-right: 11px;
+}
+
 header .logo {
   margin-top: 15px;
-  margin-right: 200px;
+  margin-right: 228px;
   margin-left: 12px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
@@ -186,7 +194,7 @@ header #check {
   -webkit-animation: slide 12s infinite;
           animation: slide 12s infinite;
   height: 320px;
-  margin-top: 14px;
+  margin-top: 13px;
   position: relative;
   background-size: cover;
 }
@@ -254,8 +262,8 @@ main .menu {
   height: 100%;
   background: #fbfafa;
   border: solid 1px #c3c1c1;
-  border-right: none;
   margin-bottom: 200px;
+  margin-top: 2%;
   padding: 0 26px 12px;
 }
 
@@ -393,12 +401,13 @@ main #destaquesAsus {
   display: -ms-grid;
   display: grid;
   margin-left: 0%;
+  height: 100000% !important;
   padding: 0 12px 25px;
-  -ms-grid-columns: (200px)[4];
-      grid-template-columns: repeat(4, 200px);
+  -ms-grid-columns: (210px)[4];
+      grid-template-columns: repeat(4, 210px);
   grid-column-gap: 45px;
   grid-row-gap: 35px;
-  border-left: solid 1px #c3c1c1;
+  margin-top: 2%;
 }
 
 main #destaques .item,
@@ -406,11 +415,22 @@ main #destaquesApple .item,
 main #destaquesMoto .item,
 main #destaquesSam .item,
 main #destaquesAsus .item {
-  width: 211px;
-  height: 380px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  width: 100%;
+  height: 100%;
   padding: 6%;
   background-color: #fbfafa;
   border: solid 1px #cfcdcd;
+  border-radius: 2px;
 }
 
 main #destaques .itemBanner,
@@ -423,6 +443,7 @@ main #destaquesAsus .itemBanner {
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 4;
+  border-radius: 2px;
 }
 
 main #destaques .itemBanner img,
@@ -452,7 +473,7 @@ main #destaquesMoto img,
 main #destaquesSam img,
 main #destaquesAsus img {
   cursor: pointer;
-  width: 220px;
+  width: 100%;
 }
 
 main #destaques h3,
@@ -487,7 +508,6 @@ main #destaquesAsus a {
   padding: 11px;
   width: 150px;
   margin-top: 10px;
-  margin-left: 18px;
   text-transform: uppercase;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
@@ -507,14 +527,10 @@ main #destaquesApple p,
 main #destaquesMoto p,
 main #destaquesSam p,
 main #destaquesAsus p {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin-top: 5px;
-  font-size: 12px;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #434444;
 }
 
 main #destaques .parcela,
@@ -532,6 +548,8 @@ main #destaquesMoto .preco p,
 main #destaquesSam .preco p,
 main #destaquesAsus .preco p {
   font-size: 17px;
+  font-weight: 100;
+  color: #444343;
 }
 
 main .organizar {
@@ -729,7 +747,7 @@ footer {
       flex-wrap: wrap;
   border-top: solid 1px #c3c1c1;
   background: #fdfcfc;
-  height: 40vh;
+  height: 100%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
@@ -832,6 +850,7 @@ footer .copyright {
       -ms-flex-align: center;
           align-items: center;
   color: #3b3b3b;
+  padding: 4% 0 2% 0%;
 }
 
 /* Footer end */
@@ -1108,6 +1127,7 @@ footer .copyright {
   border-radius: 3px;
   padding: 6px;
   margin-left: 7px;
+  width: 100%;
 }
 
 .opcoes .frete button {
@@ -2099,14 +2119,14 @@ img {
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
-@media (max-width: 1250px) {
+@media (max-width: 1275px) {
   #destaques,
   #destaquesApple,
   #destaquesMoto,
   #destaquesSam,
   #destaquesAsus {
-    -ms-grid-columns: (200px)[3] !important;
-        grid-template-columns: repeat(3, 200px) !important;
+    -ms-grid-columns: (210px)[3] !important;
+        grid-template-columns: repeat(3, 210px) !important;
   }
   .duvidas-form,
   .sobre {
@@ -2115,15 +2135,24 @@ img {
   .itemBanner {
     -ms-grid-column: 1 !important;
         grid-column-start: 1 !important;
-    grid-column-end: 3 !important;
+    grid-column-end: 4 !important;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 12;
+    grid-row: 1/13;
   }
   .itemBanner img {
     max-width: 100% !important;
     height: 100% !important;
     border: solid 1px #c3c1c1;
   }
+  .home-nav .logo {
+    margin-right: 53px !important;
+  }
+  .home-nav .login-link {
+    margin-right: 11px !important;
+  }
   header .logo {
-    margin-right: 34px;
+    margin-right: 53px;
   }
   header li,
   header a {
@@ -2148,7 +2177,7 @@ img {
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1020px) {
   .show-menu-btn, .hide-menu-btn, .login {
     display: block !important;
   }
@@ -2270,7 +2299,8 @@ img {
     border-right: solid 1px #c3c1c1 !important;
   }
   header .logo {
-    margin-right: 555px !important;
+    position: absolute;
+    left: 45px;
   }
   header li,
   header a {
@@ -2279,6 +2309,9 @@ img {
   }
   .show-menu-btn {
     color: #323333;
+    position: absolute;
+    right: 58px;
+    margin-top: 5px;
   }
 }
 
@@ -2306,7 +2339,19 @@ img {
             flex-direction: column;
   }
   .opcoes {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
     margin-left: 0% !important;
+  }
+  .opcoes img {
+    width: 70%;
+    margin-left: 15%;
+  }
+  .card-nav {
+    -webkit-box-pack: end !important;
+        -ms-flex-pack: end !important;
+            justify-content: end !important;
   }
   table {
     margin-left: 0 !important;
@@ -2321,6 +2366,10 @@ img {
   .detalhes-pag p {
     font-size: 15px;
     padding: 2px;
+  }
+  .detalhes-pag h1 {
+    font-size: 17px;
+    padding: 4px;
   }
   .menu {
     position: fixed;
@@ -2372,7 +2421,8 @@ img {
     border-radius: 4px;
     padding: 10px;
     width: 466px;
-    margin-bottom: 7px;
+    margin-bottom: 2%;
+    margin-top: 3%;
   }
   .show-menu-item a {
     color: #333333;
@@ -2417,11 +2467,11 @@ img {
   }
   .logo {
     position: absolute;
-    left: 55px;
+    left: 6px !important;
   }
   .show-menu-btn {
     position: absolute;
-    right: 60px;
+    right: 20px !important;
     margin-top: 4px;
   }
   .container-contato {
@@ -2463,12 +2513,6 @@ img {
   #destaquesSam .item {
     margin-left: 17.8%;
   }
-  #destaquesApple .item a,
-  #destaquesAsus .item a,
-  #destaquesMoto .item a,
-  #destaquesSam .item a {
-    margin-left: 45.5px !important;
-  }
   .orderBy {
     margin-left: 0 !important;
   }
@@ -2477,10 +2521,6 @@ img {
   }
   .item img {
     width: 65% !important;
-    margin-left: 45px;
-  }
-  .item a {
-    margin-left: 55px !important;
   }
   footer {
     display: -ms-grid;
@@ -2501,6 +2541,70 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (max-width: 475px) {
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  .item {
+    margin-left: 0 !important;
+    -ms-grid-column-align: center !important;
+        justify-self: center !important;
+  }
+  .show-menu-item {
+    width: 93% !important;
+    position: relative;
+  }
+  .show-menu-item i {
+    position: absolute;
+    right: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .itemBanner {
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 7 !important;
+    grid-row: 1/8 !important;
+  }
+  #finalizarCompra {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+  }
+  .opcoes {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin-left: 0 !important;
+  }
+  .opcoes img {
+    margin-left: 10px !important;
+  }
+  .opcoes #img-container {
+    margin-left: 37px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .buttonsPag button {
+    width: 82% !important;
+  }
+  table {
+    width: 100% !important;
+  }
+  .card-nav img {
+    width: 65px !important;
+  }
+  .opcoes {
+    margin-top: 2%;
   }
 }
 /*# sourceMappingURL=style.css.map */
