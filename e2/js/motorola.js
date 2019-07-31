@@ -460,17 +460,16 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[0].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+              
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[0].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[0].preco
-              } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
-              <p>R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[0].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[0].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -573,17 +572,16 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[1].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+              
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[1].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[1].preco
-              } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
-              <p>R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[1].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[1].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -689,17 +687,16 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[2].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+              
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[2].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[2].preco
-              } no cartão de crédito em até 10x de R$ 90,99 s/ juros</p>
-              <p>R$ 1150,90 no cartão Logo.com em até 12x de R$ 55,96 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[2].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[2].preco} no cartão de crédito em até 10x de R$ 90,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1150,90 no cartão Logo.com em até 12x de R$ 55,96 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -805,17 +802,16 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[3].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+    
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[3].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[3].preco
-              } no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
-              <p>R$ 2200,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[3].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[3].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 2200,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -921,17 +917,15 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[4].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[4].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[4].preco
-              } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
-              <p>R$ 1190,90 no cartão Logo.com em até 12x de R$ 56,99 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[4].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[4].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1190,90 no cartão Logo.com em até 12x de R$ 56,99 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1034,17 +1028,15 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[5].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[5].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[5].preco
-              } no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
-              <p>R$ 720,90 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[5].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[5].preco} no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 720,90 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1150,17 +1142,15 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[6].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[6].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[6].preco
-              } no cartão de crédito em até 10x de R$ 98,99 s/ juros</p>
-              <p>R$ 1101,95 no cartão Logo.com em até 12x de R$ 50,99 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[6].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 98,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1101,95 no cartão Logo.com em até 12x de R$ 50,99 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1248,7 +1238,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a  href  = "index.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[7].imagem}">
@@ -1266,17 +1256,15 @@ function motoProd() {
                   </p>
                   <h2>R$ ${produtos[7].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtos[7].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtos[7].preco
-              } no cartão de crédito em até 10x de R$ 105,99 s/ juros</p>
-              <p>R$ 1180,90 no cartão Logo.com em até 12x de R$ 40,90 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtos[7].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtos[7].preco} no cartão de crédito em até 10x de R$ 105,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1180,90 no cartão Logo.com em até 12x de R$ 40,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">

@@ -1056,6 +1056,7 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1%;
 }
 
 #finalizarCompra a {
@@ -1065,7 +1066,6 @@ footer .copyright {
   text-transform: uppercase;
   color: #616162;
   font-size: 15px;
-  margin-left: -657px;
   font-weight: bold;
   left: 200px;
 }
@@ -1127,7 +1127,7 @@ footer .copyright {
   border-radius: 3px;
   padding: 6px;
   margin-left: 7px;
-  width: 100%;
+  width: 150px;
 }
 
 .opcoes .frete button {
@@ -2163,18 +2163,6 @@ img {
     margin-top: 10px !important;
     margin-left: 0 !important;
   }
-  .precodet {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
 }
 
 @media (max-width: 1020px) {
@@ -2557,6 +2545,15 @@ img {
     margin-left: 0 !important;
     -ms-grid-column-align: center !important;
         justify-self: center !important;
+  }
+  .opcoes img {
+    margin-left: 20px !important;
+  }
+  .opcoes #img-container {
+    margin-left: 47px !important;
+  }
+  .frete input {
+    width: 100% !important;
   }
   .show-menu-item {
     width: 93% !important;

@@ -762,12 +762,13 @@ footer {
   display: flex !important;
   flex-direction: column;
   align-items: center;
+  margin-top: 1%;
   a {
     @include linksReset();
     text-transform: uppercase;
     color: rgb(97, 97, 98);
     font-size: 15px;
-    margin-left: -657px;
+    // margin-left: 657px;
     font-weight: bold;
     left: 200px;
   }
@@ -795,8 +796,6 @@ footer {
     width: 100%;
   }
 
-
-
   h1 {
     border-bottom: $borderStyle;
     padding: 12px;
@@ -821,7 +820,7 @@ footer {
       border-radius: 3px;
       padding: 6px;
       margin-left: 7px;
-      width: 100%;
+      width: 150px;
     }
     button {
       @include btnReset();
@@ -1326,12 +1325,12 @@ img{
   #destaquesAsus{
     grid-template-columns: repeat(3,210px) !important;
   }
-
+   
   .duvidas-form,
   .sobre {
     width: 100% !important;
   }
-
+  
   .itemBanner {
     grid-column-start: 1 !important;
     grid-column-end: 4 !important;
@@ -1368,11 +1367,11 @@ img{
     margin-top: 10px !important;
     margin-left: 0 !important;
   }
-  .precodet {
-    display: flex;
-    align-items: center !important;
-    flex-direction: column;
-  }
+  // .precodet {
+  //   display: flex;
+  //   align-items: center !important;
+  //   flex-direction: column;
+  // }
 }
 
 @media (max-width: 1020px){
@@ -1750,6 +1749,20 @@ img{
     margin-left: 0 !important;
     justify-self: center !important; 
 
+  }
+
+  .opcoes{
+    img{
+      margin-left: 20px !important;
+    }
+    #img-container{
+      margin-left:47px !important;
+    }
+  }
+  .frete {
+    input{
+      width: 100% !important;
+    }
   }
 
   .show-menu-item{

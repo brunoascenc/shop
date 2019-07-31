@@ -482,17 +482,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[0].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                        
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[0].preco} no boleto bancário</p>
-                        <p>R$ ${
-                          produtos[0].preco
-                        } no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
-                        <p>R$ 710,95 no cartão Logo.com em até 12x de R$ 38,92 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[0].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[0].preco} no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 710,95 no cartão Logo.com em até 12x de R$ 38,92 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -595,17 +594,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[1].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                        
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[1].preco} no boleto bancário</p>
-                        <p>R$ ${
-                          produtos[1].preco
-                        } no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
-                        <p>R$ 1780,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[1].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[1].preco} no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 1780,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -711,17 +709,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[2].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                        
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[2].preco} no boleto bancário</p>
-                        <p>R$ ${
-                          produtos[2].preco
-                        } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
-                        <p>R$ 1290,99 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[2].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[2].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 1290,99 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -824,17 +821,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[3].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                        
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[3].preco} no boleto bancário</p>
-                        <p>R$ ${
-                          produtos[3].preco
-                        } no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
-                        <p>R$ 1599,90 no cartão Logo.com em até 12x de R$ 65,60 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[3].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[3].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 1599,90 no cartão Logo.com em até 12x de R$ 65,60 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -940,17 +936,15 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[4].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[4].preco} no boleto bancário</p>
-                        <p>R$ ${
-                          produtos[4].preco
-                        } no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
-                        <p>R$ 1299,90 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[4].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[4].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 1299,90 no cartão Logo.com em até 12x de R$ 45,99 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -1056,17 +1050,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[5].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                        
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[5].preco} no boleto bancário</p>
-                        <p>R$ ${
-                          produtos[5].preco
-                        } no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
-                        <p>R$ 689,90 no cartão Logo.com em até 12x de R$ 50,68 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[5].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[5].preco} no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 689,90 no cartão Logo.com em até 12x de R$ 50,68 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -1172,15 +1165,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[6].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                       
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[6].preco} no boleto bancário</p>
-                        <p>R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
-                        <p>R$ 2020,90 no cartão em Logo.com até 12x de R$ 129,08 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[6].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 2020,90 no cartão em Logo.com até 12x de R$ 129,08 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">
@@ -1283,15 +1277,16 @@ function samsungProd() {
                             </p>
                             <h2>R$ ${produtos[7].preco}</h2>
                             <p>à vista no cartão</p>
-                        </div>
+                        
                         <div class = "buttonsPag">
-                            <button>Comprar</button>
-                            <button>Adicionar ao carrinho</button>
+                            <button><i class="fas fa-check"></i> Comprar</button>
+                            <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                        </div>
                         </div>
                         <br>
-                        <p>R$ ${produtos[7].preco} no boleto bancário</p>
-                        <p>R$ ${produtos[7].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
-                        <p>R$ 589,90 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
+                        <p><i class="fas fa-barcode"></i> R$ ${produtos[7].preco} no boleto bancário</p>
+                        <p><i class="far fa-credit-card"></i> R$ ${produtos[7].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
+                        <p><i class="fas fa-credit-card"></i> R$ 589,90 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
                         <div class = "frete">
                             <p>Calcular o frete: </p>
                             <input type = "text">

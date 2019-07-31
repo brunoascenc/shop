@@ -279,17 +279,16 @@ function asusProd() {
                     </p>
                     <h2>R$ ${produtosAsus[0].preco}</h2>
                     <p>à vista no cartão</p>
-                </div>
+                
                 <div class = "buttonsPag">
-                    <button>Comprar</button>
-                    <button>Adicionar ao carrinho</button>
+                    <button><i class="fas fa-check"></i> Comprar</button>
+                    <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+                </div>
                 </div>
                 <br>
-                <p>R$ ${produtosAsus[0].preco} no boleto bancário</p>
-                <p>R$ ${
-                  produtosAsus[0].preco
-                } no cartão de crédito em até 10x de R$ 85,99 s/ juros</p>
-                <p>R$ 1520,50 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+                <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[0].preco} no boleto bancário</p>
+                <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[0].preco} no cartão de crédito em até 10x de R$ 85,99 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1520,50 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -396,17 +395,16 @@ function asusProd() {
                   </p>
                   <h2>R$ ${produtosAsus[1].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+              
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                  <button><i class="fas fa-check"></i> Comprar</button>
+                  <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtosAsus[1].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtosAsus[1].preco
-              } no cartão de crédito em até 10x de R$ 102,90 s/ juros</p>
-              <p>R$ 1520,00 no cartão Logo.com em até 12x de R$ 69,99 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[1].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[1].preco} no cartão de crédito em até 10x de R$ 102,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1520,00 no cartão Logo.com em até 12x de R$ 69,99 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -512,17 +510,16 @@ function asusProd() {
                   </p>
                   <h2>R$ ${produtosAsus[2].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+              
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                 <button><i class="fas fa-check"></i> Comprar</button>
+                 <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtosAsus[2].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtosAsus[2].preco
-              } no cartão de crédito em até 10x de R$ 110,90 s/ juros</p>
-              <p>R$ 899,90 no cartão Logo.com em até 12x de R$ 45,60 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[2].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[2].preco} no cartão de crédito em até 10x de R$ 110,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 899,90 no cartão Logo.com em até 12x de R$ 45,60 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -628,17 +625,16 @@ function asusProd() {
                   </p>
                   <h2>R$ ${produtosAsus[3].preco}</h2>
                   <p>à vista no cartão</p>
-              </div>
+             
               <div class = "buttonsPag">
-                  <button>Comprar</button>
-                  <button>Adicionar ao carrinho</button>
+                 <button><i class="fas fa-check"></i> Comprar</button>
+                 <button><i class="fas fa-shopping-cart"></i> Adicionar ao carrinho</button>
+              </div>
               </div>
               <br>
-              <p>R$ ${produtosAsus[3].preco} no boleto bancário</p>
-              <p>R$ ${
-                produtosAsus[3].preco
-              } no cartão de crédito em até 10x de R$ 132,90 s/ juros</p>
-              <p>R$ 1750,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
+              <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[3].preco} no boleto bancário</p>
+              <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[3].preco} no cartão de crédito em até 10x de R$ 132,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1750,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
