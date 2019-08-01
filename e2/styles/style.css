@@ -622,8 +622,8 @@ main .organizar .fa-search {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 2%;
   padding: 90px;
   margin-left: 0;
 }
@@ -705,6 +705,8 @@ main .organizar .fa-search {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 1%;
+  padding: 14px;
 }
 
 .contato-title h1 {
@@ -724,17 +726,13 @@ main .organizar .fa-search {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -100px;
-  margin-bottom: 35px;
+  margin-top: -7%;
+  margin-bottom: 5%;
   width: 100%;
 }
 
-.pagamento:before {
-  content: 'Formas de pagamento';
-}
-
 .pagamento img {
-  padding: 0 40px;
+  padding: 0 30px;
 }
 
 /* Footer */
@@ -748,8 +746,9 @@ footer {
   border-top: solid 1px #c3c1c1;
   background: #fdfcfc;
   height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 footer .info {
@@ -1045,7 +1044,7 @@ footer .copyright {
 /*Modal end*/
 /*BUY SECTION*/
 #finalizarCompra {
-  padding: 4%;
+  padding: 16px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -1056,7 +1055,7 @@ footer .copyright {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1%;
+  margin-top: 50px;
 }
 
 #finalizarCompra a {
@@ -1231,6 +1230,7 @@ footer .copyright {
 
 .fichaTec table {
   width: 100%;
+  margin-bottom: 5%;
 }
 
 .fichaTec tr:nth-child(odd) {
@@ -2410,7 +2410,7 @@ img {
     padding: 10px;
     width: 466px;
     margin-bottom: 2%;
-    margin-top: 3%;
+    margin-top: 6%;
   }
   .show-menu-item a {
     color: #333333;
@@ -2600,8 +2600,46 @@ img {
   .card-nav img {
     width: 65px !important;
   }
+  .buttonsPag {
+    margin-left: 35px !important;
+  }
   .opcoes {
     margin-top: 2%;
+  }
+  .opcoes p {
+    font-size: 13px;
+  }
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus {
+    -ms-grid-columns: (1fr)[1] !important;
+        grid-template-columns: repeat(1, 1fr) !important;
+  }
+  #destaques .item,
+  #destaquesApple .item,
+  #destaquesMoto .item,
+  #destaquesSam .item,
+  #destaquesAsus .item {
+    width: 80% !important;
+  }
+  .card-nav img {
+    width: 57px !important;
+  }
+  .itemBanner {
+    -ms-grid-row: 1 !important;
+    -ms-grid-row-span: 5 !important;
+    grid-row: 1/6 !important;
+  }
+  #finalizarCompra {
+    margin-top: 15%;
+  }
+  #contato {
+    margin-top: 550% !important;
+  }
+  #finalizarCompra {
+    padding: 4%;
   }
 }
 /*# sourceMappingURL=style.css.map */

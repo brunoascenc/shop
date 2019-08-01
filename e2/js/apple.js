@@ -1098,23 +1098,23 @@ function appleProd() {
             </tr>
             <tr>
               <td>Sistema:</td>
-              <td>${produtos[5].sistema}</td>
+              <td>${produtos[4].sistema}</td>
             </tr>
             <tr>
               <td>Versão:</td>
-              <td>${produtos[5].versao}</td>
+              <td>${produtos[4].versao}</td>
             </tr>
             <tr>
               <td>Tela:</td>
               <td>${produtos[5].tipo_tela}</td>
             </tr>
-            <tr>R$ 
+            <tr>
               <td>Tamanho:</td>
-              <td>${produtos[5].tamanho_display}</td>
+              <td>${produtos[4].tamanho_display}</td>
             </tr>
             <tr>
               <td>Resolução:</td>
-              <td>${produtos[5].resolucao}</td>
+              <td>${produtos[4].resolucao}</td>
             </tr>
             <tr>
               <td>Camera Traseira:</td>

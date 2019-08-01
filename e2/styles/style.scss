@@ -452,8 +452,8 @@ main {
 .contato-form {
   display: flex;
   // justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 25px;
+  margin-top: 10px;
+  margin-bottom: 2%;
   padding: 90px;
   margin-left: 0;
   h2 {
@@ -507,6 +507,8 @@ main {
 .contato-title {
   display: flex;
   justify-content: center;
+  margin-top: 1%;
+  padding: 14px;
   h1{
     background: $mainBlue;
     margin-top: 45px;
@@ -521,14 +523,11 @@ main {
 .pagamento {
   display: flex;
   justify-content: center;
-  margin-top: -100px;
-  margin-bottom: 35px;
+  margin-top: -7%;
+  margin-bottom: 5%;
   width: 100%;
-  &:before {
-    content: 'Formas de pagamento';
-  }
   img {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
 
@@ -542,10 +541,11 @@ footer {
   background: #fdfcfc;
   height: 100%;
   // margin-top: 25px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
   .info {
     margin-top: 5%;
+    // padding: 60px;
     li,
     a {
       @include linksReset();
@@ -563,6 +563,7 @@ footer {
   }
   .newsletter {
     margin-top: 5%;
+    // margin-left: 15px;
     @include columnCenter();
     .socials i {
       color: rgb(0, 183, 255);
@@ -758,11 +759,11 @@ footer {
 
 /*BUY SECTION*/
 #finalizarCompra {
-  padding: 4%;
+  padding: 16px;
   display: flex !important;
   flex-direction: column;
   align-items: center;
-  margin-top: 1%;
+  margin-top: 50px;
   a {
     @include linksReset();
     text-transform: uppercase;
@@ -905,6 +906,7 @@ footer {
   }
   table {
     width: 100%;
+    margin-bottom: 5%;
     // justify-content: end;
     // margin-left: 141px;
   }
@@ -1604,13 +1606,10 @@ img{
     background: #f8fafa;
     border: solid 2px rgb(200, 199, 199);
     border-radius: 4px;
-    // padding: 10px 8px;
-    // height: 45px;
-    // width: 85%;
     padding: 10px;
     width: 466px;
     margin-bottom: 2%;
-    margin-top: 3%;
+    margin-top: 6%;
     a{
       color: #333333;
     }
@@ -1809,7 +1808,49 @@ img{
       width: 65px !important;
     }
   }
+
+  .buttonsPag {  
+    margin-left:  35px !important;
+  }
+
   .opcoes {
     margin-top: 2%;
+    p {
+      font-size: 13px;
+    }
   }
+
+  #destaques,
+  #destaquesApple,
+  #destaquesMoto,
+  #destaquesSam,
+  #destaquesAsus{
+    grid-template-columns: repeat(1, 1fr) !important;
+    .item {
+      width: 80% !important;
+    }
+  }
+  .card-nav {
+    img{
+      width: 57px !important;
+    }
+  }
+
+
+  .itemBanner {
+    grid-row: 1/6 !important;
+  }
+  #finalizarCompra {
+    margin-top: 15%;
+  }
+
+  #contato {
+    margin-top: 550% !important;
+  }
+
+  #finalizarCompra{
+    padding: 4%;
+    // margin-top: 25%;
+  }
+
 }
