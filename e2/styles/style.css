@@ -17,7 +17,9 @@ body {
 
 /* Nav*/
 header {
-  height: 9vh;
+  height: 18vh;
+  background: #fdfcfc;
+  width: 100%;
 }
 
 header .topo-nav,
@@ -25,16 +27,15 @@ header .nav-contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85px;
+  height: 18vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 2%;
-  border-bottom: solid 1px #e0dfdf;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background: #fdfcfc;
+  border-bottom: solid 1px #e0dfdf;
 }
 
 header .navbar {
@@ -44,6 +45,7 @@ header .navbar {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 15px;
 }
 
 header .navbar input {
@@ -53,7 +55,7 @@ header .navbar input {
   height: 25px;
   margin-top: 37px;
   margin-left: 43px;
-  margin-right: 15px;
+  margin-right: 14px;
   border: solid 1px #f0eded;
   border-bottom: solid 3px #e4e4e4;
   border-radius: 4px;
@@ -81,6 +83,7 @@ header .logo {
   margin-top: 15px;
   margin-right: 228px;
   margin-left: 12px;
+  margin-bottom: 15px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
   background: #00b7ff;
@@ -188,13 +191,9 @@ header #check {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-bottom: solid 1px #e0dfdf;
-  border-top: solid 1px #e0dfdf;
-  background-color: white;
   -webkit-animation: slide 12s infinite;
           animation: slide 12s infinite;
   height: 320px;
-  margin-top: 13px;
   position: relative;
   background-size: cover;
 }
@@ -428,7 +427,7 @@ main #destaquesAsus .item {
   width: 100%;
   height: 100%;
   padding: 6%;
-  background-color: #fbfafa;
+  background-color: white;
   border: solid 1px #cfcdcd;
   border-radius: 2px;
 }
@@ -842,6 +841,7 @@ footer .copyright {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1008,7 +1008,7 @@ footer .copyright {
 
 .modal .close-button {
   cursor: pointer;
-  background: #f1eeee;
+  background: #f0eeee;
   color: #3b3b3b;
   padding: 4px;
   border: none;
@@ -2112,6 +2112,10 @@ th {
   animation-delay: 2s;
 }
 
+.fs-slide {
+  background-color: #f6f4f4;
+}
+
 img {
   max-width: 100% !important;
 }
@@ -2119,7 +2123,7 @@ img {
 /*****************/
 /* MEDIA QUERIES */
 /*****************/
-@media (max-width: 1275px) {
+@media screen and (max-width: 1275px) {
   #destaques,
   #destaquesApple,
   #destaquesMoto,
@@ -2171,9 +2175,9 @@ img {
   }
   .navbar, .login {
     position: fixed;
-    width: 50%;
-    height: 100vh;
-    background: #0d9cd4;
+    width: 60% !important;
+    height: 100%;
+    background: #f5f3f3;
     right: -100%;
     top: 0;
     -webkit-transition: 0.7s;
@@ -2188,11 +2192,15 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-top: -195px;
+    overflow-y: scroll;
+    width: 100%;
   }
   .navbar #main a, .login #main a {
-    color: #ebe9e9;
+    color: #3f3e3e;
     font-size: 17px;
-    border-bottom: solid 1px #3ec0e7;
+    border-bottom: solid 2px #cfcece;
+    width: 100%;
   }
   .navbar #main .searchNav, .login #main .searchNav {
     display: none;
@@ -2201,6 +2209,13 @@ img {
     position: absolute;
     top: 40px;
     right: 40px;
+    color: #646262 !important;
+  }
+  .topo-nav,
+  .nav-contato {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
   }
   .contato-form {
     -webkit-box-orient: vertical;
@@ -2213,10 +2228,7 @@ img {
     padding: 6px;
   }
   .login-link i {
-    position: absolute;
-    top: 4px !important;
-    right: 99px !important;
-    color: #e0e0e0 !important;
+    display: none;
   }
   .opcoes {
     display: -webkit-box;
@@ -2306,6 +2318,9 @@ img {
 @media (max-width: 750px) {
   .show-menu-item, .hide-menu-item {
     display: block !important;
+  }
+  .navbar, .login {
+    width: 100% !important;
   }
   .navbar {
     width: 100%;
@@ -2436,6 +2451,9 @@ img {
   .hide-menu-item i {
     color: #c3c1c1;
     font-size: 18px;
+  }
+  #main {
+    margin-top: 0px !important;
   }
   #destaques,
   #destaquesApple,
