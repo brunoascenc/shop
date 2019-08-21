@@ -107,218 +107,10 @@ function appleProd() {
                   <a class = "appleBtn7" href = "#">Comprar</a>
               </div>
                   `;
-
-        document.addEventListener('click', e => {
-          if(e.target.className === 'menorPreco'){
-            const menorPreco = produtos.sort((a,b) => a.preco - b.preco)
-            let menorSaida = ``
-            menorSaida += `
-            <div class = "orderBy item">
-            <img src   = "${produtos[0].imagem}">
-               <h3>${produtos[0].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[0].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[0].parcela}</p>
-               </span>
-               <a class = "appleBtn0" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[1].imagem}">
-               <h3>${produtos[1].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[1].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[1].parcela}</p>
-               </span>
-               <a class = "appleBtn1" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[2].imagem}">
-               <h3>${produtos[2].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[2].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[2].parcela}</p>
-               </span>
-               <a class = "appleBtn2" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[3].imagem}">
-               <h3>${produtos[3].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[3].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[3].parcela}</p>
-               </span>
-               <a class = "appleBtn3" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[4].imagem}">
-               <h3>${produtos[4].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[4].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[4].parcela}</p>
-               </span>
-               <a class = "appleBtn4" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[5].imagem}">
-               <h3>${produtos[5].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[5].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[5].parcela}</p>
-               </span>
-               <a class = "appleBtn5" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[6].imagem}">
-               <h3>${produtos[6].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[6].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[6].parcela}</p>
-               </span>
-               <a class = "appleBtn6" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[7].imagem}">
-               <h3>${produtos[7].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[7].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[7].parcela}</p>
-               </span>
-               <a class = "appleBtn7" href = "#">Comprar</a>
-           </div>
-            `
-            document.getElementById('destaquesApple').innerHTML = menorSaida
-          }
-
-          else if (e.target.className === 'maiorPreco'){
-            const menorPreco = produtos.sort((a,b) => b.preco - a.preco)
-            let maiorSaida = ``
-            maiorSaida += `
-            <div class = "orderBy item">
-            <img src   = "${produtos[0].imagem}">
-               <h3>${produtos[0].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[0].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[0].parcela}</p>
-               </span>
-               <a class = "appleBtn0" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[1].imagem}">
-               <h3>${produtos[1].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[1].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[1].parcela}</p>
-               </span>
-               <a class = "appleBtn1" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[2].imagem}">
-               <h3>${produtos[2].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[2].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[2].parcela}</p>
-               </span>
-               <a class = "appleBtn2" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[3].imagem}">
-               <h3>${produtos[3].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[3].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[3].parcela}</p>
-               </span>
-               <a class = "appleBtn3" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[4].imagem}">
-               <h3>${produtos[4].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[4].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[4].parcela}</p>
-               </span>
-               <a class = "appleBtn4" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[5].imagem}">
-               <h3>${produtos[5].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[5].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[5].parcela}</p>
-               </span>
-               <a class = "appleBtn5" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[6].imagem}">
-               <h3>${produtos[6].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[6].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[6].parcela}</p>
-               </span>
-               <a class = "appleBtn6" href = "#">Comprar</a>
-           </div>
-
-           <div class = "orderBy item">
-           <img src   = "${produtos[7].imagem}">
-               <h3>${produtos[7].titulo}</h3>
-               <span class = "preco">
-                   <p>R$ ${produtos[7].preco} à vista</p>
-               </span>
-               <span class = "parcela">
-                   <p>${produtos[7].parcela}</p>
-               </span>
-               <a class = "appleBtn7" href = "#">Comprar</a>
-           </div>
-            `
-            document.getElementById('destaquesApple').innerHTML = maiorSaida
-          }
-
-          
+                  
           /** COLORS FILTER  **/
-
-          else if (e.target.className === 'branco'){
+        document.addEventListener('click', e => {
+          if (e.target.className === 'branco'){
             let cores = produtos.filter(coresPrata => {
               return coresPrata.cor === 'Prata'
             })
@@ -450,7 +242,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
            
               <div class = "opcoes">
                 <div>
@@ -465,7 +257,7 @@ function appleProd() {
                   <h1>${produtos[0].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[0].preco}</h2>
                       <p>à vista no cartão</p>
@@ -478,7 +270,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[0].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[0].preco} no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 1899,90 no cartão Logo.com em até 12x de R$ 49,60 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 1899,90 no cartão Blues.com em até 12x de R$ 49,60 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -566,7 +358,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
               <div>
                <img id = "img-container" src = "${produtos[1].imagem}">
@@ -580,7 +372,7 @@ function appleProd() {
                   <h1>${produtos[1].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[1].preco}</h2>
                       <p>à vista no cartão</p>
@@ -593,7 +385,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[1].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[1].preco} no cartão de crédito em até 10x de R$ 130,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 1389,99 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 1389,99 no cartão Blues.com em até 12x de R$ 50,90 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -678,7 +470,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
               <div>
                <img id = "img-container" src = "${produtos[2].imagem}">
@@ -692,7 +484,7 @@ function appleProd() {
                   <h1>${produtos[2].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[2].preco}</h2>
                       <p>à vista no cartão</p>
@@ -705,7 +497,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[2].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[2].preco} no cartão de crédito em até 10x de R$ 109,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 1259,99 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 1259,99 no cartão Blues.com em até 12x de R$ 39,90 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -793,7 +585,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
               <div>
               <img id = "img-container" src = "${produtos[3].imagem}">
@@ -807,7 +599,7 @@ function appleProd() {
                   <h1>${produtos[3].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[3].preco}</h2>
                       <p>à vista no cartão</p>
@@ -820,7 +612,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[3].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[3].preco} no cartão de crédito em até 10x de R$ 89,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 1005,90 no cartão Logo.com em até 12x de R$ 29,99 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 1005,90 no cartão Blues.com em até 12x de R$ 29,99 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -908,7 +700,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
               <div>
               <img id = "img-container" src = "${produtos[4].imagem}">
@@ -922,7 +714,7 @@ function appleProd() {
                   <h1>${produtos[4].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[4].preco}</h2>
                       <p>à vista no cartão</p>
@@ -935,7 +727,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[4].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[4].preco} no cartão de crédito em até 10x de R$ 89,90 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 819,90 no cartão Logo.com em até 12x de R$ 56,90 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 819,90 no cartão Blues.com em até 12x de R$ 56,90 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -1023,7 +815,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
               <div>
                <img id = "img-container" src = "${produtos[5].imagem}">
@@ -1037,7 +829,7 @@ function appleProd() {
                   <h1>${produtos[5].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[5].preco}</h2>
                       <p>à vista no cartão</p>
@@ -1050,7 +842,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[5].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[5].preco} no cartão de crédito em até 10x de R$ 50,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 420,99 no cartão Logo.com em até 12x de R$ 29,23 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 420,99 no cartão Blues.com em até 12x de R$ 29,23 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -1138,7 +930,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
               <div>
                <img id = "img-container" src = "${produtos[6].imagem}">
@@ -1152,7 +944,7 @@ function appleProd() {
                   <h1>${produtos[6].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[6].preco}</h2>
                       <p>à vista no cartão</p>
@@ -1165,7 +957,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[6].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 129,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 1569,00 no cartão Logo.com em até 12x de R$ 39,99 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 1569,00 no cartão Blues.com em até 12x de R$ 39,99 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">
@@ -1250,7 +1042,7 @@ function appleProd() {
   
             let saida = `
             <div class = "container">
-              <a   href  = "index.html">Voltar</a>
+              <a   href  = "apple.html">Voltar</a>
               <div class = "opcoes">
                 <div>
                    <img id = "img-container" src = "${produtos[7].imagem}">
@@ -1265,7 +1057,7 @@ function appleProd() {
                   <h1>${produtos[7].tituloDetalhe}</h1>
                   <div class = "precodet">
                       <p>vendido e entregue por
-                          Logo.com
+                          Blues.com
                       </p>
                       <h2>R$ ${produtos[7].preco}</h2>
                       <p>à vista no cartão</p>
@@ -1278,7 +1070,7 @@ function appleProd() {
                   <br>
                   <p><i class="fas fa-barcode"></i> R$ ${produtos[7].preco} no boleto bancário</p>
                   <p><i class="far fa-credit-card"></i> R$ ${produtos[7].preco} no cartão de crédito em até 10x de R$ 123,99 s/ juros</p>
-                  <p><i class="fas fa-credit-card"></i> R$ 1750,90 no cartão Logo.com em até 12x de R$ 59,99 s/ juros</p>
+                  <p><i class="fas fa-credit-card"></i> R$ 1750,90 no cartão Blues.com em até 12x de R$ 59,99 s/ juros</p>
                   <div class = "frete">
                       <p>Calcular o frete: </p>
                       <input type = "text">

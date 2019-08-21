@@ -2,7 +2,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-591c9c9f-iphone7-black-1.jpg",
         "titulo": "iPhone 7 Plus Preto Matte",
-        "preco": 1899.90,
+        "preco": "1899,90",
         "parcela": "ou 12x de R$ 59,99 sem juros",
         "tituloDetalhe": "iPhone 7 Plus 32GB Preto Matte Desbloqueado IOS 10",
         "marca": "Apple",
@@ -25,7 +25,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5ab2a7f1-iphone-x-cinzaespacial-frente.png",
         "titulo": "Iphone X Cinza Espacial",
-        "preco": 2000.00,
+        "preco": "2000,00",
         "parcela": "ou 12X de 49,60 sem juros",
         "tituloDetalhe": "iPhone X Cinza Espacial 64GB Tela 5.8",
         "marca": "Apple",
@@ -48,7 +48,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-maxx-2-64gb.jpg",
         "titulo": "Motorola Moto Maxx 2 64gb",
-        "preco": 2000.00,
+        "preco": "2000,00",
         "parcela": "ou 12x R$ 49,90 sem juros",
         "tituloDetalhe": "Motorola Moto Maxx 2 64gb",
         "marca": "Motorola",
@@ -71,7 +71,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-s8-preto-1.jpg",
         "titulo": "Samsung Galaxy S8 Plus",
-        "preco": 1970.90,
+        "preco": "1970,90",
         "parcela": "ou 12x R$ 50,90 sem juros",
         "tituloDetalhe": "Samsung Galaxy S8 Plus 64GB",
         "marca": "Samsung",
@@ -93,7 +93,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5979f872-moto-g5-plus-platinum-1.jpg",
         "titulo": "Motorola Moto G5 Plus",
-        "preco": 859.90,
+        "preco": "859,90",
         "parcela": "ou 12x R$ 39,90 sem juros",
         "tituloDetalhe": "Motorola Moto G 5S Dual Chip Android 7.1.1 Nougat",
         "marca": "Motorola",
@@ -116,7 +116,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-s7-edge-dourado-1.png",
         "titulo": "Samsung Galaxy S7 Edge",
-        "preco": 1689.99,
+        "preco": "1689,99",
         "parcela": "ou R$ 65,60 sem juros",
         "tituloDetalhe": "Smartphone Samsung Galaxy S7 Edge Android 6.0",
         "marca": "Samsung",
@@ -139,7 +139,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-prata-frente.jpg",
         "titulo": "Iphone SE Prata",
-        "preco": 1259.99,
+        "preco": "1259,99",
         "parcela": "ou 12x de R$ 39,90 sem juros",
         "tituloDetalhe": "iPhone SE 32GB Prata IOS 4G Câmera 12MP - Apple",
         "marca": "Apple",
@@ -162,7 +162,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-x-style-32gb-preto.png",
         "titulo": "Motorola Moto X Style",
-        "preco": 2000.00,
+        "preco": "2000,00",
         "parcela": "ou 12x R$ 49,90 sem juros",
         "tituloDetalhe": "Moto X Style Xt1572 32gb Preto",
         "marca": "Motorola",
@@ -185,7 +185,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-galaxy-s6-flat-bran-1.png",
         "titulo": "Samsung Galaxy S6 Flat",
-        "preco": 659.00,
+        "preco": "659,00",
         "parcela": "ou 12x R$ 25,90 sem juros",
         "tituloDetalhe": "Samsung Galaxy S6 Flat Branco",
         "marca": "Samsung",
@@ -208,7 +208,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5b3134b3-zenfone-4-verde-frente.png",
         "titulo": "Zenfone 4 Verde",
-        "preco": 1659.55,
+        "preco": "1659,55",
         "parcela": "ou 12x R$ 49,90 sem juros",
         "tituloDetalhe": "Zenfone 4 4GB Ram Verde",
         "marca": "Asus",
@@ -231,7 +231,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-zenfone-4-selfie-pro-vermelho-frente.png",
         "titulo": "Zenfone 4 Selfie Pro",
-        "preco": 1789.00,
+        "preco": "1789,00",
         "parcela": "ou 12x R$ 69,99 sem juros",
         "tituloDetalhe": "Zenfone 4 Selfie Pro 4GB Ram Vermelho",
         "marca": "Asus",
@@ -254,7 +254,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5a5f3e54-zenfone-3-preto-1.jpg",
         "titulo": "Zenfone 3 Preto",
-        "preco": 1289.66,
+        "preco": "1289,66",
         "parcela": "ou 12x R$ 45,60 sem juros",
         "tituloDetalhe": "Smartphone Asus Zenfone 3 Dual Chip ",
         "marca": "Asus",

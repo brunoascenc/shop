@@ -110,213 +110,7 @@ function motoProd() {
      `;
 
      document.addEventListener('click', e => {
-       if(e.target.className === 'menorPreco'){
-        const menorPreco = produtos.sort((a,b) => a.preco - b.preco)
-        let menorSaida = ``
-        menorSaida += `
-        <div class = "orderBy item">
-        <img src   = "${produtos[0].imagem}">
-           <h3>${produtos[0].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[0].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[0].parcela}</p>
-           </span>
-           <a class = "motoBtn0" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[1].imagem}">
-           <h3>${produtos[1].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[1].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[1].parcela}</p>
-           </span>
-           <a class = "motoBtn1" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[2].imagem}">
-           <h3>${produtos[2].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[2].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[2].parcela}</p>
-           </span>
-           <a class = "motoBtn2" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[3].imagem}">
-           <h3>${produtos[3].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[3].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[3].parcela}</p>
-           </span>
-           <a class = "motoBtn3" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[4].imagem}">
-           <h3>${produtos[4].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[4].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[4].parcela}</p>
-           </span>
-           <a class = "motoBtn4" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[5].imagem}">
-           <h3>${produtos[5].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[5].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[5].parcela}</p>
-           </span>
-           <a class = "motoBtn5" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[6].imagem}">
-           <h3>${produtos[6].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[6].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[6].parcela}</p>
-           </span>
-           <a class = "motoBtn6" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[7].imagem}">
-           <h3>${produtos[7].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[7].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[7].parcela}</p>
-           </span>
-           <a class = "motoBtn7" href = "#">Comprar</a>
-       </div>
-        `
-        document.getElementById('destaquesMoto').innerHTML = menorSaida
-       }
-
-       else if (e.target.className === 'maiorPreco'){
-        const maiorPreco = produtos.sort((a,b) => b.preco - a.preco)
-        let maiorSaida = ``
-        maiorSaida += `
-        <div class = "orderBy item">
-        <img src   = "${produtos[0].imagem}">
-           <h3>${produtos[0].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[0].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[0].parcela}</p>
-           </span>
-           <a class = "motoBtn0" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[1].imagem}">
-           <h3>${produtos[1].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[1].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[1].parcela}</p>
-           </span>
-           <a class = "motoBtn1" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[2].imagem}">
-           <h3>${produtos[2].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[2].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[2].parcela}</p>
-           </span>
-           <a class = "motoBtn2" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[3].imagem}">
-           <h3>${produtos[3].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[3].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[3].parcela}</p>
-           </span>
-           <a class = "motoBtn3" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[4].imagem}">
-           <h3>${produtos[4].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[4].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[4].parcela}</p>
-           </span>
-           <a class = "motoBtn4" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[5].imagem}">
-           <h3>${produtos[5].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[5].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[5].parcela}</p>
-           </span>
-           <a class = "motoBtn5" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[6].imagem}">
-           <h3>${produtos[6].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[6].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[6].parcela}</p>
-           </span>
-           <a class = "motoBtn6" href = "#">Comprar</a>
-       </div>
-
-       <div class = "orderBy item">
-       <img src   = "${produtos[7].imagem}">
-           <h3>${produtos[7].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[7].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[7].parcela}</p>
-           </span>
-           <a class = "motoBtn7" href = "#">Comprar</a>
-       </div>
-        `
-        document.getElementById('destaquesMoto').innerHTML = maiorSaida
-       }
-
-       else if (e.target.className === 'preto'){
+      if (e.target.className === 'preto'){
         let cores = produtos.filter(coresBranco => {
           return coresBranco.cor === 'Preto'
         })
@@ -442,7 +236,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[0].imagem}">
@@ -456,7 +250,7 @@ function motoProd() {
               <h1>${produtos[0].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[0].preco}</h2>
                   <p>à vista no cartão</p>
@@ -469,7 +263,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[0].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[0].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1900,90 no cartão Blues.com em até 12x de R$ 49,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -554,7 +348,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[1].imagem}">
@@ -568,7 +362,7 @@ function motoProd() {
               <h1>${produtos[1].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[1].preco}</h2>
                   <p>à vista no cartão</p>
@@ -581,7 +375,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[1].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[1].preco} no cartão de crédito em até 10x de R$ 136,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1900,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1900,90 no cartão Blues.com em até 12x de R$ 49,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -669,7 +463,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[2].imagem}">
@@ -683,7 +477,7 @@ function motoProd() {
               <h1>${produtos[2].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[2].preco}</h2>
                   <p>à vista no cartão</p>
@@ -696,7 +490,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[2].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[2].preco} no cartão de crédito em até 10x de R$ 90,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1150,90 no cartão Logo.com em até 12x de R$ 55,96 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1150,90 no cartão Blues.com em até 12x de R$ 55,96 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -784,7 +578,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[3].imagem}">
@@ -798,7 +592,7 @@ function motoProd() {
               <h1>${produtos[3].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[3].preco}</h2>
                   <p>à vista no cartão</p>
@@ -811,7 +605,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[3].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[3].preco} no cartão de crédito em até 10x de R$ 169,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 2200,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 2200,99 no cartão Blues.com em até 12x de R$ 89,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -899,7 +693,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[4].imagem}">
@@ -913,7 +707,7 @@ function motoProd() {
               <h1>${produtos[4].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[4].preco}</h2>
                   <p>à vista no cartão</p>
@@ -925,7 +719,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[4].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[4].preco} no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1190,90 no cartão Logo.com em até 12x de R$ 56,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1190,90 no cartão Blues.com em até 12x de R$ 56,99 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1010,7 +804,7 @@ function motoProd() {
   
             let saida = `
             <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[5].imagem}">
@@ -1024,7 +818,7 @@ function motoProd() {
               <h1>${produtos[5].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[5].preco}</h2>
                   <p>à vista no cartão</p>
@@ -1036,7 +830,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[5].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[5].preco} no cartão de crédito em até 10x de R$ 69,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 720,90 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 720,90 no cartão Blues.com em até 12x de R$ 39,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1124,7 +918,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[6].imagem}">
@@ -1138,7 +932,7 @@ function motoProd() {
               <h1>${produtos[6].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[6].preco}</h2>
                   <p>à vista no cartão</p>
@@ -1150,7 +944,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[6].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 98,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1101,95 no cartão Logo.com em até 12x de R$ 50,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1101,95 no cartão Blues.com em até 12x de R$ 50,99 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1238,7 +1032,7 @@ function motoProd() {
   
             let saida = `
           <div class = "container">
-          <a  href  = "index.html">Voltar</a>
+          <a  href  = "motorola.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtos[7].imagem}">
@@ -1252,7 +1046,7 @@ function motoProd() {
               <h1>${produtos[7].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[7].preco}</h2>
                   <p>à vista no cartão</p>
@@ -1264,7 +1058,7 @@ function motoProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[7].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[7].preco} no cartão de crédito em até 10x de R$ 105,99 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1180,90 no cartão Logo.com em até 12x de R$ 40,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1180,90 no cartão Blues.com em até 12x de R$ 40,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">

@@ -2,7 +2,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-maxx-2-64gb.jpg",
         "titulo": "Motorola Moto Maxx 2 64gb",
-        "preco": 2000.00,
+        "preco": "2000,00",
         "parcela": "ou 12x R$ 49,90 sem juros",
         "tituloDetalhe": "Motorola Moto Maxx 2 64gb",
         "marca": "Motorola",
@@ -25,7 +25,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-x-style-32gb-preto.png",
         "titulo": "Motorola Moto X Style",
-        "preco": 2000.00,
+        "preco": "2000,00",
         "parcela": "ou 12x R$ 49,90 sem juros",
         "tituloDetalhe": "Moto X Style Xt1572 32gb Preto",
         "marca": "Motorola",
@@ -48,7 +48,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5c1148d1-moto-g-3a-geracao-16gb-4g-dual-preto.png",
         "titulo": "Moto G3 Geração",
-        "preco": 1200.00,
+        "preco": "1200,00",
         "parcela": "ou 12x R$ 55,96 sem juros",
         "tituloDetalhe": "Moto G3 Motorola Xt1543 16gb Preto",
         "marca": "Motorola",
@@ -71,7 +71,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-597a4afd-moto-z-play-preto-1.jpg",
         "titulo": "Motorola Moto Z Play",
-        "preco": 2509.56,
+        "preco": "2509,56",
         "parcela": "ou 12x R$ 89,90 sem juros",
         "tituloDetalhe": "Moto Z Play Motorola Dual Xt1635 Preto",
         "marca": "Motorola",
@@ -94,7 +94,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-moto-x4-preto-frete.png",
         "titulo": "Motorola Moto X4 Preto",
-        "preco": 1565.90,
+        "preco": "1565,90",
         "parcela": "ou 12x R$ 56,99 sem juros",
         "tituloDetalhe": "Smartphone Motorola Moto X4 Dual Cam",
         "marca": "Motorola",
@@ -116,7 +116,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5979f872-moto-g5-plus-platinum-1.jpg",
         "titulo": "Motorola Moto G5 Plus",
-        "preco": 859.90,
+        "preco": "859,90",
         "parcela": "ou 12x R$ 39,90 sem juros",
         "tituloDetalhe": "Motorola Moto G 5S Dual Chip Android 7.1.1 Nougat",
         "marca": "Motorola",
@@ -139,7 +139,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-motorola-moto-x2-32gb-preto.png",
         "titulo": "Motorola Moto X2 Preto",
-        "preco": 1254.00,
+        "preco": "1254,00",
         "parcela": "ou 12x R$ 50,99 sem juros",
         "tituloDetalhe": "Motorola Moto X2 32gb Preto",
         "marca": "Motorola",
@@ -162,7 +162,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-moto-g6-play-indigo-frete.png",
         "titulo": "Motorola Moto G6 Play",
-        "preco": 1299.90,
+        "preco": "1299,90",
         "parcela": "ou 12x R$ 40,90 sem juros",
         "tituloDetalhe": "Smartphone Motorola Moto G6 32GB Dual Chip",
         "marca": "Motorola",

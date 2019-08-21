@@ -17,7 +17,7 @@ body {
 
 /* Nav*/
 header {
-  height: 18vh;
+  height: 12vh;
   background: #fdfcfc;
   width: 100%;
 }
@@ -27,7 +27,7 @@ header .nav-contato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 18vh;
+  height: 12vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -54,7 +54,7 @@ header .navbar input {
   padding: 5px;
   height: 25px;
   margin-top: 37px;
-  margin-left: 43px;
+  margin-left: 30px;
   margin-right: 14px;
   border: solid 1px #f0eded;
   border-bottom: solid 3px #e4e4e4;
@@ -81,8 +81,8 @@ header .home-nav .login-link {
 
 header .logo {
   margin-top: 15px;
-  margin-right: 228px;
-  margin-left: 12px;
+  margin-right: 220px;
+  margin-left: 13px;
   margin-bottom: 15px;
   font-family: "Noto Sans KR", sans-serif;
   text-transform: uppercase;
@@ -173,7 +173,11 @@ header #check {
 }
 
 .pages-content .login-link {
-  margin-right: 12px;
+  margin-right: 10px;
+}
+
+.pages-content .logo {
+  margin-right: 228px;
 }
 
 .sticky-nav {
@@ -732,6 +736,11 @@ main .organizar .fa-search {
 
 .pagamento img {
   padding: 0 30px;
+}
+
+.ordenar-menu i {
+  color: #b8b6b6;
+  cursor: pointer;
 }
 
 /* Footer */
@@ -2606,6 +2615,9 @@ img {
   .opcoes #img-container {
     margin-left: 37px !important;
   }
+  .logo {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 320px) {
@@ -2654,7 +2666,7 @@ img {
     margin-top: 15%;
   }
   #contato {
-    margin-top: 550% !important;
+    margin-top: 2% !important;
   }
   #finalizarCompra {
     padding: 4%;

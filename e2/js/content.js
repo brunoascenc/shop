@@ -150,288 +150,12 @@ function homeProd() {
        </div>
         `;
 
-      document.addEventListener('click', e => {
-        if (e.target.className === 'menorPreco') {
-          const produtosMenor = produtos.sort((a, b) => a.preco - b.preco);
-          let menorSaida = ``;
-          menorSaida += `
-          <div class = "orderBy item">
-        <img src   = "${produtos[0].imagem}">
-           <h3>${produtos[0].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[0].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[0].parcela}</p>
-           </span>
-           <a class = "homeBtn0" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[1].imagem}">
-           <h3>${produtos[1].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[1].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[1].parcela}</p>
-           </span>
-           <a class = "homeBtn1" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[2].imagem}">
-           <h3>${produtos[2].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[2].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[2].parcela}</p>
-           </span>
-           <a class = "homeBtn2" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[3].imagem}">
-           <h3>${produtos[3].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[3].preco}</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[3].parcela}</p>
-           </span>
-           <a class = "homeBtn3" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[4].imagem}">
-           <h3>${produtos[4].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[4].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[4].parcela}</p>
-           </span>
-           <a class = "homeBtn4" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[5].imagem}">
-           <h3>${produtos[5].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[5].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[5].parcela}</p>
-           </span>
-           <a class = "homeBtn5" href = "#">Comprar</a>
-       </div>
-       <div class = "item">
-       <img src   = "${produtos[6].imagem}">
-           <h3>${produtos[6].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[6].preco}</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[6].parcela}</p>
-           </span>
-           <a class = "homeBtn6" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[7].imagem}">
-           <h3>${produtos[7].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[7].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[7].parcela}</p>
-           </span>
-           <a class = "homeBtn7" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[8].imagem}">
-           <h3>${produtos[8].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[8].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[8].parcela}</p>
-           </span>
-           <a class = "homeBtn8" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[9].imagem}">
-           <h3>${produtos[9].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[9].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[9].parcela}</p>
-           </span>
-           <a class = "asusBtn0" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[10].imagem}">
-           <h3>${produtos[10].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[10].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[10].parcela}</p>
-           </span>
-           <a class = "asusBtn1" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[11].imagem}">
-           <h3>${produtos[11].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[11].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[11].parcela}</p>
-           </span>
-           <a class = "asusBtn2" href = "#">Comprar</a>
-       </div>
-          `;
-          document.getElementById('destaques').innerHTML = menorSaida;
-        } else if (e.target.className === 'maiorPreco') {
-          const produtosMenor = produtos.sort((a, b) => b.preco - a.preco);
-          let maiorSaida = ``;
-          maiorSaida += `
-          <div class = "orderBy item">
-        <img src   = "${produtos[0].imagem}">
-           <h3>${produtos[0].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[0].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[0].parcela}</p>
-           </span>
-           <a class = "homeBtn0" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[1].imagem}">
-           <h3>${produtos[1].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[1].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[1].parcela}</p>
-           </span>
-           <a class = "homeBtn1" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[2].imagem}">
-           <h3>${produtos[2].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[2].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[2].parcela}</p>
-           </span>
-           <a class = "homeBtn2" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[3].imagem}">
-           <h3>${produtos[3].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[3].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[3].parcela}</p>
-           </span>
-           <a class = "homeBtn3" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[4].imagem}">
-           <h3>${produtos[4].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[4].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[4].parcela}</p>
-           </span>
-           <a class = "homeBtn4" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[5].imagem}">
-           <h3>${produtos[5].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[5].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[5].parcela}</p>
-           </span>
-           <a class = "homeBtn5" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[6].imagem}">
-           <h3>${produtos[6].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[6].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[6].parcela}</p>
-           </span>
-           <a class = "homeBtn6" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[7].imagem}">
-           <h3>${produtos[7].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[7].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[7].parcela}</p>
-           </span>
-           <a class = "homeBtn7" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[8].imagem}">
-           <h3>${produtos[8].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[8].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[8].parcela}</p>
-           </span>
-           <a class = "homeBtn8" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[9].imagem}">
-           <h3>${produtos[9].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[9].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[9].parcela}</p>
-           </span>
-           <a class = "asusBtn0" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[10].imagem}">
-           <h3>${produtos[10].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[10].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[10].parcela}</p>
-           </span>
-           <a class = "asusBtn1" href = "#">Comprar</a>
-       </div>
-       <div class = "orderBy item">
-       <img src   = "${produtos[11].imagem}">
-           <h3>${produtos[11].titulo}</h3>
-           <span class = "preco">
-               <p>R$ ${produtos[11].preco} à vista</p>
-           </span>
-           <span class = "parcela">
-               <p>${produtos[11].parcela}</p>
-           </span>
-           <a class = "asusBtn2" href = "#">Comprar</a>
-       </div>
-          `;
-          document.getElementById('destaques').innerHTML = maiorSaida;
-        }
         /******/
-        /* COLORS FILTER  */
+        /* COLORS FILTER*/
        /******/
-        else if (e.target.className === 'branco'){
+
+      document.addEventListener('click', e => {
+         if (e.target.className === 'branco'){
           let cores = produtos.filter(coresBranco => {
             return coresBranco.cor === 'Branco'
           })
@@ -492,7 +216,6 @@ function homeProd() {
                </span>
              <a class = "homeBtn0" href = "#">Comprar</a>
            </div>
-
            <div class = "orderBy item">
            <img src   = "${cores[1].imagem}">
            <h3>${cores[1].titulo}</h3>
@@ -504,7 +227,6 @@ function homeProd() {
              </span>
            <a class = "homeBtn2" href = "#">Comprar</a>
          </div>
-
          <div class = "orderBy item">
          <img src   = "${cores[2].imagem}">
          <h3>${cores[2].titulo}</h3>
@@ -516,7 +238,6 @@ function homeProd() {
            </span>
           <a class = "homeBtn3" href = "#">Comprar</a>
          </div>
-
          <div class = "orderBy item">
           <img src   = "${cores[3].imagem}">
            <h3>${cores[3].titulo}</h3>
@@ -528,7 +249,6 @@ function homeProd() {
            </span>
           <a class = "homeBtn7" href = "#">Comprar</a>
           </div>
-
           <div class = "orderBy item">
            <img src   = "${cores[4].imagem}">
             <h3>${cores[4].titulo}</h3>
@@ -661,7 +381,7 @@ function homeProd() {
                 <h1>${produtos[0].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[0].preco}</h2>
                     <p>à vista no cartão</p>
@@ -674,7 +394,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[0].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[0].preco} no cartão de crédito em até 10x de R$ 139,99 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1659,99 no cartão Logo.com em até 12x de R$ 59,99 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1659,99 no cartão Blues.com em até 12x de R$ 59,99 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -682,7 +402,6 @@ function homeProd() {
                 </div>
             </div>
          </div>   
-
          <div class = "fichaTec">
          <table>
            <tr>
@@ -774,12 +493,11 @@ function homeProd() {
                    <img onclick = "changeImg(this)" src = "https://imagens.trocafone.com/images/phones/dt-5ab2a7f2-iphone-x-cinzaespacial-traseira.png">
                 </div>
             </div>
-
             <div class = "detalhes-pag">
                 <h1>${produtos[1].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[1].preco}</h2>
                     <p>à vista no cartão</p>
@@ -792,7 +510,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[1].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[1].preco} no cartão de crédito em até 10x de R$ 220,99 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1899,90 no cartão Logo.com em até 12x de R$ 49,60 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1899,90 no cartão Blues.com em até 12x de R$ 49,60 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -800,7 +518,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -896,7 +613,7 @@ function homeProd() {
                 <h1>${produtos[2].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[2].preco}</h2>
                     <p>à vista no cartão</p>
@@ -909,7 +626,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[2].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[2].preco} no cartão de crédito em até 10x de R$ 139,99 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1668,90 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1668,90 no cartão Blues.com em até 12x de R$ 49,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -917,7 +634,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -1012,7 +728,7 @@ function homeProd() {
                 <h1>${produtos[3].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[3].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1025,7 +741,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[3].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[3].preco}no cartão de crédito em até 10x de R$ 120,99 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1689,80 no cartão Logo.com em até 12x de R$ 50,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1689,80 no cartão Blues.com em até 12x de R$ 50,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1033,7 +749,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -1128,7 +843,7 @@ function homeProd() {
                 <h1>${produtos[4].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[4].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1141,7 +856,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[4].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[4].preco} no cartão de crédito em até 10x de R$ 80,95 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 790,00 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 790,00 no cartão Blues.com em até 12x de R$ 39,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1149,7 +864,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -1244,7 +958,7 @@ function homeProd() {
                 <h1>${produtos[5].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[5].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1257,7 +971,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[5].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[5].preco} no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1489,90 no cartão Logo.com em até 12x de R$ 65,60 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1489,90 no cartão Blues.com em até 12x de R$ 65,60 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1265,7 +979,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -1360,7 +1073,7 @@ function homeProd() {
                 <h1>${produtos[6].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[6].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1373,7 +1086,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[6].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[6].preco} no cartão de crédito em até 10x de R$ 130,90 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1159,99 no cartão Logo.com em até 12x de R$ 39,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1159,99 no cartão Blues.com em até 12x de R$ 39,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1381,7 +1094,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -1476,7 +1188,7 @@ function homeProd() {
                 <h1>${produtos[7].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[7].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1489,7 +1201,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[7].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[7].preco} no cartão de crédito em até 10x de R$ 236,99 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1899,00 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1899,00 no cartão Blues.com em até 12x de R$ 49,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1497,7 +1209,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
          <table>
            <tr>
@@ -1592,7 +1303,7 @@ function homeProd() {
                 <h1>${produtos[8].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[8].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1605,7 +1316,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[8].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[8].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Blues.com em até 12x de R$ 25,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1613,7 +1324,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
         <table>
           <tr>
@@ -1708,7 +1418,7 @@ function homeProd() {
                 <h1>${produtos[9].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtos[9].preco}</h2>
                     <p>à vista no cartão</p>
@@ -1721,7 +1431,7 @@ function homeProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtos[9].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtos[9].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Blues.com em até 12x de R$ 25,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -1729,7 +1439,6 @@ function homeProd() {
                 </div>
             </div>
         </div>
-
         <div class = "fichaTec">
         <table>
           <tr>
@@ -1824,7 +1533,7 @@ function homeProd() {
               <h1>${produtos[10].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtos[10].preco}</h2>
                   <p>à vista no cartão</p>
@@ -1837,7 +1546,7 @@ function homeProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtos[10].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtos[10].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Blues.com em até 12x de R$ 25,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -1940,7 +1649,7 @@ function homeProd() {
             <h1>${produtos[11].tituloDetalhe}</h1>
             <div class = "precodet">
                 <p>vendido e entregue por
-                    Logo.com
+                    Blues.com
                 </p>
                 <h2>R$ ${produtos[11].preco}</h2>
                 <p>à vista no cartão</p>
@@ -1953,7 +1662,7 @@ function homeProd() {
             <br>
             <p><i class="fas fa-barcode"></i> R$ ${produtos[11].preco} no boleto bancário</p>
             <p><i class="far fa-credit-card"></i> R$ ${produtos[11].preco} no cartão de crédito em até 10x de R$ 59,90 s/ juros</p>
-            <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Logo.com em até 12x de R$ 25,90 s/ juros</p>
+            <p><i class="fas fa-credit-card"></i> R$ 550,96 no cartão Blues.com em até 12x de R$ 25,90 s/ juros</p>
             <div class = "frete">
                 <p>Calcular o frete: </p>
                 <input type = "text">
@@ -1961,7 +1670,6 @@ function homeProd() {
             </div>
         </div>
     </div>
-
     <div class = "fichaTec">
     <table>
       <tr>
@@ -2049,4 +1757,3 @@ function homeProd() {
   xhr.send();
 }
 homeProd();
-

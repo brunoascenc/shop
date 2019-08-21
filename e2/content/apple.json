@@ -2,7 +2,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-5ab2a7f1-iphone-x-cinzaespacial-frente.png",
       "titulo": "Iphone X Cinza Espacial",
-      "preco": 2000.00,
+      "preco": "2000,00",
       "parcela": "ou 12X de R$ 49,60 sem juros",
       "tituloDetalhe": "iPhone X Cinza Espacial 64GB Tela 5.8",
       "marca": "Apple",
@@ -25,7 +25,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-5834762a-cinza-e-frente.png",
       "titulo": "Iphone 6S Cinza Espacial",
-      "preco": 1599.90,
+      "preco": "1599,90",
       "parcela": "ou 12X de R$ 50,00 sem juros",
       "tituloDetalhe": "iPhone 6s 32GB Cinza Tela Retina HD 4,7",
       "marca": "Apple",
@@ -48,7 +48,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-prata-frente.jpg",
       "titulo": "Iphone SE Prata",
-      "preco": 1259.99,
+      "preco": "1259,99",
       "parcela": "ou 12x de R$ 39,90 sem juros",
       "tituloDetalhe": "iPhone SE 32GB Prata IOS 4G Câmera 12MP - Apple",
       "marca": "Apple",
@@ -71,7 +71,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-5834535c-cinza-e-frente.png",
       "titulo": "Iphone 5S Cinza Espacal",
-      "preco": 1199.56,
+      "preco": "1199,56",
       "parcela": "ou 12x de R$ 29,99 sem juros",
       "tituloDetalhe": "iPhone 5s Apple 16gb Cinza Espacial ",
       "marca": "Apple",
@@ -94,7 +94,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-iphone-5s-16gb-dourado.png",
       "titulo": "Iphone 5S 16GB Dourado",
-      "preco":  999.00,
+      "preco":  "999,00",
       "parcela": "ou 12x de R$ 56,90 sem juros",
       "tituloDetalhe": "iPhone 5s Apple 16gb Dourado",
       "marca": "Apple",
@@ -117,7 +117,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-58344fcb-branco-frente.png",
       "titulo": "iPhone 5C 8GB Branco",
-      "preco": 509.00 ,
+      "preco": "509,00" ,
       "parcela": "ou 12x de R$ 29,23 sem juros",
       "tituloDetalhe": "Iphone 5c 8gb Branco",
       "marca": "Apple",
@@ -140,7 +140,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-58347a07-cinza-e-frente.png",
       "titulo": "iPhone 6S Plus Cinza",
-      "preco": 1754.00,
+      "preco": "1754,00",
       "parcela": "ou 12x de R$ 39,99 sem juros",
       "tituloDetalhe": "iPhone 6s Plus 32GB Cinza Tela Retina HD 4,7",
       "marca": "Apple",
@@ -163,7 +163,7 @@
     {
       "imagem": "https://imagens.trocafone.com/images/phones/dt-591c9c9f-iphone7-black-1.jpg",
       "titulo": "iPhone 7 Plus Preto Matte",
-      "preco": 1899.90,
+      "preco": "1899,90",
       "parcela": "ou 12x de R$ 59,99 sem juros",
       "tituloDetalhe": "iPhone 7 Plus 32GB Preto Matte Desbloqueado IOS 10",
       "marca": "Apple",

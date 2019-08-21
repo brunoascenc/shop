@@ -62,117 +62,7 @@ function asusProd() {
      `;
         
      document.addEventListener('click', e => {
-      if(e.target.className === 'menorPreco'){
-       const menorPreco = produtosAsus.sort((a,b) => a.preco - b.preco)
-       let menorSaida = ``
-       menorSaida += `
-       <div class = "orderBy item">
-       <img src   = "${produtosAsus[0].imagem}">
-          <h3>${produtosAsus[0].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[0].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[0].parcela}</p>
-          </span>
-          <a class = "asusBtn0" href = "#">Comprar</a>
-      </div>
-
-      <div class = "orderBy item">
-      <img src   = "${produtosAsus[1].imagem}">
-          <h3>${produtosAsus[1].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[1].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[1].parcela}</p>
-          </span>
-          <a class = "asusBtn1" href = "#">Comprar</a>
-      </div>
-
-      <div class = "orderBy item">
-      <img src   = "${produtosAsus[2].imagem}">
-          <h3>${produtosAsus[2].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[2].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[2].parcela}</p>
-          </span>
-          <a class = "asusBtn2" href = "#">Comprar</a>
-      </div>
-
-      <div class = "orderBy item">
-      <img src   = "${produtosAsus[3].imagem}">
-          <h3>${produtosAsus[3].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[3].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[3].parcela}</p>
-          </span>
-          <a class = "asusBtn3" href = "#">Comprar</a>
-      </div>
-       `
-       document.getElementById('destaquesAsus').innerHTML = menorSaida
-      }
-
-      else if (e.target.className === 'maiorPreco'){
-       const maiorPreco = produtosAsus.sort((a,b) => b.preco - a.preco)
-       let maiorSaida = ``
-       maiorSaida += `
-       <div class = "orderBy item">
-       <img src   = "${produtosAsus[0].imagem}">
-          <h3>${produtosAsus[0].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[0].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[0].parcela}</p>
-          </span>
-          <a class = "asusBtn0" href = "#">Comprar</a>
-      </div>
-
-      <div class = "orderBy item">
-      <img src   = "${produtosAsus[1].imagem}">
-          <h3>${produtosAsus[1].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[1].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[1].parcela}</p>
-          </span>
-          <a class = "asusBtn1" href = "#">Comprar</a>
-      </div>
-
-      <div class = "orderBy item">
-      <img src   = "${produtosAsus[2].imagem}">
-          <h3>${produtosAsus[2].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[2].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[2].parcela}</p>
-          </span>
-          <a class = "asusBtn2" href = "#">Comprar</a>
-      </div>
-
-      <div class = "orderBy item">
-      <img src   = "${produtosAsus[3].imagem}">
-          <h3>${produtosAsus[3].titulo}</h3>
-          <span class = "preco">
-              <p>R$ ${produtosAsus[3].preco} à vista</p>
-          </span>
-          <span class = "parcela">
-              <p>${produtosAsus[3].parcela}</p>
-          </span>
-          <a class = "asusBtn3" href = "#">Comprar</a>
-      </div>
-       `
-       document.getElementById('destaquesAsus').innerHTML = maiorSaida
-       }
-
-       else if (e.target.className === 'vermelho'){
+        if (e.target.className === 'vermelho'){
         let cores = produtosAsus.filter(coresBranco => {
           return coresBranco.cor === 'Vermelho'
         })
@@ -261,7 +151,7 @@ function asusProd() {
   
             let saida = `
             <div class = "container">
-            <a   href  = "index.html">Voltar</a>
+            <a   href  = "asus.html">Voltar</a>
             <div class = "opcoes">
             <div>
             <img id = "img-container" src = "${produtosAsus[0].imagem}">
@@ -275,7 +165,7 @@ function asusProd() {
                 <h1>${produtosAsus[0].tituloDetalhe}</h1>
                 <div class = "precodet">
                     <p>vendido e entregue por
-                        Logo.com
+                        Blues.com
                     </p>
                     <h2>R$ ${produtosAsus[0].preco}</h2>
                     <p>à vista no cartão</p>
@@ -288,7 +178,7 @@ function asusProd() {
                 <br>
                 <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[0].preco} no boleto bancário</p>
                 <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[0].preco} no cartão de crédito em até 10x de R$ 85,99 s/ juros</p>
-                <p><i class="fas fa-credit-card"></i> R$ 1520,50 no cartão Logo.com em até 12x de R$ 49,90 s/ juros</p>
+                <p><i class="fas fa-credit-card"></i> R$ 1520,50 no cartão Blues.com em até 12x de R$ 49,90 s/ juros</p>
                 <div class = "frete">
                     <p>Calcular o frete: </p>
                     <input type = "text">
@@ -377,7 +267,7 @@ function asusProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "asus.html">Voltar</a>
           <div class = "opcoes">
           <div>
           <img id = "img-container" src = "${produtosAsus[1].imagem}">
@@ -391,7 +281,7 @@ function asusProd() {
               <h1>${produtosAsus[1].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtosAsus[1].preco}</h2>
                   <p>à vista no cartão</p>
@@ -404,7 +294,7 @@ function asusProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[1].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[1].preco} no cartão de crédito em até 10x de R$ 102,90 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1520,00 no cartão Logo.com em até 12x de R$ 69,99 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1520,00 no cartão Blues.com em até 12x de R$ 69,99 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -492,7 +382,7 @@ function asusProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "asus.html">Voltar</a>
           <div class = "opcoes">
           <div>
             <img id = "img-container" src = "${produtosAsus[2].imagem}">
@@ -506,7 +396,7 @@ function asusProd() {
               <h1>${produtosAsus[2].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtosAsus[2].preco}</h2>
                   <p>à vista no cartão</p>
@@ -519,7 +409,7 @@ function asusProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[2].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[2].preco} no cartão de crédito em até 10x de R$ 110,90 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 899,90 no cartão Logo.com em até 12x de R$ 45,60 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 899,90 no cartão Blues.com em até 12x de R$ 45,60 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">
@@ -607,7 +497,7 @@ function asusProd() {
   
             let saida = `
           <div class = "container">
-          <a   href  = "index.html">Voltar</a>
+          <a   href  = "asus.html">Voltar</a>
           <div class = "opcoes">
           <div>
           <img id = "img-container" src = "${produtosAsus[3].imagem}">
@@ -621,7 +511,7 @@ function asusProd() {
               <h1>${produtosAsus[3].tituloDetalhe}</h1>
               <div class = "precodet">
                   <p>vendido e entregue por
-                      Logo.com
+                      Blues.com
                   </p>
                   <h2>R$ ${produtosAsus[3].preco}</h2>
                   <p>à vista no cartão</p>
@@ -634,7 +524,7 @@ function asusProd() {
               <br>
               <p><i class="fas fa-barcode"></i> R$ ${produtosAsus[3].preco} no boleto bancário</p>
               <p><i class="far fa-credit-card"></i> R$ ${produtosAsus[3].preco} no cartão de crédito em até 10x de R$ 132,90 s/ juros</p>
-              <p><i class="fas fa-credit-card"></i> R$ 1750,99 no cartão Logo.com em até 12x de R$ 89,90 s/ juros</p>
+              <p><i class="fas fa-credit-card"></i> R$ 1750,99 no cartão Blues.com em até 12x de R$ 89,90 s/ juros</p>
               <div class = "frete">
                   <p>Calcular o frete: </p>
                   <input type = "text">

@@ -2,7 +2,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5b3134b3-zenfone-4-verde-frente.png",
         "titulo": "Zenfone 4 Verde",
-        "preco": 1659.55,
+        "preco": "1659,55",
         "parcela": "ou 12x R$ 49,90 sem juros",
         "tituloDetalhe": "Zenfone 4 4GB Ram Verde",
         "marca": "Asus",
@@ -25,7 +25,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-zenfone-4-selfie-pro-vermelho-frente.png",
         "titulo": "Zenfone 4 Selfie Pro",
-        "preco": 1789.00,
+        "preco": "1789,00",
         "parcela": "ou 12x R$ 69,99 sem juros",
         "tituloDetalhe": "Zenfone 4 Selfie Pro 4GB Ram Vermelho",
         "marca": "Asus",
@@ -48,7 +48,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5a5f3e54-zenfone-3-preto-1.jpg",
         "titulo": "Zenfone 3 Preto",
-        "preco":  1289.66,
+        "preco":  "1289,66",
         "parcela": "ou 12x R$ 45,60 sem juros",
         "tituloDetalhe": "Smartphone Asus Zenfone 3 Dual Chip ",
         "marca": "Asus",
@@ -71,7 +71,7 @@
     {
         "imagem": "https://imagens.trocafone.com/images/phones/dt-5c23a990-zenfone-4-max-preto-frente.png",
         "titulo": "Asus Zenfone 4 Max Preto",
-        "preco": 1989.56,
+        "preco": "1989,56",
         "parcela": "ou 12x R$ 89,90 sem juros",
         "tituloDetalhe": "Asus Zenfone 4 Max Dual Chip Android 7",
         "marca": "Asus",

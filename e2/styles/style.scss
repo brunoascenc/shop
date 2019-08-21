@@ -12,31 +12,28 @@ body {
 }
 /* Nav*/
 header {
-  height: 18vh;
+  height: 12vh;
   background: #fdfcfc;
   width: 100%;
   .topo-nav,
   .nav-contato {
     display: flex;
-    height: 18vh;
-    // justify-content: space-around;
+    height: 12vh;
     justify-content: center;
     align-items: flex-end;
     background: #fdfcfc;
-    // margin-bottom: 50px;
     border-bottom: $borderStyle;
   }
 
   .navbar {
     @include flexCenter();
-    // position: relative;
     margin-bottom: 15px;
     
     input {
       @include inputReset();
       height: 25px;
       margin-top: 37px;
-      margin-left: 43px;
+      margin-left: 30px;
       margin-right: 14px;
       border: solid 1px rgb(240, 237, 237);
       border-bottom: solid 3px rgb(228, 228, 228);
@@ -60,8 +57,8 @@ header {
 
   .logo {
     margin-top: 15px;
-    margin-right: 228px;
-    margin-left: 12px;
+    margin-right: 220px;
+    margin-left: 13px;
     margin-bottom: 15px;
     font-family: $titleFont;
     text-transform: uppercase;
@@ -79,7 +76,6 @@ header {
     margin-top: 40px;
     text-transform: uppercase;
     color: #6b6969;
-    // font-weight: bold;
     transition: 0.1s ease;
     &:hover {
       color: #4395bb;
@@ -133,9 +129,6 @@ header {
   }
 
   .show-menu-btn{
-    // position: absolute;
-    // top: 0;
-    // right: 153px;
     i{
       line-height: 100px;
     }
@@ -151,7 +144,13 @@ header {
 
 .pages-content{
   .login-link{
-    margin-right: 12px;
+    margin-right: 10px;
+  }
+}
+
+.pages-content{
+  .logo{
+    margin-right: 228px;
   }
 }
 
@@ -159,7 +158,6 @@ header {
   position: fixed;
   width: 100%;
   background: #f6f4f4;
-  // height: 85px !important;
   z-index: 100;
   transition: 0.5s;
   border-bottom: solid 1px rgb(224, 222, 222);
@@ -170,10 +168,7 @@ header {
   display: flex;
   animation: slide 12s infinite;
   height: 320px;
-  // margin-top: 13px;
   position: relative;
-  // background: url('https://navedez.vteximg.com.br/arquivos/ids/184555/[2015-08]-Nave-10-Banners-Galaxy-S9.jpg?v=636579283423470000')
-  //   no-repeat;
   background-size: cover;
   .carousel {
     display: flex;
@@ -230,12 +225,10 @@ main {
     border: $item-border;
     margin-bottom: 200px;
     margin-top: 2%;
-    // border-top: none;
     padding: 0 26px 12px;
     .menu-items {
       @include flexCenter();
       flex-direction: column;
-      // margin-left: 15px;
       h3 {
         margin-top: 15px;
         font-family: $titleFont;
@@ -258,7 +251,6 @@ main {
         border-bottom: solid 2px rgb(223, 220, 220);
         margin-top: 12px;
         width: 130px;
-        // border-radius: 6px;
       }
     }
     .cores-opcoes {
@@ -312,7 +304,6 @@ main {
     grid-column-gap: 45px;
     grid-row-gap: 35px;
     margin-top: 2%;
-    // border-left: $item-border;
     .item {
       display: flex;
       flex-direction: column;
@@ -359,7 +350,6 @@ main {
       padding: 11px;
       width: 150px;
       margin-top: 10px;
-      // margin-left: 18px;
       text-transform: uppercase;
       transition: all 0.1s ease;
       color: #fdf5f5;
@@ -376,7 +366,6 @@ main {
     }
 
     .parcela {
-      // font-weight: bold;
       color: rgb(75, 74, 74);
       font-size: 0.9em;
     }
@@ -424,8 +413,6 @@ main {
       margin-top: 10px;
     }
     .fa-search {
-      // margin-left: 160px;
-      // margin-top: -260px;
       position: absolute;
       top: 380px;
       right: 95px;
@@ -437,13 +424,6 @@ main {
 /*Conteudo end*/
 
 /*Contato*/
-// #contato{
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   padding: 16%;
-// }
-
 .container-contato {
   display: flex;
   flex-direction: column;
@@ -452,7 +432,6 @@ main {
 
 .contato-form {
   display: flex;
-  // justify-content: center;
   margin-top: 10px;
   margin-bottom: 2%;
   padding: 90px;
@@ -532,6 +511,13 @@ main {
   }
 }
 
+.ordenar-menu {
+  i {
+    color: rgb(184, 182, 182);
+    cursor: pointer;
+  }
+}
+
 
 /* Footer */
 footer {
@@ -541,12 +527,10 @@ footer {
   border-top: $item-border;
   background: #fdfcfc;
   height: 100%;
-  // margin-top: 25px;
   justify-content: space-evenly;
 
   .info {
     margin-top: 5%;
-    // padding: 60px;
     li,
     a {
       @include linksReset();
@@ -564,7 +548,6 @@ footer {
   }
   .newsletter {
     margin-top: 5%;
-    // margin-left: 15px;
     @include columnCenter();
     .socials i {
       color: rgb(0, 183, 255);
@@ -771,7 +754,6 @@ footer {
     text-transform: uppercase;
     color: rgb(97, 97, 98);
     font-size: 15px;
-    // margin-left: 657px;
     font-weight: bold;
     left: 200px;
   }
@@ -785,16 +767,11 @@ footer {
 
 .opcoes {
   display: flex;
-  // margin-left: 56px;
-  // width: 100%;
-  // width: 1200px;
   justify-content: center;
   background: rgb(253, 253, 253);
   border: solid 1px rgb(224, 221, 221);
   padding: 28px;
   img{
-    // border: solid 1px rgb(190, 190, 190);
-    // width: 250px;
     padding: 4px;
     width: 100%;
   }
@@ -841,7 +818,6 @@ footer {
     height: 95%;
     width: 75%;
     border: $borderStyle;
-    // background: #faf8f8;
     padding: 28px;
     position: relative;
     .buttonsPag {
@@ -880,7 +856,6 @@ footer {
 
   .card-nav {
     display: flex;
-    // justify-content: space-between;
     justify-content: center;
     img{
       margin-top: 6px;
@@ -896,21 +871,14 @@ footer {
 
 .fichaTec {
   display: flex;
-  // width: 95%;
   border-collapse: collapse;
-  // width: 100%;
-  // justify-self: center;
   color: rgb(100, 100, 100);
-  // padding: 12px;
   td {
     padding: 8px 255px 8px 6px;
-    // width: 100%;
   }
   table {
     width: 100%;
     margin-bottom: 5%;
-    // justify-content: end;
-    // margin-left: 141px;
   }
 }
 
@@ -928,13 +896,10 @@ th {
   text-transform: uppercase;
   font-family: $titleFont;
   color: #535050;
-  // align-self: center;
 }
 
 .home-content {
   justify-content: center;
-  // width: 90%;
-  // margin-left: 65px;
   flex-wrap: wrap;
 }
 
@@ -956,7 +921,6 @@ th {
     left: 0;
     right: 0;
     opacity: 0;
-    // background-size: cover;
     max-width: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -1491,10 +1455,9 @@ img{
 
   header {
     .logo {
-      // margin-right: 580px !important;
       position: absolute;
       left: 45px;
-      // top: 38px;
+
     }
   
     li,
@@ -1696,7 +1659,6 @@ img{
   #destaquesSam,
   #destaquesAsus{
     grid-template-columns: repeat(1, 1fr) !important;
-    // align-items: center !important;
   }
 
   .itemBanner {
@@ -1710,9 +1672,6 @@ img{
   #destaquesSam{
     .item{
       margin-left: 17.8%;
-      // a{
-      //   margin-left: 45.5px !important;
-      // }
     }
   }
 
@@ -1725,11 +1684,7 @@ img{
     width: 300px !important;
     img {
       width: 65% !important;
-      // margin-left: 45px;
     }
-    // a{
-    //   margin-left: 55px !important;
-    // }
   }
 
   footer {
@@ -1777,7 +1732,6 @@ img{
     width: 93% !important;
     position: relative;
     i{
-      // margin-left: 210px;
       position: absolute;
       right: 15px;
     }
@@ -1800,6 +1754,9 @@ img{
     #img-container{
       margin-left:37px !important;
     }
+  }
+  .logo {
+    font-size: 12px;
   }
 }
 
@@ -1854,12 +1811,10 @@ img{
   }
 
   #contato {
-    margin-top: 550% !important;
+    margin-top: 2% !important;
   }
 
   #finalizarCompra{
     padding: 4%;
-    // margin-top: 25%;
   }
-
 }
