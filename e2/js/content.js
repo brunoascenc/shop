@@ -1634,7 +1634,7 @@ function homeProd() {
           compraDiv.style.display = 'block';
 
           let saida = `
-          <div class = "container">
+       <div class = "container">
         <a   href  = "index.html">Voltar</a>
         <div class = "opcoes">
           <div>
