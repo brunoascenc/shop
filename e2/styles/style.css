@@ -12,7 +12,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
-  background-color: #f6f4f4;
+  background-color: #f3eded;
 }
 
 /* Nav*/
@@ -150,7 +150,8 @@ header .searchNav i {
   color: #ccc9c9;
 }
 
-header .show-menu-btn, header .hide-menu-btn {
+header .show-menu-btn,
+header .hide-menu-btn {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-size: 30px;
@@ -243,7 +244,8 @@ header #check {
   z-index: -1111;
 }
 
-.show-menu-item, .hide-menu-item {
+.show-menu-item,
+.hide-menu-item {
   display: none;
   cursor: pointer;
 }
@@ -343,7 +345,7 @@ main .menu .cores-opcoes .dourado {
   background: #f0f0f3;
   cursor: pointer;
   border: solid 1px #afaaaa;
-  background: #D4AF37;
+  background: #d4af37;
 }
 
 main .menu .cores-opcoes .preto {
@@ -363,7 +365,7 @@ main .menu .cores-opcoes .cinza {
   background: #f0f0f3;
   cursor: pointer;
   border: solid 1px #afaaaa;
-  background: #4B4B4C;
+  background: #4b4b4c;
 }
 
 main .menu .cores-opcoes .vermelho {
@@ -729,7 +731,6 @@ main .organizar .fa-search {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: -7%;
   margin-bottom: 5%;
   width: 100%;
 }
@@ -1218,7 +1219,8 @@ footer .copyright {
   cursor: pointer;
 }
 
-.opcoes .card-nav img:nth-child(2), .opcoes .card-nav img:nth-child(3) {
+.opcoes .card-nav img:nth-child(2),
+.opcoes .card-nav img:nth-child(3) {
   margin-left: 15px;
 }
 
@@ -1240,7 +1242,7 @@ footer .copyright {
 }
 
 .fichaTec tr:nth-child(odd) {
-  background: #f5f4f4;
+  background: #e6e3e3;
 }
 
 .fichaTec tr:nth-child(even) {
@@ -1251,7 +1253,7 @@ th {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background: #f6f4f4;
+  background: #f1eded;
   padding: 6px;
   text-transform: uppercase;
   font-family: "Noto Sans KR", sans-serif;

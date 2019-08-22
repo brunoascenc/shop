@@ -332,19 +332,19 @@ function homeProd() {
         }
 
         else if (e.target.className === 'verde'){
-          let cores = produtos.filter(coresBranco => {
-            return coresBranco.cor === 'Verde'
+          let cores = produtos.filter(coresVerde => {
+            return coresVerde.cor === 'Verde'
           })
           let saida = ``
            saida += `
            <div class = "orderBy item">
-             <img src = "${cores[i].imagem}">
-             <h3>${cores[i].titulo}</h3>
+             <img src = "${cores[0].imagem}">
+             <h3>${cores[0].titulo}</h3>
                <span class = "preco">
-                 <p>R$ ${cores[i].preco} à vista</p>
+                 <p>R$ ${cores[0].preco} à vista</p>
                </span>
                <span class = "parcela">
-                 <p>${cores[i].parcela}</p>
+                 <p>${cores[0].parcela}</p>
                </span>
              <a class = "homeBtn9" href = "#">Comprar</a>
            </div>

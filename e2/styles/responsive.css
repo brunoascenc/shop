@@ -35,6 +35,8 @@
   }
   header .logo {
     margin-right: 53px;
+    margin-top: 10px;
+    font-size: 12px !important;
   }
   header li,
   header a {
@@ -47,11 +49,14 @@
   }
 }
 
-@media screen and (max-width: 1020px) {
-  .show-menu-btn, .hide-menu-btn, .login {
+@media screen and (max-width: 1135px) {
+  .show-menu-btn,
+  .hide-menu-btn,
+  .login {
     display: block !important;
   }
-  .navbar, .login {
+  .navbar,
+  .login {
     position: fixed;
     width: 60% !important;
     height: 100%;
@@ -62,7 +67,8 @@
     transition: 0.7s;
     z-index: 1;
   }
-  .navbar #main, .login #main {
+  .navbar #main,
+  .login #main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -74,16 +80,19 @@
     overflow-y: scroll;
     width: 100%;
   }
-  .navbar #main a, .login #main a {
+  .navbar #main a,
+  .login #main a {
     color: #3f3e3e;
     font-size: 17px;
     border-bottom: solid 2px #cfcece;
     width: 100%;
   }
-  .navbar #main .searchNav, .login #main .searchNav {
+  .navbar #main .searchNav,
+  .login #main .searchNav {
     display: none;
   }
-  .navbar .hide-menu-btn, .login .hide-menu-btn {
+  .navbar .hide-menu-btn,
+  .login .hide-menu-btn {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -113,6 +122,9 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .detalhes-pag {
     width: 100% !important;
@@ -145,9 +157,6 @@
   #check:checked ~ .navbar {
     right: 0 !important;
   }
-  .logo {
-    margin-top: 0px !important;
-  }
   #destaques,
   #destaquesApple,
   #destaquesMoto,
@@ -171,6 +180,7 @@
   header .logo {
     position: absolute;
     left: 45px;
+    top: 5px;
   }
   header li,
   header a {
@@ -181,15 +191,17 @@
     color: #323333;
     position: absolute;
     right: 58px;
-    margin-top: 5px;
+    top: -20px;
   }
 }
 
 @media screen and (max-width: 750px) {
-  .show-menu-item, .hide-menu-item {
+  .show-menu-item,
+  .hide-menu-item {
     display: block !important;
   }
-  .navbar, .login {
+  .navbar,
+  .login {
     width: 100% !important;
   }
   .navbar {
@@ -443,6 +455,12 @@
   }
 }
 
+@media screen and (max-width: 420px) {
+  .card-nav img {
+    width: 68.5px !important;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .itemBanner {
     -ms-grid-row: 1 !important;
@@ -478,9 +496,6 @@
   table {
     width: 100% !important;
   }
-  .card-nav img {
-    width: 70px !important;
-  }
   .buttonsPag {
     margin-left: 35px !important;
   }
@@ -506,7 +521,7 @@
     width: 80% !important;
   }
   .card-nav img {
-    width: 58px !important;
+    width: 62.5px !important;
   }
   .itemBanner {
     -ms-grid-row: 1 !important;
@@ -521,6 +536,10 @@
   }
   #finalizarCompra {
     padding: 4%;
+  }
+  .navbar #main a,
+  .login #main a {
+    font-size: 14px;
   }
 }
 /*# sourceMappingURL=responsive.css.map */
